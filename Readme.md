@@ -2,6 +2,10 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 # Programming Languages
 
+## Parsing
+
+  - [ ] [Restricting Grammars with Tree Automata - Michael D. Adams and Matthew Might](http://delivery.acm.org/10.1145/3140000/3133906/oopsla17-oopsla234.pdf?ip=62.195.23.191&id=3133906&acc=OA&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EFF4855CDBAECEBC5%2EC1E31BC46E58D5B8&__acm__=1518888271_476e608b6be1213e8e1bfb39669d33c5)
+
 ## [Elm](http://elm-lang.org/)
 
   - [x] [An Introduction to Elm](https://guide.elm-lang.org/)
@@ -38,7 +42,9 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
   - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
   - [ ] [The Lost Art of Denotational Semantics](https://www.youtube.com/watch?v=pQyH0p-XJzE)
+  - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
+  - [ ] [Linear Haskell: Practical linearity in a higher-order polymorphic language](https://blog.acolyer.org/2018/01/24/linear-haskell-practical-linearity-in-a-higher-order-polymorphic-language/)
   - [ ] [Subscribe to Haskell weekly news](https://haskellweekly.news/issues/85.html)
   - [ ] Multiparameter type classes/functional dependencie
   - [ ] Type families
@@ -103,6 +109,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
   - [x] [A Tutorial on Coalgebras and Coinduction](https://pdfs.semanticscholar.org/40bb/e9978e2c4080740f55634ac58033bfb37d36.pdf)
   - [ ] [Fundamental Study: Universal Coalgebra: A theory of systems](http://www.sciencedirect.com/science/article/pii/S0304397500000566)
+  - [ ] [The basics of coinduction - Jan Stolarek](http://lambda.jstolarek.com/2015/03/the-basics-of-coinduction/)
   
 ### Logic
 
