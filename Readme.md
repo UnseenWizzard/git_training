@@ -10,6 +10,9 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] [Lecture 6: Alternating Automata](http://www.cmi.ac.in/~kumar/words/lecture06.pdf)
   - [x] [Regular-expression derivatives reexamined](https://people.mpi-sws.org/~turon/re-deriv.pdf)
   - [x] [Parsing with Derivatives - a functional pearl - Matthew Might, David Darais and Daniel Spiewak](https://s3.amazonaws.com/academia.edu.documents/30626123/might2011derivatives.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1518892310&Signature=h%2BGIOGvJDelNj2jLucDwIHGO7kc%3D&response-content-disposition=inline%3B%20filename%3DParsing_with_derivatives_a_functional_pe.pdf)
+  - [x] [Visibly Pushdown Languages - Rajeev Alur and P Madhusudan](https://repository.upenn.edu/cgi/viewcontent.cgi?article=1174&context=cis_papers)
+  - [x] [High-Performance Complex Event Processing over XML Streams - Barzan Mozafari, Kai Zeng, Carlo Zaniolo](http://web.cs.ucla.edu/~zaniolo/papers/p253-mozafari.pdf)
+  - [x] [Visibly Pushdown Automata for Streaming XML - Varij Kumar, P Madhusdan, Mahesh Viswanathan](http://www.ra.ethz.ch/cdstore/www2007/www2007.org/papers/paper788.pdf)
   - [x] [Regular Expression Sub-Matching using Partial Derivatives - Martin Sulzmann and Kenny Zhuo Ming Lu](https://5b6c6881-a-62cb3a1a-s-sites.googlegroups.com/site/luzhuomi/file/ppdp39-sulzmann.pdf?attachauth=ANoY7crz7zlgeFVqKfz21xs3J43HwF_-sNbCMgfXTF_n3NGvtRj9c38uRQfo-0djC_uj60Hwfg0UCE21pwBzsG0Tp6g5PG1_Bbc0Pua71Gw9_rDuGmxecsdMhf9QgdCh6KsqVLFmBr2PyasKYi29DzgyCBRzJiIEjeNKMNHlHlDrodJ80qwFUrh46HVlQn8IJOorscdZn9J6rgi0uoX6UQmqfzBltBSOOjCi0sVx8_s8NPrrtEpbq3o%3D&attredirects=0)
   - [x] [Correct and Efficient POSIX Submatch Extraction with Regular Expression Derivatives - Martin Sulzmann and Kenny Zhuo Ming Lu](http://www.home.hs-karlsruhe.de/~suma0002/publications/posix-derivatives.pdf)
   - [x] [Taxonomy of XML Schema Languages Using Formal Language Theory - Makoto Murata](https://www.tjhsst.edu/~rlatimer/acm/InternetTechnology/XMLFormalLanguagep660-murataTOITNov05.pdf)
@@ -117,6 +120,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 ### Coalgebra
 
+  - [x] [Automata and Coinduction (an exercise in coalgebra) - J.J.M.M Rutten](https://fldit-www.cs.uni-dortmund.de/~peter/Rutten/AutomataCoind.pdf)
   - [x] [A Tutorial on Coalgebras and Coinduction](https://pdfs.semanticscholar.org/40bb/e9978e2c4080740f55634ac58033bfb37d36.pdf)
   - [ ] [Fundamental Study: Universal Coalgebra: A theory of systems](http://www.sciencedirect.com/science/article/pii/S0304397500000566)
   - [ ] [The basics of coinduction - Jan Stolarek](http://lambda.jstolarek.com/2015/03/the-basics-of-coinduction/)
