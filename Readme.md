@@ -124,6 +124,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
   - [x] [Automata and Coinduction (an exercise in coalgebra) - J.J.M.M Rutten](https://fldit-www.cs.uni-dortmund.de/~peter/Rutten/AutomataCoind.pdf)
   - [x] [A Tutorial on Coalgebras and Coinduction](https://pdfs.semanticscholar.org/40bb/e9978e2c4080740f55634ac58033bfb37d36.pdf)
+  - [ ] [Kleene Coalgebra: an overview - Alexandra Silva, Marcello Bonsangue and Jan Rutten](https://homepages.cwi.nl/~janr/papers/files-of-papers/2011-nvti.pdf)
   - [ ] [Fundamental Study: Universal Coalgebra: A theory of systems](http://www.sciencedirect.com/science/article/pii/S0304397500000566)
   - [ ] [The basics of coinduction - Jan Stolarek](http://lambda.jstolarek.com/2015/03/the-basics-of-coinduction/)
   
