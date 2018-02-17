@@ -2,7 +2,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 # Programming Languages
 
-## Parsing
+## Parsing and Automata
 
   - [x] [Tree Automata and Tree Grammars - Joost Engelfriet](https://arxiv.org/pdf/1510.02036.pdf)
   - [x] [Parsing Expression Grammars: A Recognition-Based Syntactic Foundation](http://bford.info/pub/lang/peg.pdf)
