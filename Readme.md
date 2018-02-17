@@ -103,6 +103,10 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
   - [x] [A Tutorial on Coalgebras and Coinduction](https://pdfs.semanticscholar.org/40bb/e9978e2c4080740f55634ac58033bfb37d36.pdf)
   - [ ] [Fundamental Study: Universal Coalgebra: A theory of systems](http://www.sciencedirect.com/science/article/pii/S0304397500000566)
+  
+### Logic
+
+  - [ ] [Monadic Second Order Logic](https://cs.stackexchange.com/questions/82994/monadic-second-order-logic-for-dummies)
 
 ### Homotopy Type Theory
 
