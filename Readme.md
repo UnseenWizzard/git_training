@@ -4,10 +4,16 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 ## Parsing
 
+  - [x] [Tree Automata and Tree Grammars - Joost Engelfriet](https://arxiv.org/pdf/1510.02036.pdf)
   - [x] [Parsing Expression Grammars: A Recognition-Based Syntactic Foundation](http://bford.info/pub/lang/peg.pdf)
   - [x] [Combinator Parsers A Short Tutorial](http://www.cs.uu.nl/research/techreps/repo/CS-2008/2008-044.pdf)
+  - [x] [Lecture 6: Alternating Automata](http://www.cmi.ac.in/~kumar/words/lecture06.pdf)
   - [x] [Regular-expression derivatives reexamined](https://people.mpi-sws.org/~turon/re-deriv.pdf)
   - [x] [Parsing with Derivatives - a functional pearl - Matthew Might, David Darais and Daniel Spiewak](https://s3.amazonaws.com/academia.edu.documents/30626123/might2011derivatives.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1518892310&Signature=h%2BGIOGvJDelNj2jLucDwIHGO7kc%3D&response-content-disposition=inline%3B%20filename%3DParsing_with_derivatives_a_functional_pe.pdf)
+  - [x] [Regular Expression Sub-Matching using Partial Derivatives - Martin Sulzmann and Kenny Zhuo Ming Lu](https://5b6c6881-a-62cb3a1a-s-sites.googlegroups.com/site/luzhuomi/file/ppdp39-sulzmann.pdf?attachauth=ANoY7crz7zlgeFVqKfz21xs3J43HwF_-sNbCMgfXTF_n3NGvtRj9c38uRQfo-0djC_uj60Hwfg0UCE21pwBzsG0Tp6g5PG1_Bbc0Pua71Gw9_rDuGmxecsdMhf9QgdCh6KsqVLFmBr2PyasKYi29DzgyCBRzJiIEjeNKMNHlHlDrodJ80qwFUrh46HVlQn8IJOorscdZn9J6rgi0uoX6UQmqfzBltBSOOjCi0sVx8_s8NPrrtEpbq3o%3D&attredirects=0)
+  - [x] [Correct and Efficient POSIX Submatch Extraction with Regular Expression Derivatives - Martin Sulzmann and Kenny Zhuo Ming Lu](http://www.home.hs-karlsruhe.de/~suma0002/publications/posix-derivatives.pdf)
+  - [x] [Taxonomy of XML Schema Languages Using Formal Language Theory - Makoto Murata](https://www.tjhsst.edu/~rlatimer/acm/InternetTechnology/XMLFormalLanguagep660-murataTOITNov05.pdf)
+  - [x] [Foundations of XML Processing: The Tree Automata Approach - Haruo Hosoya](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.138.6773&rep=rep1&type=pdf)
   - [ ] [Restricting Grammars with Tree Automata - Michael D. Adams and Matthew Might](http://delivery.acm.org/10.1145/3140000/3133906/oopsla17-oopsla234.pdf?ip=62.195.23.191&id=3133906&acc=OA&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EFF4855CDBAECEBC5%2EC1E31BC46E58D5B8&__acm__=1518888271_476e608b6be1213e8e1bfb39669d33c5)
   - [ ] [Verified Decision Procedures for MSO on Words Based on Derivatives of Regular Expressions](https://www21.in.tum.de/~traytel/papers/icfp13-mso/index.html)
 
