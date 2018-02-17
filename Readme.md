@@ -57,6 +57,9 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 ## Maths
 
+  - [ ] [3Blue1Brown - Neat proofs/perspectives](https://www.youtube.com/playlist?list=PLZHQObOWTQDPSKntUcMArGheySM4gL7wS)
+  - [ ] [euclideanspace - Maths - Abstract Algebra and Discrete Mathematics](http://euclideanspace.com/maths/discrete/index.htm)
+
 ### Discrete Maths
 
   - [ ] [Discrete Mathematics for Computer Science: Class1](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class1.pdf)
