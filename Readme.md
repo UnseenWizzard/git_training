@@ -5,6 +5,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 ## Parsing
 
   - [ ] [Restricting Grammars with Tree Automata - Michael D. Adams and Matthew Might](http://delivery.acm.org/10.1145/3140000/3133906/oopsla17-oopsla234.pdf?ip=62.195.23.191&id=3133906&acc=OA&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EFF4855CDBAECEBC5%2EC1E31BC46E58D5B8&__acm__=1518888271_476e608b6be1213e8e1bfb39669d33c5)
+  - [ ] [Verified Decision Procedures for MSO on Words Based on Derivatives of Regular Expressions](https://www21.in.tum.de/~traytel/papers/icfp13-mso/index.html)
 
 ## [Elm](http://elm-lang.org/)
 
@@ -147,6 +148,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] [Oleg Kiselyov's site](http://okmij.org/ftp/)
   - [ ] [Adventures with Types](https://www.youtube.com/watch?v=6COvD8oynmI)
   - [ ] [SQL in the type system where it belongs](http://ren.zone/articles/opaleye-sot)
+  - [ ] [Structural type system](https://en.wikipedia.org/wiki/Structural_type_system)
 
 ## Proof Assistants
 
