@@ -4,6 +4,8 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 ## Parsing
 
+  - [x] [Parsing Expression Grammars: A Recognition-Based Syntactic Foundation](http://bford.info/pub/lang/peg.pdf)
+  - [x] [Regular-expression derivatives reexamined](https://people.mpi-sws.org/~turon/re-deriv.pdf)
   - [x] [Parsing with Derivatives - a functional pearl - Matthew Might, David Darais and Daniel Spiewak](https://s3.amazonaws.com/academia.edu.documents/30626123/might2011derivatives.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1518892310&Signature=h%2BGIOGvJDelNj2jLucDwIHGO7kc%3D&response-content-disposition=inline%3B%20filename%3DParsing_with_derivatives_a_functional_pe.pdf)
   - [ ] [Restricting Grammars with Tree Automata - Michael D. Adams and Matthew Might](http://delivery.acm.org/10.1145/3140000/3133906/oopsla17-oopsla234.pdf?ip=62.195.23.191&id=3133906&acc=OA&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2EFF4855CDBAECEBC5%2EC1E31BC46E58D5B8&__acm__=1518888271_476e608b6be1213e8e1bfb39669d33c5)
   - [ ] [Verified Decision Procedures for MSO on Words Based on Derivatives of Regular Expressions](https://www21.in.tum.de/~traytel/papers/icfp13-mso/index.html)
