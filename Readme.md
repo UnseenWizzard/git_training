@@ -166,6 +166,8 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 ## Proof Assistants
 
+ - [ ] [Beginner’s Luck: A Language for Property-Based Generators](https://arxiv.org/pdf/1607.05443.pdf)
+
 ### Coq
 
   - [ ] [Software Foundations](https://softwarefoundations.cis.upenn.edu/lf-current/toc.html)
