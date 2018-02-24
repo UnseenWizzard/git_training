@@ -60,7 +60,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
   - [ ] [Linear Haskell: Practical linearity in a higher-order polymorphic language](https://blog.acolyer.org/2018/01/24/linear-haskell-practical-linearity-in-a-higher-order-polymorphic-language/)
-  - [ ] [Subscribe to Haskell weekly news](https://haskellweekly.news/issues/85.html)
+  - [x] Subscribe to [Haskell weekly news](https://haskellweekly.news/)
   - [ ] Multiparameter type classes/functional dependencie
   - [ ] Type families
   - [ ] Existentially quantified types
