@@ -55,7 +55,6 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
   - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
   - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
-  - [ ] [The Lost Art of Denotational Semantics](https://www.youtube.com/watch?v=pQyH0p-XJzE)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
