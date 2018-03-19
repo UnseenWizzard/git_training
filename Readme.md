@@ -82,9 +82,9 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 ### Discrete Maths
 
-  - [ ] [Discrete Mathematics for Computer Science: Class1](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class1.pdf)
-  - [ ] [Discrete Mathematics for Computer Science: Class2](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class2.pdf)
-  - [ ] [Discrete Mathematics for Computer Science: Class3](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class3.pdf)
+  - [x] [Discrete Mathematics for Computer Science: Logic](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class1.pdf)
+  - [x] [Discrete Mathematics for Computer Science: Propositional logic](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class2.pdf)
+  - [ ] [Discrete Mathematics for Computer Science: Predicate logic](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class3.pdf)
   - [ ] [Discrete Mathematics for Computer Science: Class4](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class4.pdf)
   - [ ] [Discrete Mathematics for Computer Science: Class5](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class5.pdf)
   - [ ] [Discrete Mathematics for Computer Science: Class6](http://people.cs.pitt.edu/~milos/courses/cs441/lectures/Class6.pdf)
