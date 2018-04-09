@@ -60,6 +60,8 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
   - [ ] [Linear Haskell: Practical linearity in a higher-order polymorphic language](https://blog.acolyer.org/2018/01/24/linear-haskell-practical-linearity-in-a-higher-order-polymorphic-language/)
   - [x] Subscribe to [Haskell weekly news](https://haskellweekly.news/)
+  - [ ] Lenses
+      - [x] [Haskell Lens - Part 1 - namc.in](https://namc.in/2018-03-26-lenses-part-1)
   - [ ] Multiparameter type classes/functional dependencie
   - [ ] Type families
   - [ ] Existentially quantified types
@@ -73,7 +75,6 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] [Fast Functional Goats, Lions and Wolves](http://unriskinsight.blogspot.nl/2014/06/fast-functional-goats-lions-and-wolves.html)
   - [ ] [History of Haskell](https://www.microsoft.com/en-us/research/publication/a-history-of-haskell-being-lazy-with-class/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fsimonpj%2Fpapers%2Fhistory-of-haskell%2F)
   - [ ] [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
-  - [ ] [Functional Programming with Bananas, Lenses, Envelopes and Barbed Wire](https://maartenfokkinga.github.io/utwente/mmf91m.pdf)
 
 ## Maths
 
