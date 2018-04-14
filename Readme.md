@@ -54,7 +54,9 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] [Do a moderate sized project](https://github.com/katydid/katydid-haskell)
   - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
   - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
-  - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
+  - [ ] Recursion Schemes: catamorphisms, etc.
+      - [x] [Understanding F-Algebras](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/)
+      - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
