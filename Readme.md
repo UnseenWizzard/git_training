@@ -98,6 +98,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] [Category Theory for Programmers 1](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_)
   - [ ] [Category Theory for Programmers blog](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) - [My Answers to Challenges](https://github.com/awalterschulze/category-theory-for-programmers-challenges)
   - [ ] [Category Theory for Programmers 2](https://www.youtube.com/playlist?list=PLbgaMIhjbmElia1eCEZNvsVscFef9m0dm)
+  - [ ] [Conceptual Mathematics - A First Introduction to Categories](http://admin.cambridge.org/se/academic/subjects/mathematics/logic-categories-and-sets/conceptual-mathematics-first-introduction-categories-2nd-edition#dsw6Z4zPOAEr2ZrJ.97)
 
 ### Coalgebra
 
