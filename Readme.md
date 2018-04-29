@@ -10,7 +10,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] [Combinator Parsers A Short Tutorial](http://www.cs.uu.nl/research/techreps/repo/CS-2008/2008-044.pdf)
   - [x] [Lecture 6: Alternating Automata](http://www.cmi.ac.in/~kumar/words/lecture06.pdf)
   - [x] [Regular-expression derivatives reexamined](https://people.mpi-sws.org/~turon/re-deriv.pdf)
-  - [x] [Parsing with Derivatives - a functional pearl - Matthew Might, David Darais and Daniel Spiewak](https://s3.amazonaws.com/academia.edu.documents/30626123/might2011derivatives.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1518892310&Signature=h%2BGIOGvJDelNj2jLucDwIHGO7kc%3D&response-content-disposition=inline%3B%20filename%3DParsing_with_derivatives_a_functional_pe.pdf)
+  - [x] [Parsing with Derivatives - a functional pearl - Matthew Might, David Darais and Daniel Spiewak](https://s3.amazonaws.com/academia.edu.documents/30626123/might2011derivatives.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1518892310&Signature=h%2BGIOGvJDelNj2jLucDwIHGO7kc%3D&response-content-disposition=inline%3B%20filename%3DParsing_with_derivatives_a_functional_pe.pdf) - [Video](https://www.youtube.com/watch?v=ZzsK8Am6dKU)
   - [x] [Visibly Pushdown Languages - Rajeev Alur and P Madhusudan](https://repository.upenn.edu/cgi/viewcontent.cgi?article=1174&context=cis_papers)
   - [x] [High-Performance Complex Event Processing over XML Streams - Barzan Mozafari, Kai Zeng, Carlo Zaniolo](http://web.cs.ucla.edu/~zaniolo/papers/p253-mozafari.pdf)
   - [x] [Visibly Pushdown Automata for Streaming XML - Varij Kumar, P Madhusdan, Mahesh Viswanathan](http://www.ra.ethz.ch/cdstore/www2007/www2007.org/papers/paper788.pdf)
