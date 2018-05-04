@@ -75,7 +75,6 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] [Arrows](http://www.haskell.org/arrows/):  Arrows are a way of representing computations that take an input and return an output. A function is the most basic type of arrow, but there are many other types. The library also has many very useful functions for manipulating arrows - they are very useful even if only used with plain old haskell functions.
   - [ ] [Typoclasspedia](https://wiki.haskell.org/Typeclassopedia) Also, there are many concepts (like the Monad concept that you should eventually learn. This will be easier than learning Monads the first time, as your brain will be used to dealing with the level of abstraction involved. A very good overview for learning about these high level concepts and how they fit together is the Typeclassopedia.
   - [ ] Do Haskell Web development
-  - [ ] [Popular Haskell Libraries](https://haskell.zeef.com/konstantin.skipor)
   - [ ] [Fast Functional Goats, Lions and Wolves](http://unriskinsight.blogspot.nl/2014/06/fast-functional-goats-lions-and-wolves.html)
   - [ ] [History of Haskell](https://www.microsoft.com/en-us/research/publication/a-history-of-haskell-being-lazy-with-class/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fsimonpj%2Fpapers%2Fhistory-of-haskell%2F)
   - [ ] [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
