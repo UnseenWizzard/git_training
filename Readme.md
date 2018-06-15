@@ -66,6 +66,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] Subscribe to [Haskell weekly news](https://haskellweekly.news/)
   - [ ] Lenses
       - [x] [Haskell Lens - Part 1 - namc.in](https://namc.in/2018-03-26-lenses-part-1)
+      - [ ] [Lenses embody Products, Prisms embody Sums](https://blog.jle.im/entry/lenses-products-prisms-sums.html)
   - [ ] Multiparameter type classes/functional dependencie
   - [ ] Type families
   - [ ] Existentially quantified types
