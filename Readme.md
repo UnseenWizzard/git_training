@@ -176,3 +176,10 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 ### Javascript
 
   - [x] [Douglas Crockford: The JavaScript Programming Language](https://www.youtube.com/watch?v=v2ifWcnQs6M)
+  
+### Virtual Machines
+
+  - [ ] [One VM to Rule Them All, One VM to Bind Them](https://www.youtube.com/watch?v=FJY96_6Y3a4)
+  - [ ] [Graal: How to use the new JVM JIT compiler in real life by Chris Thalinger](https://www.youtube.com/watch?v=_7yIUkP5LiQ&feature=youtu.be)
+  - [ ] [Project Sulong: an LLVM bitcode interpreter on the Graal VM with Matthias Grimmer](https://www.youtube.com/watch?v=yyDD_KRdQQU)
+
