@@ -59,6 +59,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
       - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
       - [ ] [Win For Recursion Schemes](http://newartisans.com/2018/04/win-for-recursion-schemes/)
       - [x] [Use cata and para for implementing Brzozowski derivatives](https://github.com/awalterschulze/ragax/blob/gh-pages/haskell/deriv/src/FDerive.hs)
+      - [ ] [Functional Pearl: Data types a la carte - Wouter Swierstra](http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
