@@ -174,6 +174,10 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] [microKanren: A Minimal Functional Core for Relational Programming](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf)
   - [x] [Implement it in your favourite programming language](https://github.com/awalterschulze/gominikanren)
 
+## Distributed Systems
+
+  - [x] [Making reliable distributed systems in the presence of software errors - Joe Armstrong](http://erlang.org/download/armstrong_thesis_2003.pdf)
+
 ## Popular Programming
 
 ### Javascript
