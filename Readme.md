@@ -133,7 +133,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
   - [ ] [Achieving Warp Speed in Rust](https://gist.github.com/jFransham/369a86eff00e5f280ed25121454acec1)
   
-## List
+## Lisp
 
   - [ ] [Lisp in Small Pieces - Book](https://en.m.wikipedia.org/wiki/Lisp_in_Small_Pieces)
   - [ ] [Structure and Interpretation of Computer Programs - Book](https://en.m.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
