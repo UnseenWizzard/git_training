@@ -40,20 +40,24 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [x] [DelftX: FP101x Introduction to Functional Programming](https://courses.edx.org/courses/DelftX/FP101x/3T2014/course/) Erik Meijer's course on functional programming.
   - [x] [99 Problems](http://www.haskell.org/haskellwiki/H-99:_Ninety-Nine_Haskell_Problems) This is great for practicing working with lists and immutability for the first time.
   - [x] [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
-  - [x] [HUnit: Unit testing in haskell](http://hunit.sourceforge.net/)
-  - [x] [QuickCheck](http://www.cse.chalmers.se/~rjmh/QuickCheck/): A very cool testing library, based on property based testing. What you do is write a predicate that should always be true `(eg length (reverse list) == length list)`. You then pass the predicate the quickCheck, and it will generate a lot of random values (in this case lists) and test that the predicate is true for all results. [John Hughes - Testing the Hard Stuff and Staying Sane](https://www.youtube.com/watch?v=zi0rHwfiX1Q)
-  - [x] [Parsing stuff in Haskell](https://www.youtube.com/watch?v=r_Enynu_TV0)
-  - [x] [Create a parser using Parsec](https://github.com/aslatter/parsec)
+  - [x] Testing
+      - [x] [HUnit: Unit testing in haskell](http://hunit.sourceforge.net/)
+      - [x] [QuickCheck](http://www.cse.chalmers.se/~rjmh/QuickCheck/): A very cool testing library, based on property based testing. What you do is write a predicate that should always be true `(eg length (reverse list) == length list)`. You then pass the predicate the quickCheck, and it will generate a lot of random values (in this case lists) and test that the predicate is true for all results. [John Hughes - Testing the Hard Stuff and Staying Sane](https://www.youtube.com/watch?v=zi0rHwfiX1Q)
+  - [x] Parsing
+      - [x] [Parsing stuff in Haskell](https://www.youtube.com/watch?v=r_Enynu_TV0)
+      - [x] [Create a parser using Parsec](https://github.com/aslatter/parsec)
   - [x] [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf)
   - [x] ~~[Real World Haskell](http://book.realworldhaskell.org/)~~
+  - [x] [Arrays](https://wiki.haskell.org/Modern_array_libraries) and [Vectors](https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial)
   - [ ] [Continuation passing style](https://en.wikibooks.org/wiki/Haskell/Continuation_passing_style)
   - [ ] [the Continuation monad](http://www.haskellforall.com/2012/12/the-continuation-monad.html)
 
 ### Haskell - Moderate
 
   - [x] [Do a moderate sized project](https://github.com/katydid/katydid-haskell)
-  - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
-  - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
+      - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
+      - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
+  - [x] GADTs
   - [ ] Recursion Schemes: catamorphisms, etc.
       - [x] [Understanding F-Algebras](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/)
       - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
@@ -72,7 +76,6 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] Type families
   - [ ] Existentially quantified types
   - [ ] Phantom types
-  - [x] GADTs
   - [ ] [Arrays](https://wiki.haskell.org/Modern_array_libraries): the various mutable/immutable arrays
   - [ ] [Arrows](http://www.haskell.org/arrows/):  Arrows are a way of representing computations that take an input and return an output. A function is the most basic type of arrow, but there are many other types. The library also has many very useful functions for manipulating arrows - they are very useful even if only used with plain old haskell functions.
   - [ ] [Typoclasspedia](https://wiki.haskell.org/Typeclassopedia) Also, there are many concepts (like the Monad concept that you should eventually learn. This will be easier than learning Monads the first time, as your brain will be used to dealing with the level of abstraction involved. A very good overview for learning about these high level concepts and how they fit together is the Typeclassopedia.
