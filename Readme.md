@@ -3,6 +3,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 # Programming Languages
 
   - [ ] [Types and Programming Languages - Benjamin C. Pierce](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
+  - [ ] [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) or [video series](https://www.youtube.com/watch?v=2Op3QLzMgSY&feature=youtu.be)
 
 ## Parsing and Automata
 
