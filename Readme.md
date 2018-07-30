@@ -76,7 +76,6 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [ ] Type families
   - [ ] Existentially quantified types
   - [ ] Phantom types
-  - [ ] [Arrays](https://wiki.haskell.org/Modern_array_libraries): the various mutable/immutable arrays
   - [ ] [Arrows](http://www.haskell.org/arrows/):  Arrows are a way of representing computations that take an input and return an output. A function is the most basic type of arrow, but there are many other types. The library also has many very useful functions for manipulating arrows - they are very useful even if only used with plain old haskell functions.
   - [ ] [Typoclasspedia](https://wiki.haskell.org/Typeclassopedia) Also, there are many concepts (like the Monad concept that you should eventually learn. This will be easier than learning Monads the first time, as your brain will be used to dealing with the level of abstraction involved. A very good overview for learning about these high level concepts and how they fit together is the Typeclassopedia.
   - [ ] Do Haskell Web development
