@@ -2,6 +2,8 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
 
 # Programming Languages
 
+  - [ ] [Types and Programming Languages - Benjamin C. Pierce](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
+
 ## Parsing and Automata
 
   - [x] [Tree Automata and Tree Grammars - Joost Engelfriet](https://arxiv.org/pdf/1510.02036.pdf)
