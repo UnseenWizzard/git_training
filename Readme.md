@@ -58,6 +58,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
       - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
       - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
   - [x] GADTs
+  - [x] [Write foldl using foldr](http://lambda.jstolarek.com/2012/07/expressing-foldl-in-terms-of-foldr/)
   - [ ] Recursion Schemes: catamorphisms, etc.
       - [x] [Understanding F-Algebras](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/)
       - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
