@@ -13,9 +13,12 @@
 
 ## Category Theory
 
-  - [x] [Category Theory for Programmers 1](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_)
-  - [ ] [Category Theory for Programmers blog](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) - [My Answers to Challenges](https://github.com/awalterschulze/category-theory-for-programmers-challenges)
-  - [ ] [Category Theory for Programmers 2](https://www.youtube.com/playlist?list=PLbgaMIhjbmElia1eCEZNvsVscFef9m0dm)
+  - [x] [Category Theory for Programmers playlist - Part 1](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_)
+  - [x] [Category Theory for Programmers blog - Part 1](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) - [My Answers to Challenges](https://github.com/awalterschulze/category-theory-for-programmers-challenges)
+  - [ ] [Category Theory for Programmers playlist - Part 2](https://www.youtube.com/playlist?list=PLbgaMIhjbmElia1eCEZNvsVscFef9m0dm)
+  - [ ] [Category Theory for Programmers blog - Part 2](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
+  - [ ] [Category Theory for Programmers playlist - Part 3](https://www.youtube.com/watch?v=F5uEpKwHqdk&list=PLbgaMIhjbmEn64WVX4B08B4h2rOtueWIL)
+  - [ ] [Category Theory for Programmers blog - Part 3](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
   - [ ] [Conceptual Mathematics - A First Introduction to Categories](http://admin.cambridge.org/se/academic/subjects/mathematics/logic-categories-and-sets/conceptual-mathematics-first-introduction-categories-2nd-edition#dsw6Z4zPOAEr2ZrJ.97)
 
 ## Coalgebra
