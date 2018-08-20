@@ -32,8 +32,6 @@
   - [x] [An Introduction to Elm](https://guide.elm-lang.org/)
   - [x] Build an application
   - [x] [Optimize Elm with Keyed and Lazy](http://elm-lang.org/blog/blazing-fast-html-round-two)
-  - [ ] [Debug](http://debug.elm-lang.org/)
-  - [ ] [Time Traveling made easy](http://elm-lang.org/blog/time-travel-made-easy)
   - [x] [Unit testing](https://github.com/elm-community/elm-test)
 
 ## [Haskell](https://www.haskell.org/)
