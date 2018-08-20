@@ -2,13 +2,18 @@
 
   - [ ] [Types and Programming Languages - Benjamin C. Pierce](https://www.asc.ohio-state.edu/pollard.4/type/books/pierce-tpl.pdf)
   - [ ] [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) or [video series](https://www.youtube.com/watch?v=2Op3QLzMgSY&feature=youtu.be)
+  - [ ] [Winter School on Denotational Semantics](https://www.youtube.com/watch?v=EI5i54VrAbc&t=0s&list=WL&index=6)
 
-## Parsing and Automata
+## Parsing
 
-  - [x] [Tree Automata and Tree Grammars - Joost Engelfriet](https://arxiv.org/pdf/1510.02036.pdf)
+  - [x] [Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools) first 4 Chapters
   - [x] [Learn You a gocc for Great Good - Marius Ackerman](https://raw.githubusercontent.com/goccmack/gocc/master/doc/gocc_user_guide.pdf)
   - [x] [Parsing Expression Grammars: A Recognition-Based Syntactic Foundation](http://bford.info/pub/lang/peg.pdf)
   - [x] [Combinator Parsers A Short Tutorial](http://www.cs.uu.nl/research/techreps/repo/CS-2008/2008-044.pdf)
+
+## Automata
+
+  - [x] [Tree Automata and Tree Grammars - Joost Engelfriet](https://arxiv.org/pdf/1510.02036.pdf)
   - [x] [Lecture 6: Alternating Automata](http://www.cmi.ac.in/~kumar/words/lecture06.pdf)
   - [x] [Regular-expression derivatives reexamined](https://people.mpi-sws.org/~turon/re-deriv.pdf)
   - [x] [Parsing with Derivatives - a functional pearl - Matthew Might, David Darais and Daniel Spiewak](https://s3.amazonaws.com/academia.edu.documents/30626123/might2011derivatives.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1518892310&Signature=h%2BGIOGvJDelNj2jLucDwIHGO7kc%3D&response-content-disposition=inline%3B%20filename%3DParsing_with_derivatives_a_functional_pe.pdf) - [Video](https://www.youtube.com/watch?v=ZzsK8Am6dKU)
