@@ -36,14 +36,19 @@
 
 ## [Haskell](https://www.haskell.org/)
 
-### Haskell - Beginner
+### Haskell - Interested
 
-  - [x] [Programming in Haskell - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
-  - [x] ~~[C9 Lectures: Dr. Erik Meijer - Functional Programming Fundamentals](http://channel9.msdn.com/shows/Going+Deep/Lecture-Series-Erik-Meijer-Functional-Programming-Fundamentals-Chapter-1/)~~
-  - [x] ~~[First 6 chapters of learn you a haskell](http://learnyouahaskell.com/chapters)~~
-  - [x] [DelftX: FP101x Introduction to Functional Programming](https://courses.edx.org/courses/DelftX/FP101x/3T2014/course/) Erik Meijer's course on functional programming.
+  - [x] [C9 Lectures: Dr. Erik Meijer - Functional Programming Fundamentals](http://channel9.msdn.com/shows/Going+Deep/Lecture-Series-Erik-Meijer-Functional-Programming-Fundamentals-Chapter-1/)
+  - [x] [First 6 chapters of learn you a haskell](http://learnyouahaskell.com/chapters)
   - [x] [99 Problems](http://www.haskell.org/haskellwiki/H-99:_Ninety-Nine_Haskell_Problems) This is great for practicing working with lists and immutability for the first time.
   - [x] [Why Functional Programming Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
+
+### Haskell - Beginner
+
+  - [x] [DelftX: FP101x Introduction to Functional Programming](https://courses.edx.org/courses/DelftX/FP101x/3T2014/course/) Erik Meijer's course on functional programming.
+  - [x] [Programming in Haskell - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
+      - [x] Monads
+  - [x] [Arrays](https://wiki.haskell.org/Modern_array_libraries) and [Vectors](https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial)
   - [x] Testing
       - [x] [HUnit: Unit testing in haskell](http://hunit.sourceforge.net/)
       - [x] [QuickCheck](http://www.cse.chalmers.se/~rjmh/QuickCheck/): A very cool testing library, based on property based testing. What you do is write a predicate that should always be true `(eg length (reverse list) == length list)`. You then pass the predicate the quickCheck, and it will generate a lot of random values (in this case lists) and test that the predicate is true for all results. [John Hughes - Testing the Hard Stuff and Staying Sane](https://www.youtube.com/watch?v=zi0rHwfiX1Q)
@@ -51,8 +56,8 @@
       - [x] [Parsing stuff in Haskell](https://www.youtube.com/watch?v=r_Enynu_TV0)
       - [x] [Create a parser using Parsec](https://github.com/aslatter/parsec)
   - [x] [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf)
-  - [x] ~~[Real World Haskell](http://book.realworldhaskell.org/)~~
-  - [x] [Arrays](https://wiki.haskell.org/Modern_array_libraries) and [Vectors](https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial)
+  - [x] [Real World Haskell](http://book.realworldhaskell.org/)
+      - [x] Monad Transformers
   - [ ] [Continuation passing style](https://en.wikibooks.org/wiki/Haskell/Continuation_passing_style)
   - [ ] [the Continuation monad](http://www.haskellforall.com/2012/12/the-continuation-monad.html)
 
