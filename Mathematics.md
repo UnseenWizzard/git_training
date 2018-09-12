@@ -10,6 +10,7 @@
 ## Abstract Algebra
 
   - [x] [Abstract Algebra on Socratica](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)
+  - [ ] [Algebra - Saunders Mac Lane](https://www.amazon.com/gp/product/0821816462/ref=dbs_a_def_rwt_bibl_vppi_i1)
 
 ## Category Theory
 
