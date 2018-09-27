@@ -66,6 +66,7 @@
   - [x] [Do a moderate sized project](https://github.com/katydid/katydid-haskell)
       - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
       - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
+  - [x] [What the heck is Typeable](https://sras.me/haskell/what-the-heck-is-typeable.html)
   - [ ] [A Guide to GHC's Extensions](https://limperg.de/ghc-extensions/)
   - [x] GADTs
   - [x] [Write foldl using foldr](http://lambda.jstolarek.com/2012/07/expressing-foldl-in-terms-of-foldr/)
