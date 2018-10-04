@@ -113,7 +113,7 @@
 
   - [ ] [Learn You Some Erlang for great good](https://learnyousomeerlang.com/)
   
-## Ocaml
+## OCaml
 
   - [ ] [Real World OCaml](https://realworldocaml.org/)
 
