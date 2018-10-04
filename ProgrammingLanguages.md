@@ -109,6 +109,14 @@
   - [x] [Programming Languages](https://class.coursera.org/proglang-003)
   - [ ] [Intro to Theoretical Computer Science](https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313)
 
+## Erlang
+
+  - [ ] [Learn You Some Erlang for great good](https://learnyousomeerlang.com/)
+  
+## Ocaml
+
+  - [ ] [Real World OCaml](https://realworldocaml.org/)
+
 ## Rust
 
   - [ ] [Achieving Warp Speed in Rust](https://gist.github.com/jFransham/369a86eff00e5f280ed25121454acec1)
