@@ -115,7 +115,13 @@
   
 ## OCaml
 
-  - [ ] [Real World OCaml](https://realworldocaml.org/)
+  - [x] [Real World OCaml - Part 1](https://realworldocaml.org/)
+    - [ ] Functors
+    - [ ] First class Modules
+    - [ ] Open recursion
+    - [ ] Mixins
+  - [ ] [Real World OCaml - Part 2](https://realworldocaml.org/)
+  - [ ] [Real World OCaml - Part 3](https://realworldocaml.org/)
 
 ## Rust
 
