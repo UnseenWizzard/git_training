@@ -132,6 +132,11 @@
 
   - [ ] [Lisp in Small Pieces - Book](https://en.m.wikipedia.org/wiki/Lisp_in_Small_Pieces)
   - [ ] [Structure and Interpretation of Computer Programs - Book](https://en.m.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
+  
+## Scheme
+  
+  - [ ] [The Little Schemer](https://mitpress.mit.edu/books/little-schemer-fourth-edition)
+  - [x] [Quote, Unquote - How to Design Programs](https://htdp.org/2018-01-06/Book/i2-3.html)
 
 ## Curated Lists
 
