@@ -68,7 +68,7 @@
       - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
       - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
   - [x] [What the heck is Typeable](https://sras.me/haskell/what-the-heck-is-typeable.html)
-  - [ ] [A Guide to GHC's Extensions](https://limperg.de/ghc-extensions/)
+  - [x] [Fixpoints in Haskell](https://medium.com/@cdsmithus/fixpoints-in-haskell-294096a9fc10)
   - [x] GADTs
   - [x] [Write foldl using foldr](http://lambda.jstolarek.com/2012/07/expressing-foldl-in-terms-of-foldr/)
   - [ ] Recursion Schemes: catamorphisms, etc.
@@ -79,7 +79,9 @@
       - [ ] Use a recursion scheme to relabel a tree with ordered numbers
       - [ ] [Functional Pearl: Data types a la carte - Wouter Swierstra](http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
+  - [ ] [A Guide to GHC's Extensions](https://limperg.de/ghc-extensions/)
   - [ ] [Write you a Haskell - Hindley-Milner Inference](http://dev.stephendiehl.com/fun/006_hindley_milner.html)
+  - [ ] [Extensible ADT](https://docs.haskus.org/eadt.html)
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
   - [ ] [Linear Haskell: Practical linearity in a higher-order polymorphic language](https://blog.acolyer.org/2018/01/24/linear-haskell-practical-linearity-in-a-higher-order-polymorphic-language/)
@@ -135,7 +137,8 @@
   
 ## Scheme
   
-  - [ ] [The Little Schemer](https://mitpress.mit.edu/books/little-schemer-fourth-edition)
+  - [x] [The Little Schemer](https://mitpress.mit.edu/books/little-schemer-fourth-edition)
+    - Basics of Scheme, Recursion, Higher order functions, Y-combinator and writing an interpreter.
   - [x] [Quote, Unquote - How to Design Programs](https://htdp.org/2018-01-06/Book/i2-3.html)
 
 ## Curated Lists
