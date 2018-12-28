@@ -1,5 +1,9 @@
 # Health
 
+## Diet
+
+  - [ ] [nutritionfacts.org](https://nutritionfacts.org/) - Nutrition Facts from scientific papers condensed into bite sized videos.
+
 ## Exercise
 
   - [x] Planking
