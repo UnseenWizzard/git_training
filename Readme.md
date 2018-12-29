@@ -8,3 +8,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [Musings](https://github.com/awalterschulze/learning/blob/master/Musings.md)
   - [Health](https://github.com/awalterschulze/learning/blob/master/Health.md)
   - [Finance](https://github.com/awalterschulze/learning/blob/master/Finance.md)
+
+### Other
+
+  - [x] [Understanding Copyright and Licenses](https://www.smashingmagazine.com/2011/06/understanding-copyright-and-licenses/)
