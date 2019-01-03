@@ -13,6 +13,10 @@
         Found that there is no single best diet for humans, everyone is different.
         Ror example some people can eat ice cream and not white rice.
         The algorithm predicted personalized diets also had good effects on stomach bacteria.
+        
+  - [x] [Sugar: The Bitter Truth](https://www.youtube.com/watch?v=dBnniua6-oM)
+  
+  - [x] [Why We Get Fat: And What to Do About It - Gary Taubes](https://www.amazon.com/Why-We-Get-Fat-About-ebook/dp/B003WUYOQ6/ref=cm_cr_arp_d_product_top?ie=UTF8)
 
   - [ ] [What I've Leanred](https://www.youtube.com/channel/UCqYPhGiB9tkShZorfgcL2lA)
 
