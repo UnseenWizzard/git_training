@@ -2,6 +2,20 @@
 
 ## Diet
 
+  - [x] [Low Carb & Keto: What about Cholesterol?](https://www.youtube.com/watch?v=b7zWNabebxs)
+        Vitamin K2 found in animal fat is used to transport calcium from your heart to your bones.
+        This reduces mortality rates from heart desease, where Vitamin K1 found in soy beans, does not.
+        Saturated fat, like butter is good for you.
+        Polyunsaturated fat, like food fried vegatable oil, is not for you.
+
+  - [x] [What is the best diet for humans? - Eran Segal](https://www.youtube.com/watch?v=0z03xkwFbw4)
+        Measured glucose response to meals, where spikes are assumed to be a bad diet for person.
+        Found that there is no single best diet for humans, everyone is different.
+        Ror example some people can eat ice cream and not white rice.
+        The algorithm predicted personalized diets also had good effects on stomach bacteria.
+
+  - [ ] [What I've Leanred](https://www.youtube.com/channel/UCqYPhGiB9tkShZorfgcL2lA)
+
   - [ ] [nutritionfacts.org](https://nutritionfacts.org/) - Nutrition Facts from scientific papers condensed into bite sized videos.
   
     Lutein fights brain aging and is found in green leafy vegatables, like Spinach and Kale:
