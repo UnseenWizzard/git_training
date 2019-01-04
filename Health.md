@@ -42,6 +42,7 @@
   - [x] Squats
   - [x] Strecth Lower Back
   - [x] Strecth Shoulders
+  - [x] Walk at least 150 minutes a week
   - [ ] [Fitness Blender](https://www.youtube.com/channel/UCiP6wD_tYlYLYh3agzbByWQ)  
 
 
