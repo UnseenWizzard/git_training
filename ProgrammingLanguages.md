@@ -156,6 +156,10 @@
 ### Isabella
 
   - [ ] [Concrete Semantics](http://www.concrete-semantics.org/)
+  
+### Agda
+
+  - [ ] [Video Lectures by Conor McBride](https://www.youtube.com/channel/UCWx63QH5IevL6gsP9stpG_w/videos)
 
 ### Idris
 
