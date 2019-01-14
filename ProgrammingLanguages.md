@@ -90,6 +90,7 @@
       - [x] [Haskell Lens - Part 1 - namc.in](https://namc.in/2018-03-26-lenses-part-1)
       - [ ] [Lenses embody Products, Prisms embody Sums](https://blog.jle.im/entry/lenses-products-prisms-sums.html)
   - [ ] Multiparameter type classes/functional dependencie
+  - [ ] [Haskell's kind system - a primer](https://diogocastro.com/blog/2018/10/17/haskells-kind-system-a-primer/)
   - [ ] Type families
   - [ ] Existentially quantified types
   - [ ] Phantom types
