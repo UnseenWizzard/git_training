@@ -173,6 +173,7 @@
 
 ### [miniKanren](http://minikanren.org/)
 
+  - [x] [The Most Beautiful Program Ever Written - William Byrd](https://www.youtube.com/watch?v=OyfBQmvr2Hc)
   - [x] [The Reasoned Schemer](https://mitpress.mit.edu/books/reasoned-schemer)
   - [x] [microKanren: A Minimal Functional Core for Relational Programming](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf)
   - [x] [Implement it in your favourite programming language](https://github.com/awalterschulze/gominikanren)
