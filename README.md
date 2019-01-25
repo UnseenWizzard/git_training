@@ -19,6 +19,8 @@ Let's get started!
 
 In the picture below you see four boxes. One of them stands alone, while the other three are grouped together in what I'll call your `Development Environment`. 
 
+![git components](img/components.png)
+
 We'll start with the one that's on it's own though. The `Remote Repository` is where you send your changes when you want to share them with other people, and where you get their changes from. If you've used other version control systems there's nothing interesting about that. 
 
 The `Development Environment` is what you have on your local machine. 
@@ -38,6 +40,8 @@ Now you see how git is _distributed_ version control. The `Local Repository` is 
 
 What `git clone` also does, is create a new folder whereever you called it. There should be a `git_training` folder now. Open it. 
 
+![Cloning the remote repo](img/clone.png)
+
 ## Adding things
 
 Someone already put a file into the _Remote Repository_. It's `Alice.txt`, and kind off lonely there. Let's create a new file and call it `Bob.txt`. 
@@ -50,15 +54,22 @@ To see what's going on in your _Working Directory_ run `git status`, which will 
 You'll see that `Bob.txt` is untracked, and `git status` even tells you how to change that. 
 In the picture below you can see what happens when you follow the advice and execute `git add Bob.txt`: You've added the file to the _Staging Area_, in which you collect all the changes you wish to put into `Repository`
 
+![Adding changes to the staging area](img/add.png)
+
 When you have added all your changes (which right now is only adding Bob), you're ready to _commit_ what you just did to the _Local Repository_. 
 
 The collected changes that you _commit_ are some meaningful chunk of work, so when you now run `git commit` a text editor will open and allow you to write a message telling everything what you just did. When you save and close the message file, your _commit_ is added to the _Local Repository_.
+
+![Commiting to the local repo](img/commit.png)
 
 You can also add your _commit message_ right there in the command line if you call `git commit` like this: `git commit -m "Add Bob"`. But because you want to write [good commit messages](https://chris.beams.io/posts/git-commit/) you really should take your time and use the editor.
 
 Now your changes are in your local repository, which is a good place for the to be as long as no one else needs them or you're not yet ready to share them. 
 
 In order to share your commits with the `Remote Repository` you need to `push` them. 
+
+![Pushing to the local repo](img/push.png)
+
 However if you run `git push` you'll notice I've been mean, and _protected_ my Repositories _master_ branch, so that not everyone is allowed to just `push` changes there. You'll have to try something else if you want to share your changes. 
 
 ## Branching, Merging and Rebasing
