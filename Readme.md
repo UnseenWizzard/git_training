@@ -8,7 +8,7 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [Musings](https://github.com/awalterschulze/learning/blob/master/Musings.md)
   - [Health](https://github.com/awalterschulze/learning/blob/master/Health.md)
   - [Finance](https://github.com/awalterschulze/learning/blob/master/Finance.md)
-  - [AlgorithmsAndDataStructures](https://github.com/awalterschulze/learning/blob/master/AlgorithmsAndDataStructures.md)
+  - [ComputerScience](https://github.com/awalterschulze/learning/blob/master/ComputerScience.md)
 
 ### Other
 
