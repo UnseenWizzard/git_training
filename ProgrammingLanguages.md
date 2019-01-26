@@ -41,12 +41,14 @@
 
 ### Haskell - Moderate
 
+  - [x] Subscribe to [Haskell weekly news](https://haskellweekly.news/)
   - [x] [Do a moderate sized project](https://github.com/katydid/katydid-haskell)
       - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
       - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
   - [x] [What the heck is Typeable](https://sras.me/haskell/what-the-heck-is-typeable.html)
   - [x] [Fixpoints in Haskell](https://medium.com/@cdsmithus/fixpoints-in-haskell-294096a9fc10)
   - [x] GADTs
+  - [x] [Stanford CS240h: Phantoms](http://www.scs.stanford.edu/14sp-cs240h/slides/phantoms.html)
   - [x] [Write foldl using foldr](http://lambda.jstolarek.com/2012/07/expressing-foldl-in-terms-of-foldr/)
   - [ ] Recursion Schemes: catamorphisms, etc.
       - [x] [Understanding F-Algebras](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/)
@@ -62,7 +64,6 @@
   - [ ] [data vs codata](https://www.tac-tics.net/blog/data-vs-codata)
   - [ ] [A Tour of Go in Haskell](https://a-tour-of-go-in-haskell.syocy.net/en_US/index.html)
   - [ ] [Linear Haskell: Practical linearity in a higher-order polymorphic language](https://blog.acolyer.org/2018/01/24/linear-haskell-practical-linearity-in-a-higher-order-polymorphic-language/)
-  - [x] Subscribe to [Haskell weekly news](https://haskellweekly.news/)
   - [ ] Lenses
       - [x] [Haskell Lens - Part 1 - namc.in](https://namc.in/2018-03-26-lenses-part-1)
       - [ ] [Lenses embody Products, Prisms embody Sums](https://blog.jle.im/entry/lenses-products-prisms-sums.html)
@@ -70,10 +71,8 @@
   - [ ] [Haskell's kind system - a primer](https://diogocastro.com/blog/2018/10/17/haskells-kind-system-a-primer/)
   - [ ] Type families
   - [ ] Existentially quantified types
-  - [ ] Phantom types
   - [ ] [Arrows](http://www.haskell.org/arrows/):  Arrows are a way of representing computations that take an input and return an output. A function is the most basic type of arrow, but there are many other types. The library also has many very useful functions for manipulating arrows - they are very useful even if only used with plain old haskell functions.
   - [ ] [Typoclasspedia](https://wiki.haskell.org/Typeclassopedia) Also, there are many concepts (like the Monad concept that you should eventually learn. This will be easier than learning Monads the first time, as your brain will be used to dealing with the level of abstraction involved. A very good overview for learning about these high level concepts and how they fit together is the Typeclassopedia.
-  - [ ] Do Haskell Web development
   - [ ] [Fast Functional Goats, Lions and Wolves](http://unriskinsight.blogspot.nl/2014/06/fast-functional-goats-lions-and-wolves.html)
   - [ ] [History of Haskell](https://www.microsoft.com/en-us/research/publication/a-history-of-haskell-being-lazy-with-class/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fsimonpj%2Fpapers%2Fhistory-of-haskell%2F)
   - [ ] [What I wish I knew when learning Haskell](http://dev.stephendiehl.com/hask/)
