@@ -1,6 +1,14 @@
 # Computer Science
 
-## Parsing
+## Theoretical Computer Science
+
+  - [ ] [Intro to Theoretical Computer Science](https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313)
+    
+## Compilers
+
+  - [ ] [Awesome Compilers](https://github.com/aalhour/awesome-compilers)
+
+### Parsing
 
   - [x] [Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools) first 4 Chapters
   - [x] [Learn You a gocc for Great Good - Marius Ackerman](https://raw.githubusercontent.com/goccmack/gocc/master/doc/gocc_user_guide.pdf)
