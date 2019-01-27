@@ -81,7 +81,9 @@ In order to share your commits with the _Remote Repository_ you need to `push` t
 
 ![Pushing to the local repo](img/push.png)
 
-Once you run `git push` the changes will be sent to the _Remote Repository_.
+Once you run `git push` the changes will be sent to the _Remote Repository_. In the diagram below you see the state after your `push`.
+
+![State of all components after pushing changes](img/after_push.png)
 
 ## Making changes
 
