@@ -2,7 +2,8 @@
 
 ---
 
-An interactive git training meant to teach you how git works, not just which commands to execute
+An interactive git training meant to teach you how git works, not just which commands to execute.
+
 Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) 
 
 ## This is currently a work in progres!
@@ -10,7 +11,9 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
 ---
 
 So, you want to use git right? 
+
 But you don't just want to learn commands, you want to understand what you're using? 
+
 Then this is meant for you!
 
 Let's get started!
@@ -31,9 +34,17 @@ Just go to your home folder, or where ever you like to put your projects. You do
 
 ## Getting a _Remote Repository_ 
 
-Now we want to grab a _Remote Repository_ and put what's in it onto your machine. I'd suggest we use this one [https://github.com/UnseenWizzard/git_training.git if you're not already reading this on github](https://github.com/UnseenWizzard/git_training.git) 
+Now we want to grab a _Remote Repository_ and put what's in it onto your machine. 
 
-For that we use `git clone https://github.com/UnseenWizzard/git_training.git` 
+I'd suggest we use this one ([https://github.com/UnseenWizzard/git_training.git](https://github.com/UnseenWizzard/git_training.git) if for some reason you're not already reading this on github).
+
+> To to that I can use `git clone https://github.com/UnseenWizzard/git_training.git`
+> 
+> But as following this tutorial will need you get the changes you make in your _Dev Environment_ back to the _Remote Repository_, and github doesn't just allow anyone to do that to anyone's repo, you'll best create a _fork_ of it right now. There's a button to do that on the top right of this page. 
+
+Now that you have a copy of my _Remote Repository_ of your own, it's time to get that onto your machine. 
+
+For that we use `git clone https://github.com/{YOUR USERNAME}/git_training.git`
 
 As you can see in the diagram below, this copies the _Remote Repository_ into two places, your _Working Directory_ and the _Local Repositry_. 
 Now you see how git is _distributed_ version control. The _Local Repository_ is a copy of the _Remote_ one, and acts just like it. The only difference is that you don't share it with anyone. 
@@ -42,7 +53,7 @@ What `git clone` also does, is create a new folder whereever you called it. Ther
 
 ![Cloning the remote repo](img/clone.png)
 
-## Adding things
+## Adding new things
 
 Someone already put a file into the _Remote Repository_. It's `Alice.txt`, and kind off lonely there. Let's create a new file and call it `Bob.txt`. 
 
@@ -70,7 +81,64 @@ In order to share your commits with the _Remote Repository_ you need to `push` t
 
 ![Pushing to the local repo](img/push.png)
 
-However if you run `git push` you'll notice I've been mean, and _protected_ my Repositories _master_ branch, so that not everyone is allowed to just `push` changes there. You'll have to try something else if you want to share your changes. 
+Once you run `git push` the changes will be sent to the _Remote Repository_.
 
-## Branching, Merging and Rebasing
-[coming soon... if this is even any good and usefull so far]
+## Making changes
+
+## Branching
+
+What you've just done works, because you own the _Remote Repository_. If you're working with git in most professional or open source settings, you'll notice that when you run `git push` as you've just done, you'll get an error message. 
+
+Another thing that makes git great, is the fact that working with branches is really easy and integral part of how you work with git.
+
+What you've done by `cloning` the _Remote Repository_ was to also automatically `checkout` it's main or _master_ branch. 
+
+The error message you'd usually see when trying to just just `push` changes on the _master_ branch, is because branches can be _protected_, which means that not everyone is allowed to just `push` changes there. 
+
+With this you can make sure, that changes that actually go into the main _master_ branch are reasonable. Usually you'll be working on your own _branch_, until you're done and confident in your changes which can then be `merged` into the _master. 
+
+Don't worry, we'll get back to all of these things in more detail when we need them.  
+
+Right now we want to create a branch to make some changes there. Maybe you just want to try something on your own and don't mess with the working state on you _master_ branch, or you're not allowed to `push` to _master_.
+
+<!-- LIST BRANCHES -->
+
+<!-- CHECKOUT A BRANCH -->
+
+<!-- CREATE A NEW BRANCH -->
+
+## Merging
+
+<!-- MERGE TWO BRANCHES -->
+
+<!-- NO CONFLICT -->
+
+<!-- RESOLVE A CONFLICT -->
+
+## Rebasing
+
+<!-- rebase TWO BRANCHES -->
+
+<!-- NO CONFLICT -->
+
+<!-- RESOLVE A CONFLICT -->
+
+## Updating the _Dev Environment_ with remote changes
+
+<!-- fetch -->
+
+<!-- pull -->
+
+<!-- pull -r -->
+
+## Cherry-picking
+
+<!-- cherry pick from a branch -->
+
+## Rewriting history
+
+<!-- ammending -->
+
+<!-- squashing -->
+
+<!-- force pushing -->
