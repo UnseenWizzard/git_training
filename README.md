@@ -6,7 +6,7 @@ An interactive git training meant to teach you how git works, not just which com
 
 Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) 
 
-## This is currently a work in progres!
+## This is currently a work in progress!
 
 ---
 
@@ -46,10 +46,10 @@ Now that you have a copy of my _Remote Repository_ of your own, it's time to get
 
 For that we use `git clone https://github.com/{YOUR USERNAME}/git_training.git`
 
-As you can see in the diagram below, this copies the _Remote Repository_ into two places, your _Working Directory_ and the _Local Repositry_. 
+As you can see in the diagram below, this copies the _Remote Repository_ into two places, your _Working Directory_ and the _Local Repository_. 
 Now you see how git is _distributed_ version control. The _Local Repository_ is a copy of the _Remote_ one, and acts just like it. The only difference is that you don't share it with anyone. 
 
-What `git clone` also does, is create a new folder whereever you called it. There should be a `git_training` folder now. Open it. 
+What `git clone` also does, is create a new folder wherever you called it. There should be a `git_training` folder now. Open it. 
 
 ![Cloning the remote repo](img/clone.png)
 
@@ -71,7 +71,7 @@ When you have added all your changes (which right now is only adding Bob), you'r
 
 The collected changes that you _commit_ are some meaningful chunk of work, so when you now run `git commit` a text editor will open and allow you to write a message telling everything what you just did. When you save and close the message file, your _commit_ is added to the _Local Repository_.
 
-![Commiting to the local repo](img/commit.png)
+![Committing to the local repo](img/commit.png)
 
 You can also add your _commit message_ right there in the command line if you call `git commit` like this: `git commit -m "Add Bob"`. But because you want to write [good commit messages](https://chris.beams.io/posts/git-commit/) you really should take your time and use the editor.
 
@@ -86,7 +86,7 @@ Once you run `git push` the changes will be sent to the _Remote Repository_. In 
 ![State of all components after pushing changes](img/after_push.png)
 
 ## Making changes
-So far we've only added a new file. Obviously the more intersting part of version control is changing files. 
+So far we've only added a new file. Obviously the more interesting part of version control is changing files. 
 
 Have a look at `Alice.txt`. 
 
@@ -133,12 +133,12 @@ As the change is what we wanted, let's `git add Bob.txt` to stage the current st
 Now we're ready to `commit` what we just did. I went with `git commit -m "Add text to Bob"` because I felt for such a small change writing one line would be enough. 
 
 As we know, the changes are now in the _Local Repository_. 
-We might still want to know what change we just _commited_ and what was there before. 
+We might still want to know what change we just _committed_ and what was there before. 
 
 We can do that by comparing commits. 
 Every commit in git has a unique hash by which it is referenced. 
 
-If we have a look at the `git log` we'll not only see a list of all the commits with their _hash_ as well as _Author_ and _Date_, we also see the state of our _Local_ and the _Remote Repsitory_. 
+If we have a look at the `git log` we'll not only see a list of all the commits with their _hash_ as well as _Author_ and _Date_, we also see the state of our _Local_ and the _Remote Repository_. 
 
 Right now the `git log` looks something like this: 
 
@@ -177,11 +177,11 @@ In there we see a few interesting things:
 * Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
 * The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
 
-> Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article ](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html)
+> Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article ](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html).
 
 To compare that commit and the one one before we can do `git diff <commit>^!`, where the `^!` tells git to compare to the commit one before. So in this case I run `git diff 87a4ad48d55e5280aa608cd79e8bce5e13f318dc^!`
 
-We can also do `git diff 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e 87a4ad48d55e5280aa608cd79e8bce5e13f318dc` for the same result and compare any two commits. Note that the format here is `git diff <from commit> <to commit>`, so our new commit comes second.
+We can also do `git diff 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e 87a4ad48d55e5280aa608cd79e8bce5e13f318dc` for the same result and in general to compare any two commits. Note that the format here is `git diff <from commit> <to commit>`, so our new commit comes second.
 
 In the diagram below you again see the different stages of a change, and the diff commands that apply to where a file currently is. 
 
@@ -191,25 +191,89 @@ Now that we're sure we made the change we wanted, go ahead and `git push`.
 
 ## Branching
 
-What you've just done works, because you own the _Remote Repository_. If you're working with git in most professional or open source settings, you'll notice that when you run `git push` as you've just done, you'll get an error message. 
+What you've just done again works because you own the _Remote Repository_. 
+If you're working with git in most professional or open source settings, you'll notice that when you run `git push` as you've just done, you'll get an error message. 
 
 Another thing that makes git great, is the fact that working with branches is really easy and integral part of how you work with git.
 
-What you've done by `cloning` the _Remote Repository_ was to also automatically `checkout` it's main or _master_ branch. 
+When you `cloned` the _Remote Repository_ your _Dev Environment_ automatically started on the repository's main or _master_ branch.
 
-The error message you'd usually see when trying to just just `push` changes on the _master_ branch, is because branches can be _protected_, which means that not everyone is allowed to just `push` changes there. 
+The error message you'd usually see when trying to just just `push` changes on the _master_ branch, is because branches can be _protected_, which means that not everyone is allowed to just `push` changes there, and the _master_ is usually protected by default. 
 
-With this you can make sure, that changes that actually go into the main _master_ branch are reasonable. Usually you'll be working on your own _branch_, until you're done and confident in your changes which can then be `merged` into the _master. 
+With this you can make sure, that changes that actually go into the main _master_ branch are reasonable. Usually you'll be working on your own _branch_, until you're done and confident in your changes which can then be `merged` into the _master_. 
 
 Don't worry, we'll get back to all of these things in more detail when we need them.  
 
-Right now we want to create a branch to make some changes there. Maybe you just want to try something on your own and don't mess with the working state on you _master_ branch, or you're not allowed to `push` to _master_.
+Right now we want to create a branch to make some changes there. Maybe you just want to try something on your own and not mess with the working state on your _master_ branch, or you're not allowed to `push` to _master_.
 
-<!-- LIST BRANCHES -->
+Branches live in the _Local_ and _Remote Repository_. When you create a new branch, the branches contents will be a copy of the currently committed state of whatever branch you are currently working on. 
 
-<!-- CHECKOUT A BRANCH -->
+Let's make some change to `Alice.txt`. Anything you like. 
 
-<!-- CREATE A NEW BRANCH -->
+We want to share that change, but not put it on _master_ right away, so let's create a branch for it using `git branch <branch name>`. 
+
+To create a new branch called `change_alice` you can run `git branch change_alice`. 
+
+This adds the new branch to the _Local Repository_. 
+
+While your _Working Directory_ and _Staging Area_ don't really care about branches, you always `commit` to the branch you are currently on. 
+
+You can think of _branches_ in git as pointers, pointing to a series of commits. When you `commit`, you add to whatever you're currently pointing to. 
+
+Just adding a branch, doesn't directly take you there, it just creates such a pointer. 
+In fact the state your _Local Repository_ is currently at, can be viewed as another pointer, called _HEAD_, which points to what branch and commit you are currently at. 
+
+If that sounds complicated the diagrams below will hopefully help to clear things up a bit:
+
+![State after adding branch](img/add_branch.png)
+
+To switch to our new branch you will have to use `git checkout change_alice`. What this does is simply to move the _HEAD_ to the branch you specify.
+
+![State after after switching branch](img/checkout_branch.png)
+
+You'll notice that your _Working Directory_ hasn't changed. That we've _modified_ `Alice.txt` is not related to the branch we're on yet. 
+Now you can `add` and `commit` the change to `Alice.txt` just like we did on the _master_ before, which will _stage_ (at which point it's still unrelated to the branch) and finally _commit_ your change to the `change_alice` branch. 
+
+There's just one thing you can't do yet. Try to `git push` your changes to the _Remote Repository_.
+
+You'll see the following error and - as git is always ready to help - a suggestion how to resolve the issue: 
+
+```ShellSession
+fatal: The current branch change_alice has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin change_alice 
+```
+
+But we don't just want to blindly do that. We're here to understand what's actually going on. So what are _upstream branches_ and _remotes_?
+
+Remember when we `cloned` the _Remote Repository_ a while ago? At that point it didn't only contain this tutorial and `Alice.txt` but actually two branches. 
+
+The _master_ we just went ahead and started working on, and one I called "tutorial_wip" on which I commit all the changes I make to this tutorial. 
+
+When we copied the things in the _Remote Repository_ into your _Dev Environment_ a few extra steps happened under the hood. 
+
+Git setup the _remote_ of your _Local Repository_ to be the _Remote Repository_ you cloned and gave it the default name `origin`. 
+
+>Your _Local Repository_ can track several _remotes_ and they can have different names, but we'll stick to the `origin` and nothing else for this tutorial. 
+
+Then it copied the two remote branches into your _Local Repository_ and finally it `checked out` _master_ for you. 
+
+When doing that another implicit step happens. When you `checkout` a branch name that has an exact match in the remote branches, you will get a new _local_ branch that is linked to the _remote_ branch. The _remote_ branch is the _upstream branch_ of your _local_ one. 
+
+In the diagrams above you can see just the local branches you have. You can see that list of local branches by running `git branch`. 
+
+If you want to also see the _remote_ branches your _Local Repository_ knows, you can use `git branch -a` to list all of them.
+
+![Remote and local branches`](img/branches.png)
+
+Now we can call the suggested `git push --set-upstream origin change_alice`, and `push` the changes on our branch to a new _remote_. This will create a `change_alice` branch on the _Remote Repository_ and set our _local_ `change_alice` to track that new branch. 
+
+> There is another option if we actually want our branch to track something that already exists on the _Remote Repository_. Maybe a colleague has already pushed some changes, while we were working on something related on our local branch, and we'd like to integrate the two. Then we could just set the _upstream_ for our `change_alice` branch to a new _remote_ by using `git branch --set-upstream-to=origin/change_alice` and from there on track the _remote_ branch.
+
+After that went through have a look at your _Remote Repository_ on github, your branch will be there, ready for other people to see and work with. 
+
+We'll get to how you can get other people's changes into your _Dev Environment_ soon, but first we'll work a bit more with branches, to introduce all the concepts that also come into play when we get new things from the _Remote Repository_. 
 
 ## Merging
 
