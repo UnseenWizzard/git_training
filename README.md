@@ -86,6 +86,108 @@ Once you run `git push` the changes will be sent to the _Remote Repository_. In 
 ![State of all components after pushing changes](img/after_push.png)
 
 ## Making changes
+So far we've only added a new file. Obviously the more intersting part of version control is changing files. 
+
+Have a look at `Alice.txt`. 
+
+It actually contains some text, but `Bob.txt` doesn't, so lets change that and put `Hi!! I'm Bob. I'm new here.` in there. 
+
+If you run `git status` now, you'll see that `Bob.txt` is _modified_. 
+In that state the changes are only in your _Working Directory_.
+
+If you want to see what has changed in your _Working Directory_ you can run `git diff`, and right now see this: 
+
+```Diff
+diff --git a/Bob.txt b/Bob.txt
+index e69de29..3ed0e1b 100644
+--- a/Bob.txt
++++ b/Bob.txt
+@@ -0,0 +1 @@
++Hi!! I'm Bob. I'm new here.
+```
+
+Go ahead and `git add Bob.txt` like you've done before. As we know, this moves your changes to the _Staging Area_. 
+
+I want to see the changes we just _staged_, so let's show the `git diff` again! You'll notice that this time the output is empty. This happens because `git diff` operates on the changes in your _Working Directory_ only. 
+
+To show what changes are _staged_ already, we can use `git diff --staged` and we'll see the same diff output as before. 
+
+I just noticed that we put two exclamation marks after the 'Hi'. I don't like that, so lets change `Bob.txt` again, so that it's just 'Hi!' 
+
+If we now run `git status` we'll see that there's two changes, the one we already _staged_ where we added text, and the one we just made, which is still only in the working directory. 
+
+We can have a look at the `git diff` between the _Working Directory_ and what we've already moved to the _Staging Area_, to show what has changed since we last felt ready to _stage_ our changes for a _commit_. 
+
+```Diff
+diff --git a/Bob.txt b/Bob.txt
+index 8eb57c4..3ed0e1b 100644
+--- a/Bob.txt
++++ b/Bob.txt
+@@ -1 +1 @@
+-Hi!! I'm Bob. I'm new here.
++Hi! I'm Bob. I'm new here.
+```
+
+As the change is what we wanted, let's `git add Bob.txt` to stage the current state of the file. 
+
+Now we're ready to `commit` what we just did. I went with `git commit -m "Add text to Bob"` because I felt for such a small change writing one line would be enough. 
+
+As we know, the changes are now in the _Local Repository_. 
+We might still want to know what change we just _commited_ and what was there before. 
+
+We can do that by comparing commits. 
+Every commit in git has a unique hash by which it is referenced. 
+
+If we have a look at the `git log` we'll not only see a list of all the commits with their _hash_ as well as _Author_ and _Date_, we also see the state of our _Local_ and the _Remote Repsitory_. 
+
+Right now the `git log` looks something like this: 
+
+```ShellSession
+commit 87a4ad48d55e5280aa608cd79e8bce5e13f318dc (HEAD -> master)
+Author: {YOU} <{YOUR EMAIL}>
+Date:   Sun Jan 27 14:02:48 2019 +0100
+
+    Add text to Bob
+
+commit 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e (origin/master, origin/HEAD)
+Author: {YOU} <{YOUR EMAIL}>
+Date:   Sun Jan 27 13:35:41 2019 +0100
+
+    Add Bob
+
+commit 71a6a9b299b21e68f9b0c61247379432a0b6007c 
+Author: UnseenWizzard <nicola.riedmann@live.de>
+Date:   Fri Jan 25 20:06:57 2019 +0100
+
+    Add Alice
+
+commit ddb869a0c154f6798f0caae567074aecdfa58c46
+Author: Nico Riedmann <UnseenWizzard@users.noreply.github.com>
+Date:   Fri Jan 25 19:25:23 2019 +0100
+
+    Add Tutorial Text
+
+      Changes to the tutorial are all squashed into this commit on master, to keep the log free of clutter that distracts from the tutorial
+
+      See the tutorial_wip branch for the actual commit history
+```
+
+In there we see a few interesting things: 
+* The first two commits are made by me.
+* Your initial commit to add Bob is the current _HEAD_ of the _master_ branch on the _Remote Repository_. We'll look at this again when we talk about branches and getting remote changes.
+* The latest commit in the _Local Repository_ is the one we just made, and now we know its hash.
+
+> Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article ](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html)
+
+To compare that commit and the one one before we can do `git diff <commit>^!`, where the `^!` tells git to compare to the commit one before. So in this case I run `git diff 87a4ad48d55e5280aa608cd79e8bce5e13f318dc^!`
+
+We can also do `git diff 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e 87a4ad48d55e5280aa608cd79e8bce5e13f318dc` for the same result and compare any two commits. Note that the format here is `git diff <from commit> <to commit>`, so our new commit comes second.
+
+In the diagram below you again see the different stages of a change, and the diff commands that apply to where a file currently is. 
+
+![States of a change an related diff commands](img/diffs.png)
+
+Now that we're sure we made the change we wanted, go ahead and `git push`. 
 
 ## Branching
 
