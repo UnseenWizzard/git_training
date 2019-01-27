@@ -17,26 +17,26 @@ Let's get started!
 
 ## Overview
 
-In the picture below you see four boxes. One of them stands alone, while the other three are grouped together in what I'll call your `Development Environment`. 
+In the picture below you see four boxes. One of them stands alone, while the other three are grouped together in what I'll call your _Development Environment_. 
 
 ![git components](img/components.png)
 
-We'll start with the one that's on it's own though. The `Remote Repository` is where you send your changes when you want to share them with other people, and where you get their changes from. If you've used other version control systems there's nothing interesting about that. 
+We'll start with the one that's on it's own though. The _Remote Repository_ is where you send your changes when you want to share them with other people, and where you get their changes from. If you've used other version control systems there's nothing interesting about that. 
 
-The `Development Environment` is what you have on your local machine. 
-The three parts of it are your `Working Directory`, the `Staging Area` and the `Local Repository`. We'll learn more about those as we start using git. 
+The _Development Environment_ is what you have on your local machine. 
+The three parts of it are your _Working Directory_, the _Staging Area_ and the _Local Repository_. We'll learn more about those as we start using git. 
 
-Choose a place in which you want to put your `Development Environment`. 
-Just go to your home folder, or where ever you like to put your projects. You don't need to create a new folder for your `Dev Environment` though. 
+Choose a place in which you want to put your _Development Environment_. 
+Just go to your home folder, or where ever you like to put your projects. You don't need to create a new folder for your _Dev Environment_ though. 
 
 ## Getting a _Remote Repository_ 
 
-Now we want to grab a `Remote Repository` and put what's in it onto your machine. I'd suggest we use this one [https://github.com/UnseenWizzard/git_training.git if you're not already reading this on github](https://github.com/UnseenWizzard/git_training.git) 
+Now we want to grab a _Remote Repository_ and put what's in it onto your machine. I'd suggest we use this one [https://github.com/UnseenWizzard/git_training.git if you're not already reading this on github](https://github.com/UnseenWizzard/git_training.git) 
 
 For that we use `git clone https://github.com/UnseenWizzard/git_training.git` 
 
-As you can see in the diagram below, this copies the `Remote Repository` into two places, your `Working Directory` and the `Local Repositry`. 
-Now you see how git is _distributed_ version control. The `Local Repository` is a copy of the `Remote` one, and acts just like it. The only difference is that you don't share it with anyone. 
+As you can see in the diagram below, this copies the _Remote Repository_ into two places, your _Working Directory_ and the _Local Repositry_. 
+Now you see how git is _distributed_ version control. The _Local Repository_ is a copy of the _Remote_ one, and acts just like it. The only difference is that you don't share it with anyone. 
 
 What `git clone` also does, is create a new folder whereever you called it. There should be a `git_training` folder now. Open it. 
 
@@ -52,7 +52,7 @@ There's two kinds of files in your _Working Directory_: _tracked_ files that git
 To see what's going on in your _Working Directory_ run `git status`, which will tell you what branch you're on, whether your _Local Repository_ is different from the _Remote_ and the state of _tracked_ and _untracked_ files. 
 
 You'll see that `Bob.txt` is untracked, and `git status` even tells you how to change that. 
-In the picture below you can see what happens when you follow the advice and execute `git add Bob.txt`: You've added the file to the _Staging Area_, in which you collect all the changes you wish to put into `Repository`
+In the picture below you can see what happens when you follow the advice and execute `git add Bob.txt`: You've added the file to the _Staging Area_, in which you collect all the changes you wish to put into _Repository_
 
 ![Adding changes to the staging area](img/add.png)
 
@@ -66,7 +66,7 @@ You can also add your _commit message_ right there in the command line if you ca
 
 Now your changes are in your local repository, which is a good place for the to be as long as no one else needs them or you're not yet ready to share them. 
 
-In order to share your commits with the `Remote Repository` you need to `push` them. 
+In order to share your commits with the _Remote Repository_ you need to `push` them. 
 
 ![Pushing to the local repo](img/push.png)
 
