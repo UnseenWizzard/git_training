@@ -138,7 +138,7 @@ We might still want to know what change we just _committed_ and what was there b
 We can do that by comparing commits. 
 Every commit in git has a unique hash by which it is referenced. 
 
-If we have a look at the `git log` we'll not only see a list of all the commits with their _hash_ as well as _Author_ and _Date_, we also see the state of our _Local_ and the _Remote Repository_. 
+If we have a look at the `git log` we'll not only see a list of all the commits with their _hash_ as well as _Author_ and _Date_, we also see the state of our _Local Repository_ and the latest local information about _remote branches_. 
 
 Right now the `git log` looks something like this: 
 
@@ -191,16 +191,16 @@ Now that we're sure we made the change we wanted, go ahead and `git push`.
 
 ## Branching
 
-What you've just done again works because you own the _Remote Repository_. 
-If you're working with git in most professional or open source settings, you'll notice that when you run `git push` as you've just done, you'll get an error message. 
-
 Another thing that makes git great, is the fact that working with branches is really easy and integral part of how you work with git.
 
-When you `cloned` the _Remote Repository_ your _Dev Environment_ automatically started on the repository's main or _master_ branch.
+In fact we've been working on a branch since we've started.
 
-The error message you'd usually see when trying to just just `push` changes on the _master_ branch, is because branches can be _protected_, which means that not everyone is allowed to just `push` changes there, and the _master_ is usually protected by default. 
+When you `clone` the _Remote Repository_ your _Dev Environment_ automatically starts on the repositories main or _master_ branch.
 
-With this you can make sure, that changes that actually go into the main _master_ branch are reasonable. Usually you'll be working on your own _branch_, until you're done and confident in your changes which can then be `merged` into the _master_. 
+Most workflows with git include making your changes on a _branch_, before you `merge` them back into _master_. 
+Usually you'll be working on your own _branch_, until you're done and confident in your changes which can then be merged into the _master_. 
+
+> Many git repository managers like _GitLab_ and _GitHub_ also allow for branches to be _protected_, which means that not everyone is allowed to just `push` changes there. There the _master_ is usually protected by default. 
 
 Don't worry, we'll get back to all of these things in more detail when we need them.  
 
