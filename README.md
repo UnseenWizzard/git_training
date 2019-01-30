@@ -306,7 +306,7 @@ The second diagram shows what has changed with our `merge`.
 
 Let's try something more complex. 
 
-Make a change to `Bob.txt` on _master_ and commit it. 
+A some text on a new line to `Bob.txt` on _master_ and commit it. 
 
 Then `git checkout change_alice`, change `Alice.txt` and commit. 
 
@@ -324,7 +324,61 @@ As you'll remember from before, revisions in git, aren't only a snapshot of your
 
 ### Resolving conflicts
 
-<!-- RESOLVE A CONFLICT -->
+So far our changes haven't interfered with each other. 
+
+Let's introduce a _conflict_ and then _resolve_ it. 
+
+Create and `checkout` a new branch. You know how. I've called mine `bobby_branch`.
+
+On the branch we'll make a change to `Bob.txt`. 
+The first line should still be `Hi!! I'm Bob. I'm new here.`. Change that to `Hi!! I'm Bobby. I'm new here.`
+
+Stage and then `commit` your change, before you `checkout` _master_ again. Here we'll change that same line to `Hi!! I'm Bob. I've been here for a while now.` and `commit` your change. 
+
+Now it's time to `merge` the new branch into _master_. 
+When you try that, you'll see the following output
+
+```ShellSession
+Auto-merging Bob.txt
+CONFLICT (content): Merge conflict in Bob.txt
+Automatic merge failed; fix conflicts and then commit the result.
+```
+The same line has changed on both of the branches, and git can't handle this on it's own. 
+
+If you run `git status` you'll get all the usual helpful instructions on how to continue. 
+
+First we have to resolve the conflict by hand. 
+
+> For an easy conflict like this one your favorite text editor will do fine. For merging large files with lots of changes a more powerful tool will make your life much easier, and I'd assume your favorite IDE comes with version control tools and a nice view for merging. 
+
+If you open `Bob.txt` you'll see something similar to this (I've truncated whatever we might have put on the second line before): 
+
+```
+<<<<<<< HEAD
+Hi! I'm Bob. I've been here for a while now.
+=======
+Hi! I'm Bobby. I'm new here.
+>>>>>>> bobby_branch
+[... whatever you've put on line 2]
+```
+
+On top you see what has changed in `Bob.txt` on the current HEAD, below you see what has changed in the branch we're merging in.
+
+To resolve the conflict by hand, you'll just need to make sure that you end up with some reasonable content and without the special lines git has introduced to the file.
+
+So go ahead and change the file to something like this: 
+
+```
+Hi! I'm Bobby. I've been here for a while now.
+[...]
+```
+
+From here what we're doing is exactly what we'd do for any changes. 
+We _stage_ them when we `add Bob.txt`, and then we `commit`. 
+
+We already know the commit for the changes we've made to resolve the conflict. It's the _merge commit_ that is always present when merging. 
+
+Should you ever realize in the middle of resolving conflicts that you actually don't want to follow through with the `merge`, you can just `abort` it by running `git commit --abort`. 
 
 ## Rebasing
 
