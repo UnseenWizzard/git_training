@@ -52,7 +52,7 @@
   - [x] [Write foldl using foldr](http://lambda.jstolarek.com/2012/07/expressing-foldl-in-terms-of-foldr/)
   - [ ] Recursion Schemes: catamorphisms, etc.
       - [x] [Understanding F-Algebras](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/)
-      - [ ] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
+      - [x] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
       - [ ] [Win For Recursion Schemes](http://newartisans.com/2018/04/win-for-recursion-schemes/)
       - [x] [Use cata and para for implementing Brzozowski derivatives](https://github.com/awalterschulze/ragax/blob/gh-pages/haskell/deriv/src/FDerive.hs)
       - [ ] Use a recursion scheme to relabel a tree with ordered numbers
