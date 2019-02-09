@@ -48,3 +48,9 @@
   - [ ] [Adventures with Types](https://www.youtube.com/watch?v=6COvD8oynmI)
   - [ ] [SQL in the type system where it belongs](http://ren.zone/articles/opaleye-sot)
   - [ ] [Structural type system](https://en.wikipedia.org/wiki/Structural_type_system)
+
+## Infinity
+
+  - [ ] [Infinities and Skepticism in Mathematics- N J Wildberger](https://www.youtube.com/watch?v=E_dGqavx5AU)
+  - [ ] [Paradox and Infinity - Edx - Agustin Rayo](https://www.edx.org/course/paradox-infinity-mitx-24-118x-0)
+  
