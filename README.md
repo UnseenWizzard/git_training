@@ -382,11 +382,72 @@ Should you ever realize in the middle of resolving conflicts that you actually d
 
 ## Rebasing
 
-<!-- rebase TWO BRANCHES -->
+Git has another clean way to integrate changes between a two branches, which is called `rebase`.
 
-<!-- NO CONFLICT -->
+We still recall that a branch is always based on another. When you create it, you _branch away_ from somewhere. 
 
-<!-- RESOLVE A CONFLICT -->
+In our simple merging example we branched from _master_ at a specific commit, then commited some changes on both _master_ and the `change_alice` branch. 
+
+When a branch is diverging from the one it's based on and you want to integrate the latest changes back into your current branch, `rebase` offers a cleaner way of doing that than a `merge` would. 
+
+As we've seen, a `merge` introduces a _merge commit_ in which the two histories get integrated again. 
+
+Viewed simply, rebasing just changes the point in history (the commit) your branch is based on. 
+
+To try that out, let's first checkout the _master_ branch again, then create/checkout a new branch based on it. 
+I called mine `add_patrick` and I added a new `Patrick.txt` file and commited that with the message 'Add Patrick'. 
+
+When you've added a commit to the branch, get back to _master_, make a change and commit it. I added some more text to `Alice.txt`.  
+
+Like in our merging example the history of these two branches diverges at a common ancestor as you can see in the diagram below. 
+
+![History before a rebase](img/before_rebase.png)
+
+Now let's `checkout add_patrick` again, and get that change that was made on _master_ into the branch we work on! 
+
+When we `git rebase master`, we re-base our `add_patrick` branch on the current state of the _master_ branch. 
+
+The output of that command gives us a nice hint at what is happening in it: 
+
+```ShellSession
+First, rewinding head to replay your work on top of it...
+Applying: Add Patrick
+```
+
+As we remember _HEAD_ is the pointer to the current commit we're at in our _Dev Environment_. 
+
+It's pointing to the same place as `add_patrick` before the rebase starts. For the rebase, it then first moves back to the common ancestor, before moving to the current head of the branch we want to re-base our's on. 
+
+So _HEAD_ moves from the _0cfc1d2_ commit, to the _7639f4b_ commit that is at the head of _master_. 
+Then rebase applies every single commit we made on our `add_patrick` branch to that. 
+
+To be more exact what _git_ does after moving _HEAD_ back to the common ancestor of the branches, is to store parts of every single commit you've made on the branch (the `diff` of changes, and the commit text, author, etc.). 
+
+After that it does a `checkout` of the latest commit of the branch you're rebasing on, and then applies each of the stored changed __as a new commit__ on top of that.
+
+So in our original simplified view, we'd assume that after the `rebase` the _0cfc1d2_ commit doesn't point to the common ancestor anymore in it's history, but points to the head of master. 
+In fact the _0cfc1d2_ commit is gone, and the `add_patrick` branch starts with a new _0ccaba8_ commit, that has the latest commit of _master_ as its ancestor. 
+We made it look, like our `add_patrick` was based on the current _master_ not an older version of it, but in doing so we re-wrote the history of the branch.  
+At the end of this tutorial we'll learn a bit more about re-writting history and when it's approriate and inapproriate to do so. 
+
+![History after rebase](img/rebase.png)
+
+`Rebase` is an incredibly powerful tool when you're working on your own development branch which is based on a shared branch, e.g. the _master_. 
+
+Using rebase you can make sure that you frequently integrate the changes other people make and push to _master_, while keeping a clean linear history that allows you to do a `fast-forward merge` when it's time to get your work into the shared branch. 
+
+### Resolving conflicts
+
+Just like for a `merge` you may run into conflicts, if you run into two commits changing the same parts of a file. 
+
+However when you encounter a conflict during a `rebase` you don't fix it in an extra _merge commit_, but can simply resolve it in the commit that is currently being applied. 
+Again, basing your changes directly on the current state of the originial branch. 
+
+Actually resolving conflicts while you `rebase` is very similar to how you would for a `merge` so refer back to that section if you're not sure anymore how to do it. 
+
+The only distincition is, that as you're not introducing a _merge commit_ there is no need to `commit` your resolution. Simply `add` the changes to the _Staging Environment_ and then `git rebase --continue`. The conflict will be resolved in the commit that was just being applied. 
+
+As when merging, you can always stop and drop everything you've done sofar when you `git rebase --abort`. 
 
 ## Updating the _Dev Environment_ with remote changes
 
