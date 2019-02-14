@@ -10,7 +10,7 @@
    
 ### Best share dealing platform
 
-Conclusion: [IG](https://www.ig.com/uk) Just ignore the spread betting, their stocks and apps are still the best.  The only better cost competitor is [https://www.degiro.co.uk]
+Conclusion: [IG](https://www.ig.com/uk) Just ignore the spread betting, their stocks and apps are still the best.  The only better cost competitor is [Degiro](https://www.degiro.co.uk)
 
   - [x] [I Invested My Own Money to Compare Top UK Stock Brokers](https://www.cityfalcon.com/blog/investments/invested-own-money-to-compare-top-uk-stock-brokers/)
   - [x] [Best Share Dealing Accounts](https://uk.stockbrokers.com/guides/share-dealing-accounts)
