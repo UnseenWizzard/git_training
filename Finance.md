@@ -3,6 +3,12 @@
   - [ ] [Anti Fragile](http://www.fooledbyrandomness.com/)
   - [ ] [Investors Have Fallen Into a False Sense of Security](https://dailyreckoning.com/investors-have-fallen-into-a-false-sense-of-security-2/)
   
+## ETFs and ETCs
+
+  - [x] [iShares Core S&P 500 ETF](https://www.youtube.com/watch?v=KpGSXiAfmxg&index=5&list=PLVFRtNqCo9W4RNyp5F1bxyE2i99q_90hj)
+  - [x] [Powershares NASDAQ-100](https://www.youtube.com/watch?v=iwDtkL6l9d8)
+  - [x] [iShares Physical Gold ETC](https://m.youtube.com/watch?v=sLKBsgf-Fcs)
+  
 ## United Kingdom
 
   - [x] [Full ISA Guide](https://www.moneysavingexpert.com/savings/ISA-guide-savings-without-tax/)
