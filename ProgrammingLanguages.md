@@ -1,5 +1,6 @@
 # Programming Languages
 
+  - [x] [Programming Languages](https://class.coursera.org/proglang-003)
   - [ ] [Types and Programming Languages - Benjamin C. Pierce](https://www.amazon.com/Types-Programming-Languages-MIT-Press/dp/0262162091)
   - [ ] [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) or [video series](https://www.youtube.com/watch?v=2Op3QLzMgSY&feature=youtu.be)
   - [ ] [Winter School on Denotational Semantics](https://www.youtube.com/watch?v=EI5i54VrAbc&list=PLvK_yEuhMQ0wxzN_xkkMA4VfFPAjJgnf0)
@@ -83,11 +84,13 @@
   - [x] [International Conference on Functional Programming](https://www.icfpconference.org/)
   - [ ] [StrangeLoop](https://www.thestrangeloop.com/)
   - [ ] [POPL](https://popl18.sigplan.org/)
-
-## Courses
-
-  - [x] [Programming Languages](https://class.coursera.org/proglang-003)
-
+  
+## Scheme
+  
+  - [x] [The Little Schemer](https://mitpress.mit.edu/books/little-schemer-fourth-edition)
+    - Basics of Scheme, Recursion, Higher order functions, Y-combinator and writing an interpreter.
+  - [x] [Quote, Unquote - How to Design Programs](https://htdp.org/2018-01-06/Book/i2-3.html)
+ 
 ## Erlang
 
   - [ ] [Learn You Some Erlang for great good](https://learnyousomeerlang.com/)
@@ -110,12 +113,6 @@
 
   - [ ] [Lisp in Small Pieces - Book](https://en.m.wikipedia.org/wiki/Lisp_in_Small_Pieces)
   - [ ] [Structure and Interpretation of Computer Programs - Book](https://en.m.wikipedia.org/wiki/Structure_and_Interpretation_of_Computer_Programs)
-  
-## Scheme
-  
-  - [x] [The Little Schemer](https://mitpress.mit.edu/books/little-schemer-fourth-edition)
-    - Basics of Scheme, Recursion, Higher order functions, Y-combinator and writing an interpreter.
-  - [x] [Quote, Unquote - How to Design Programs](https://htdp.org/2018-01-06/Book/i2-3.html)
 
 ## Proof Assistants
 
@@ -145,6 +142,7 @@
 
   - [ ] [Mercury](https://www.mercurylang.org/)
   - [ ] [TLA+](https://lamport.azurewebsites.net/tla/tla.html)
+  - [ ] Prolog
 
 ### [miniKanren](http://minikanren.org/)
 
