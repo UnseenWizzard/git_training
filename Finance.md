@@ -32,3 +32,4 @@ Conclusion: [IG](https://www.ig.com/uk) Just ignore the spread betting, their st
   - [Revolut](https://www.revolut.com/) Based in UK and useful for currency exchange.
   - [Monzo](https://monzo.com/) Based in UK and useful for direct debit.
   - [Glint](https://glintpay.com/) Gold
+  - [Bettr](https://bettr.finance) Based in South Africa
