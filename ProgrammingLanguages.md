@@ -119,7 +119,11 @@
 
 ## Proof Assistants
 
- - [ ] [Beginner’s Luck: A Language for Property-Based Generators](https://arxiv.org/pdf/1607.05443.pdf)
+  - [ ] [Beginner’s Luck: A Language for Property-Based Generators](https://arxiv.org/pdf/1607.05443.pdf)
+ 
+### Pie
+
+  - [ ] [The Little Typer](https://mitpress.mit.edu/books/little-typer) and [exercises](https://github.com/awalterschulze/the-little-typer-exercises)
 
 ### Coq
 
