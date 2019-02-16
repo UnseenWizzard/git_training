@@ -163,3 +163,9 @@
   - [ ] [Graal: How to use the new JVM JIT compiler in real life by Chris Thalinger](https://www.youtube.com/watch?v=_7yIUkP5LiQ&feature=youtu.be)
   - [ ] [Project Sulong: an LLVM bitcode interpreter on the Graal VM with Matthias Grimmer](https://www.youtube.com/watch?v=yyDD_KRdQQU)
 
+### Golang
+
+  - [x] [Effective Go](https://golang.org/doc/effective_go.html)
+  - [x] [Go Slices: usage and internals](https://blog.golang.org/go-slices-usage-and-internals)
+  - [x] [Profiling Go Programs](https://blog.golang.org/profiling-go-programs)
+  - [x] [Functional options for friendly APIs - Dave Cheney](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
