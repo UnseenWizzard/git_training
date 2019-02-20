@@ -8,6 +8,7 @@
   - [x] [iShares Core S&P 500 ETF](https://www.youtube.com/watch?v=KpGSXiAfmxg&index=5&list=PLVFRtNqCo9W4RNyp5F1bxyE2i99q_90hj)
   - [x] [Powershares NASDAQ-100](https://www.youtube.com/watch?v=iwDtkL6l9d8)
   - [x] [iShares Physical Gold ETC](https://m.youtube.com/watch?v=sLKBsgf-Fcs)
+  - [x] [iShares Core MSCI Emerging Markets IMI ETF](https://www.youtube.com/watch?v=b2MCFbpG4BM&feature=youtu.be)
   
 ## United Kingdom
 
