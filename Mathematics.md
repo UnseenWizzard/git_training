@@ -34,6 +34,10 @@
 ## Logic
 
   - [ ] [Monadic Second Order Logic](https://cs.stackexchange.com/questions/82994/monadic-second-order-logic-for-dummies)
+  
+## Topology
+
+  - [ ] [Topology without Tears](http://www.topologywithouttears.net/topbook.pdf)
 
 ## Homotopy Type Theory
 
