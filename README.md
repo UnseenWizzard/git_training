@@ -9,6 +9,23 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
 ## This is currently a work in progress!
 
 ---
+- [git_training](#git_training)
+    - [Overview](#overview)
+    - [Getting a _Remote Repository_](#getting-a-_remote-repository_)
+        - [Adding new things](#adding-new-things)
+    - [Making changes](#making-changes)
+    - [Branching](#branching)
+    - [Merging](#merging)
+        - [Fast-Forward merging](#fast-forward-merging)
+        - [Merging divergent branches](#merging-divergent-branches)
+        - [Resolving conflicts](#resolving-conflicts)
+    - [Rebasing](#rebasing)
+        - [Resolving conflicts](#resolving-conflicts-1)
+    - [~~Updating the _Dev Environment_ with remote changes~~](#updating-the-_dev-environment_-with-remote-changes)
+    - [~~Cherry-picking~~](#cherry-picking)
+    - [~~Rewriting history~~](#rewriting-history)
+
+---
 
 So, you want to use git right? 
 
