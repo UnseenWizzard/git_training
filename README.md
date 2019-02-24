@@ -229,6 +229,10 @@ If that sounds complicated the diagrams below will hopefully help to clear thing
 
 To switch to our new branch you will have to use `git checkout change_alice`. What this does is simply to move the _HEAD_ to the branch you specify.
 
+> As you'll usually want switch to a branch right after creating it, there is the convenient `-b` option available for the `checkout` command, which allows you to just directly `checkout` a _new_ branch, so you don't have to create it beforehand. 
+
+> So to create and switch to our `change_alice` branch, we could also just have called `git checkout -b change_alice`.
+
 ![State after after switching branch](img/checkout_branch.png)
 
 You'll notice that your _Working Directory_ hasn't changed. That we've _modified_ `Alice.txt` is not related to the branch we're on yet. 
@@ -306,7 +310,7 @@ The second diagram shows what has changed with our `merge`.
 
 Let's try something more complex. 
 
-A some text on a new line to `Bob.txt` on _master_ and commit it. 
+Add some text on a new line to `Bob.txt` on _master_ and commit it. 
 
 Then `git checkout change_alice`, change `Alice.txt` and commit. 
 
@@ -328,7 +332,8 @@ So far our changes haven't interfered with each other.
 
 Let's introduce a _conflict_ and then _resolve_ it. 
 
-Create and `checkout` a new branch. You know how. I've called mine `bobby_branch`.
+Create and `checkout` a new branch. You know how, but maybe try using `git checkout -b` to make your live easier. 
+I've called mine `bobby_branch`.
 
 On the branch we'll make a change to `Bob.txt`. 
 The first line should still be `Hi!! I'm Bob. I'm new here.`. Change that to `Hi!! I'm Bobby. I'm new here.`
@@ -353,7 +358,7 @@ First we have to resolve the conflict by hand.
 
 If you open `Bob.txt` you'll see something similar to this (I've truncated whatever we might have put on the second line before): 
 
-```
+```Diff
 <<<<<<< HEAD
 Hi! I'm Bob. I've been here for a while now.
 =======
@@ -382,7 +387,7 @@ Should you ever realize in the middle of resolving conflicts that you actually d
 
 ## Rebasing
 
-Git has another clean way to integrate changes between a two branches, which is called `rebase`.
+Git has another clean way to integrate changes between two branches, which is called `rebase`.
 
 We still recall that a branch is always based on another. When you create it, you _branch away_ from somewhere. 
 
@@ -435,6 +440,8 @@ At the end of this tutorial we'll learn a bit more about re-writting history and
 `Rebase` is an incredibly powerful tool when you're working on your own development branch which is based on a shared branch, e.g. the _master_. 
 
 Using rebase you can make sure that you frequently integrate the changes other people make and push to _master_, while keeping a clean linear history that allows you to do a `fast-forward merge` when it's time to get your work into the shared branch. 
+
+Keeping a linear history also makes reading or looking at (try out `git log --graph` or take a look at the branch view of _GitHub_ or _GitLab_) commit logs much more useful than having a history littered with _merge commits_, usually just using the default text.
 
 ### Resolving conflicts
 
