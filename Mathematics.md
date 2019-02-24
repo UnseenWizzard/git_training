@@ -16,6 +16,7 @@
 
   - [x] [Category Theory for Programmers playlist - Part 1](https://www.youtube.com/playlist?list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_)
   - [x] [Category Theory for Programmers blog - Part 1](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) - [My Answers to Challenges](https://github.com/awalterschulze/category-theory-for-programmers-challenges)
+  - [ ] [Cakes, Custard and Category Theory - Chapter: universal properties](https://www.amazon.com/Cakes-Custard-Category-Theory-Understanding/dp/1781252874)
   - [ ] [Category Theory for Programmers playlist - Part 2](https://www.youtube.com/playlist?list=PLbgaMIhjbmElia1eCEZNvsVscFef9m0dm)
   - [ ] [Category Theory for Programmers blog - Part 2](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
   - [ ] [Category Theory for Programmers playlist - Part 3](https://www.youtube.com/watch?v=F5uEpKwHqdk&list=PLbgaMIhjbmEn64WVX4B08B4h2rOtueWIL)
