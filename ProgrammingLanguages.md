@@ -43,6 +43,7 @@
 ### Haskell - Moderate
 
   - [x] Subscribe to [Haskell weekly news](https://haskellweekly.news/)
+  - [x] Listen to [The Haskell Cast](https://www.haskellcast.com/)
   - [x] [Do a moderate sized project](https://github.com/katydid/katydid-haskell)
       - [x] Create docs using [haddock](https://www.haskell.org/haddock/)
       - [x] Ask for a community review on [reddit](https://www.reddit.com/r/haskell/comments/78w65f/code_review_request_from_a_noob_haskeller/)
