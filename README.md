@@ -21,7 +21,7 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
         - [Resolving conflicts](#resolving-conflicts)
     - [Rebasing](#rebasing)
         - [Resolving conflicts](#resolving-conflicts-1)
-    - [~~Updating the _Dev Environment_ with remote changes~~](#updating-the-_dev-environment_-with-remote-changes)
+    - [Updating the _Dev Environment_ with remote changes](#updating-the-_dev-environment_-with-remote-changes)
     - [~~Cherry-picking~~](#cherry-picking)
     - [~~Rewriting history~~](#rewriting-history)
 
@@ -475,15 +475,117 @@ As when merging, you can always stop and drop everything you've done sofar when 
 
 ## Updating the _Dev Environment_ with remote changes
 
-<!-- fetch -->
+So far we've only learned how to make and share changes.
 
-<!-- pull -->
+That fits what you'll do if you're just working on your own, but usually there'll be a lot of people that do just the same, and we're gonna want to get their changes from the _Remote Repository_ into our _Dev Environment_ somehow.
 
-<!-- pull -r -->
+Because it has been a while, lets have another look at the components of git: 
+
+![git components](img/components.png)
+
+Just like your _Dev Environment_ everyone else working on the same source code has theirs. 
+
+# TODO image
+
+All of these _Dev Environments_ have their own _working_ and _staged_ changes, that are at some point `committed` to the _Local Repository_ and finally `pushed` to the _Remote_. 
+
+For our example, we'll use the online tools offered by _GitHub_, to simulate someone else making changes to the _remote_ while we work. 
+
+Go to your `fork` of this repo on [github.com](https://www.github.com) and open the `Alice.txt` file. 
+
+Find the edit button and make and commit a change via the website. 
+
+TODO ADD PICTURES
+
+### _Fetching_ Changes
+
+We still remember that when you `git push`, you synchronize changes made to the _Local Repository_ into the _Remote Repository_. 
+
+To get changes made to the _Remote_ into your _Local Repository_ you use `git fetch`. 
+
+This gets any changes on the remote - so commits as well as branches - into your _Local Repository_.
+
+Note that at this point, changes aren't integrated into the local branches and thus the _Working Directory_ and _Staging Area_ yet.
+
+# TODO modify image
+ 
+![Remote and local branches`](img/branches.png)
+
+### _Pulling_ Changes
+
+As we have no _working_ or _staged_ changes, we could just execute `git pull` now to get the changes from the _Repository_ all the way into our working area. 
+
+> Pulling will implicitly also `fetch` the _Remote Repository_, but sometimes it is a good idea to do a `fetch` on it's own. 
+> For example when you want to synchronize any new _remote_ branches, or when you want to make sure your _Local Repository_ is up to date before you do a `git rebase` on something like `origin/master`.
+
+Before we `pull`, lets change a file locally to see what happens. 
+
+In order to not have to deal with conflicts for now, lets change `Bob.txt` in our _Working Directory_. 
+
+If you now try to do a `git pull` you'll see the following error: 
+
+```ShellSession
+TODO
+```
+
+You can not `pull` in any changes, while there are modified files in the _Working Directory_. 
+
+While one way around this is, to just get your changes to a point where you're confident in them and `add` them to the _Staging Environment_ (TODO check that), before you finally `commit` them, this is a good moment to learn about another great tool, the `git stash`. 
+
+### Stashing changes
+
+If at any point you have local changes that you do not yet want to put into a commit, or want to store somewhere while you try some different angle to solve a problem, you can `stash` those changes away. 
+
+A `git stash` is basically a stack of changes on which you store any changes to the _Working Directory_. 
+
+The commands you'll mostly use are `git stash` which places any modifications to the _Working Directory_ on the stash, and `git stash pop` wich takes the latest change that was stashed and applies it the to the _Working Directory_ again. 
+
+Just like the stack commands it's named after `git stash pop` removes the latest stashed change before applying it again. 
+If you want to keep the stashed changes, you can use `git stash apply`, which doesn't remove them from the stash before applying them. 
+
+To inspect you current `stash` you can use `git stash list` to list the individual entries, and `git stash show` to show the changes in the latest entry on the `stash`. 
+
+> Another nice convenience command is `git stash branch {BRANCH NAME}`, which creates a branch, starting from the HEAD at the moment you've stashed the changes, and applies the stashed changes to that branch.
+
+Now that we know about `git stash`, lets run it to remove our local changes to `Bob.txt` from the _Working Directory_, so that we can go ahead and `git pull` the changes we've made via the website. 
+
+After that, let's `git stash pop` to get the changes back and then `add` and `commit` them. 
+
+Now that we've understood how to `fetch` and `pull` _Remote Changes_ into our _Dev Environment_, it's time to create some conflicts! 
+
+Do not `push` the commit that changed `Bob.txt` and head back to your _Remote Repository_ on [github.com](https://www.github.com). 
+
+There we're also going to change `Bob.txt` and commit the change. 
+
+Now there's actually two conflicts between our _Local_ and _Remote Repositories_. 
+
+If you run `git status` you will see, that both branches have one commit on them that differs from the other. 
+
+In addition we've changed the same file in both of those commits, to introduce a `merge` conflict we'll have to resolve. 
+
+When you `git pull` while there is a difference between the _Local_ and _Remote Repository_ the exact same thing happens as when you `merge` two branches. 
+
+Additonally, you can think of the relationship between branches on the _Remote_ and the one in the _Local Repository_ as a special case of creating a branch based on another. 
+A local branch is based on a banches state on the _Remote_ from the time you last `fetched` it. 
+
+Thinking that way, the two options to get _remote_ changes make a lot of sense: 
+
+When you `git pull` the _Local_ and _Remote_ version of a branch will be `merged`. Just like `merging` branches, this will introduce a _merge commit. 
+
+As any _local_ branch is based on it's respective _remote_ version, we can also `rebase` it, so that any changes we may have made locally, appear as if they were based on the latest version that is available in the _Remote Repository. 
+To do that, we can use `git pull --rebase` (or the shorthand `git pull -r`). 
+
+As detailed in the section on [Rebasing](#rebasing), there is a benefit in keeping a clean linear history, which is why I would strongly recommend that when ever you `git pull` you do a `git pull -r`. 
+
+> You can also tell git to use `rebase` instead of `merge` as it's default strategy when your `git pull`, by setting the `pull.rebase` flag with a command like this `git config --global pull.rebase true`.
 
 ## Cherry-picking
 
 <!-- cherry pick from a branch -->
+
+## Reading history
+
+<!-- reflog -->
 
 ## Rewriting history
 
