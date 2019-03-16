@@ -34,3 +34,8 @@ Conclusion: [IG](https://www.ig.com/uk) Just ignore the spread betting, their st
   - [Monzo](https://monzo.com/) Based in UK and useful for direct debit.
   - [Glint](https://glintpay.com/) Gold
   - [Bettr](https://bettr.finance) Based in South Africa
+
+## Crypto Currencies
+
+  - [Ada](https://www.cardano.org/en/home/) Proof of Stake, Platform and uses Haskell
+  - [ZillaQA](https://zilliqa.com/) Scalable and uses Coq
