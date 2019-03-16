@@ -1,5 +1,6 @@
 # Finance
 
+  - [ ] [IG Academy](https://www.ig.com/uk/learn-to-trade/ig-academy) A few short and approachable courses on investing.
   - [ ] [Anti Fragile](http://www.fooledbyrandomness.com/)
   - [ ] [Investors Have Fallen Into a False Sense of Security](https://dailyreckoning.com/investors-have-fallen-into-a-false-sense-of-security-2/)
   
