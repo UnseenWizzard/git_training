@@ -3,13 +3,8 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [Programming Languages](https://github.com/awalterschulze/learning/blob/master/ProgrammingLanguages.md)
   - [Mathematics](https://github.com/awalterschulze/learning/blob/master/Mathematics.md)
   - [Music](https://github.com/awalterschulze/learning/blob/master/Music.md)
-  - [Artificial Intelligence](https://github.com/awalterschulze/learning/blob/master/ArtificialIntelligence.md)
-  - [Distributed Systems](https://github.com/awalterschulze/learning/blob/master/DistributedSystems.md)
   - [Musings](https://github.com/awalterschulze/learning/blob/master/Musings.md)
   - [Health](https://github.com/awalterschulze/learning/blob/master/Health.md)
   - [Finance](https://github.com/awalterschulze/learning/blob/master/Finance.md)
-  - [ComputerScience](https://github.com/awalterschulze/learning/blob/master/ComputerScience.md)
-
-### Other
-
-  - [x] [Understanding Copyright and Licenses](https://www.smashingmagazine.com/2011/06/understanding-copyright-and-licenses/)
+  - [Computer Science](https://github.com/awalterschulze/learning/blob/master/ComputerScience.md)
+  - [Software Engineering](https://github.com/awalterschulze/learning/blob/master/SoftwareEngineering.md)
