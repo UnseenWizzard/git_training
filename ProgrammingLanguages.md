@@ -1,6 +1,6 @@
 # Programming Languages
 
-  - [x] [Programming Languages](https://class.coursera.org/proglang-003)
+  - [x] [Programming Languages - Coursera](https://class.coursera.org/proglang-003)
   - [ ] [Types and Programming Languages - Benjamin C. Pierce](https://www.amazon.com/Types-Programming-Languages-MIT-Press/dp/0262162091)
   - [ ] [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) or [video series](https://www.youtube.com/watch?v=2Op3QLzMgSY&feature=youtu.be)
   - [ ] [Winter School on Denotational Semantics](https://www.youtube.com/watch?v=EI5i54VrAbc&list=PLvK_yEuhMQ0wxzN_xkkMA4VfFPAjJgnf0)
