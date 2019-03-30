@@ -8,6 +8,10 @@
 
   - [x] [Understanding Copyright and Licenses](https://www.smashingmagazine.com/2011/06/understanding-copyright-and-licenses/)
   
+## API Design
+
+  - [x] [Denotational Design: From Meanings To Programs - Conal Elliott](https://www.youtube.com/watch?v=bmKYiUOEo2A)
+  
 ## Distributed Systems
 
   - [x] [MapReduce: Simplfied Data Processing on Large Clusters](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
