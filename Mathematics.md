@@ -1,5 +1,6 @@
 # Mathematics
 
+  - [x] [The Map of Mathematics](https://www.youtube.com/watch?v=OmJ-4B-mS-Y)
   - [ ] [3Blue1Brown - Neat proofs/perspectives](https://www.youtube.com/playlist?list=PLZHQObOWTQDPSKntUcMArGheySM4gL7wS)
   - [ ] [euclideanspace - Maths - Abstract Algebra and Discrete Mathematics](http://euclideanspace.com/maths/discrete/index.htm)
 
