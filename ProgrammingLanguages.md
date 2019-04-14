@@ -137,6 +137,8 @@
 ### Agda
 
   - [ ] [Video Lectures by Conor McBride](https://www.youtube.com/channel/UCWx63QH5IevL6gsP9stpG_w/videos)
+  - [ ] [Programming Language Foundations in Agda - Philip Wadler and Wen Kokke](https://plfa.github.io/)
+        Starts from the basics and contains a chapter on Bisimulation
 
 ### Idris
 
