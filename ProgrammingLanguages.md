@@ -175,3 +175,7 @@
   - [x] [Go Slices: usage and internals](https://blog.golang.org/go-slices-usage-and-internals)
   - [x] [Profiling Go Programs](https://blog.golang.org/profiling-go-programs)
   - [x] [Functional options for friendly APIs - Dave Cheney](https://dave.cheney.net/2014/10/17/functional-options-for-friendly-apis)
+  
+### Python
+
+  - [x] [args and kwargs in python explained](https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/)
