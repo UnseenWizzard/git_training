@@ -59,9 +59,7 @@
       - [x] [Use cata and para for implementing Brzozowski derivatives](https://github.com/awalterschulze/ragax/blob/gh-pages/haskell/deriv/src/FDerive.hs)
       - [ ] Use a recursion scheme to relabel a tree with ordered numbers
       - [ ] [Functional Pearl: Data types a la carte - Wouter Swierstra](http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf)
-  - [ ] Tagless Final
-      - [ ] [Introduction to Tagless Final](https://serokell.io/blog/2018/12/07/tagless-final)
-      - [ ] [Typed tagless-final interpretations: Lecture notes](http://okmij.org/ftp/tagless-final/course/)
+  - [x] [Tagless Final Encoding in Haskell](https://jproyo.github.io/posts/2019-03-17-tagless-final-haskell.html)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [A Guide to GHC's Extensions](https://limperg.de/ghc-extensions/)
   - [ ] [Write you a Haskell - Hindley-Milner Inference](http://dev.stephendiehl.com/fun/006_hindley_milner.html)
