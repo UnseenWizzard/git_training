@@ -21,7 +21,7 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
         - [Resolving conflicts](#resolving-conflicts)
     - [Rebasing](#rebasing)
         - [Resolving conflicts](#resolving-conflicts-1)
-    - [Updating the _Dev Environment_ with remote changes](#updating-the-_dev-environment_-with-remote-changes)
+    - [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
     - [~~Cherry-picking~~](#cherry-picking)
     - [~~Rewriting history~~](#rewriting-history)
 
