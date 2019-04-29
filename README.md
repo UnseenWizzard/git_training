@@ -485,7 +485,7 @@ Because it has been a while, lets have another look at the components of git:
 
 Just like your _Dev Environment_ everyone else working on the same source code has theirs. 
 
-# TODO image
+![many dev environments](img/many_dev_environments.png)
 
 All of these _Dev Environments_ have their own _working_ and _staged_ changes, that are at some point `committed` to the _Local Repository_ and finally `pushed` to the _Remote_. 
 
@@ -495,7 +495,9 @@ Go to your `fork` of this repo on [github.com](https://www.github.com) and open 
 
 Find the edit button and make and commit a change via the website. 
 
-TODO ADD PICTURES
+![github edit](img/github.png) 
+
+In this repository I have added a remote change to `Alice.txt` on a branch called `fetching_changes_sample`, but in your version of the repository you can of course just change the file on `master`.
 
 ### _Fetching_ Changes
 
@@ -507,9 +509,16 @@ This gets any changes on the remote - so commits as well as branches - into your
 
 Note that at this point, changes aren't integrated into the local branches and thus the _Working Directory_ and _Staging Area_ yet.
 
-# TODO modify image
- 
-![Remote and local branches`](img/branches.png)
+![Fetching changes](img/fetch.png)
+
+If you run `git status` now, you'll see another great example of git commands telling you exactly what is going on: 
+
+```ShellSession
+> git status
+On branch fetching_changes_sample
+Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+```
 
 ### _Pulling_ Changes
 
@@ -520,17 +529,24 @@ As we have no _working_ or _staged_ changes, we could just execute `git pull` no
 
 Before we `pull`, lets change a file locally to see what happens. 
 
-In order to not have to deal with conflicts for now, lets change `Bob.txt` in our _Working Directory_. 
+Lets also change `Alice.txt` in our _Working Directory_ now! 
 
 If you now try to do a `git pull` you'll see the following error: 
 
 ```ShellSession
-TODO
+> git pull
+Updating df3ad1d..418e6f0
+error: Your local changes to the following files would be overwritten by merge:
+        Alice.txt
+Please commit your changes or stash them before you merge.
+Aborting
 ```
 
-You can not `pull` in any changes, while there are modified files in the _Working Directory_. 
+You can not `pull` in any changes, while there are modfications to files in the _Working Directory_ that are also changed by the commits you're `pull`ing in. 
 
-While one way around this is, to just get your changes to a point where you're confident in them and `add` them to the _Staging Environment_ (TODO check that), before you finally `commit` them, this is a good moment to learn about another great tool, the `git stash`. 
+While one way around this is, to just get your changes to a point where you're confident in them, `add` them to the _Staging Environment_, before you finally `commit` them, this is a good moment to learn about another great tool, the `git stash`. 
+
+<!-- > If you have differing commits between your _Local Repository_ and the remote, the same things happen when you `git pull` as when you just `merge` two branches, including manual conflict resolution -->
 
 ### Stashing changes
 
@@ -547,9 +563,11 @@ To inspect you current `stash` you can use `git stash list` to list the individu
 
 > Another nice convenience command is `git stash branch {BRANCH NAME}`, which creates a branch, starting from the HEAD at the moment you've stashed the changes, and applies the stashed changes to that branch.
 
-Now that we know about `git stash`, lets run it to remove our local changes to `Bob.txt` from the _Working Directory_, so that we can go ahead and `git pull` the changes we've made via the website. 
+Now that we know about `git stash`, lets run it to remove our local changes to `Alice.txt` from the _Working Directory_, so that we can go ahead and `git pull` the changes we've made via the website. 
 
 After that, let's `git stash pop` to get the changes back and then `add` and `commit` them. 
+
+### Pulling with Conflicts
 
 Now that we've understood how to `fetch` and `pull` _Remote Changes_ into our _Dev Environment_, it's time to create some conflicts! 
 
