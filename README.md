@@ -22,8 +22,9 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
     - [Rebasing](#rebasing)
         - [Resolving conflicts](#resolving-conflicts-1)
     - [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
-    - [~~Cherry-picking~~](#cherry-picking)
+    - [Cherry-picking](#cherry-picking)
     - [~~Rewriting history~~](#rewriting-history)
+    - [~~So what is a commit made off really?~~](#so-what-is-a-commit-made-off-really?)
 
 ---
 
@@ -599,16 +600,59 @@ As detailed in the section on [Rebasing](#rebasing), there is a benefit in keepi
 
 ## Cherry-picking
 
-<!-- cherry pick from a branch -->
+> Congratulations! You've made it to the more advanced features! 
 
-## Reading history
+> By now you understand how to use all the typical git commands and more importantly how they work. 
+>
+>This will hopefully make the following concepts much simpler to understand than if I just told you what commands to type in. 
+>
+>So let's head right in an learn how to `cherry-pick` commits!
 
-<!-- reflog -->
+From earlier sections you still remember roughly what a `commit` is made off, right? 
+
+And how when you [`rebase`](#rebasing) a branch your commmits are applied as new commits with the same _change set_ and _message_? 
+
+Whenever you want to just take a few choice changes from one branch and apply them to another branch, you want to `cherry-pick` these commits and put them on your branch. 
+
+That is exactly what `git cherry-pick` allows you to do with either single commits or a range of commits. 
+
+Just like during a `rebase` this will actually put the changes from these commits into a new commit on your current branch. 
+
+Lets have a look at an example each for `cherry-pick`ing one or more commits: 
+
+The figure below shows three branches before we have done anything. Let's assume we really want to get some changes from the `add_patrick` branch into the `change_alice` branch. Sadly they haven't made it into master yet, so we can't just `rebase` onto master to get those changes (along with any other changes on the other branch, that we might not even want). 
+
+![Branches before cherry-picking](img/cherry_branches.png)
+
+So let's just `git cherry-pick` the commit _63fc421_. 
+The figure below visualizes what happens when we run `git cherry-pick 63fc421`
+
+![Cherry-picking a single commit](img/cherry_pick.png)
+
+As you can see, a new commit with the changes we wanted shows up on branch. 
+
+> At this point note that like with any other kind of getting changes onto a branch that we've seen before, any conflicts that arrise during a `cherry-pick` will have to be _resolved_ by us, before the command can go through. 
+>
+> Also like all other commands you can either `--continue` a `cherry-pick` when you've resolved conflicts, or decide to `--abort` the command entirely.
+
+The figure below visualizes `cherry-pick`ing a range of commits instead of a single one. You can simply do that by calling the command in the form `git cherry-pick <from>..<to>` or in our example below as `git cherry-pick 0cfc1d2..41fbfa7`.
+
+![Cherry-picking commit range](img/cherry_pick_range.png)
 
 ## Rewriting history
+_coming soon to a tutorial near you_
 
 <!-- ammending -->
 
 <!-- squashing -->
 
 <!-- force pushing -->
+
+## Reading history
+
+<!-- reflog -->
+_coming soon to a tutorial near you_
+
+## So what is a commit made off really? 
+
+_coming soon to a tutorial near you_
