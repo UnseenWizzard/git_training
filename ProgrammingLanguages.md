@@ -27,6 +27,7 @@
   - [x] [DelftX: FP101x Introduction to Functional Programming](https://courses.edx.org/courses/DelftX/FP101x/3T2014/course/) Erik Meijer's course on functional programming.
   - [x] [Programming in Haskell - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/pih.html)
       - [x] Monads
+  - [x] [Haskell monads and the nest of lies](https://blog.johncs.com/posts/monads-and-how-we-lie.htm) - explains the IO Monad.
   - [x] [Arrays](https://wiki.haskell.org/Modern_array_libraries) and [Vectors](https://wiki.haskell.org/Numeric_Haskell:_A_Vector_Tutorial)
   - [x] Testing
       - [x] [HUnit: Unit testing in haskell](http://hunit.sourceforge.net/)
