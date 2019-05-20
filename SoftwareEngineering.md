@@ -13,6 +13,10 @@
   - [x] [Denotational Design: From Meanings To Programs - Conal Elliott](https://www.youtube.com/watch?v=bmKYiUOEo2A)
   - [x] [Abstraction and Learning with Runar Bjarnason](https://corecursive.com/027-abstraction-with-runar-bjarnason/)
   
+## Multiprocessing
+
+  - [x] [Stabbing yourself with a fork() in a multiprocessing.Pool full of sharks](https://codewithoutrules.com/2018/09/04/python-multiprocessing/)
+  
 ## Distributed Systems
 
   - [x] [MapReduce: Simplfied Data Processing on Large Clusters](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf)
