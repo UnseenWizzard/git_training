@@ -23,9 +23,8 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
         - [Resolving conflicts](#resolving-conflicts-1)
     - [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
     - [Cherry-picking](#cherry-picking)
-    - [~~Rewriting history~~](#rewriting-history)
-    - [~~So what is a commit made off really?~~](#so-what-is-a-commit-made-off-really?)
-
+    - [Rewriting history](#rewriting-history)
+    - [~~Reading history~~](#reading-history)
 ---
 
 So, you want to use git right? 
@@ -54,11 +53,11 @@ Just go to your home folder, or where ever you like to put your projects. You do
 
 Now we want to grab a _Remote Repository_ and put what's in it onto your machine. 
 
-I'd suggest we use this one ([https://github.com/UnseenWizzard/git_training.git](https://github.com/UnseenWizzard/git_training.git) if for some reason you're not already reading this on github).
+I'd suggest we use this one ([https://github.com/UnseenWizzard/git_training.git](https://github.com/UnseenWizzard/git_training.git) if you're not already reading this on github).
 
-> To to that I can use `git clone https://github.com/UnseenWizzard/git_training.git`
+> To do that I can use `git clone https://github.com/UnseenWizzard/git_training.git`
 > 
-> But as following this tutorial will need you get the changes you make in your _Dev Environment_ back to the _Remote Repository_, and github doesn't just allow anyone to do that to anyone's repo, you'll best create a _fork_ of it right now. There's a button to do that on the top right of this page. 
+> But as following this tutorial will need you to get the changes you make in your _Dev Environment_ back to the _Remote Repository_, and github doesn't just allow anyone to do that to anyone's repo, you'll best create a _fork_ of it right now. There's a button to do that on the top right of this page. 
 
 Now that you have a copy of my _Remote Repository_ of your own, it's time to get that onto your machine. 
 
@@ -73,7 +72,7 @@ What `git clone` also does, is create a new folder wherever you called it. There
 
 ## Adding new things
 
-Someone already put a file into the _Remote Repository_. It's `Alice.txt`, and kind off lonely there. Let's create a new file and call it `Bob.txt`. 
+Someone already put a file into the _Remote Repository_. It's `Alice.txt`, and kind of lonely there. Let's create a new file and call it `Bob.txt`. 
 
 What you've just done is add the file to your _Working Directory_. 
 There's two kinds of files in your _Working Directory_: _tracked_ files that git knows about and _untracked_ files that git doesn't know about (yet). 
@@ -640,19 +639,268 @@ The figure below visualizes `cherry-pick`ing a range of commits instead of a sin
 ![Cherry-picking commit range](img/cherry_pick_range.png)
 
 ## Rewriting history
-_coming soon to a tutorial near you_
+> I'm repeating myself now, but you still remeber [`rebase`](#rebasing) well enough right? Else quickly jump back to that section, before continuing here, as we'll use what we already know when learning about how change history!
 
-<!-- ammending -->
+As you know a `commit` basically contains your changes, a message and few other things. 
 
+The 'history' of a branch is made up of all it's commits. 
+
+But lets say you've just made a `commit` and then notice, that you've forgotten to add a file, or you made a typo and the change leaves you with broken code. 
+
+We'll briefly look at two things we could do to fix that, and make it look like it never happened. 
+
+Let's switch to a new branch with `git checkout -b rewrite_history`. 
+
+Now make some changes to both `Alice.txt` and `Bob.txt`, and then `git add Alice.txt`. 
+
+Then `git commit` using a message like "This is history" and you're done. 
+
+Wait, did I say we're done? No, you'll clearly see that we've made some mistakes here: 
+
+* We forgot to add the changes to `Bob.txt`
+* We didn't write a [good commit message](https://chris.beams.io/posts/git-commit/)
+
+<!-- amending -->
+### Amending the last Commit
+One way to fix both of these in one go would be to `amend` the commit we've just made. 
+
+`Amend`ing the latest commit basically works just like making a new one. 
+
+Before we do anything take a look at your latest commit, with `git show {COMMIT}`. Put either the commit hash (which you'll probably still see in your command line from the `git commit` call, or in the `git log`), or just _HEAD_.
+
+Just like in the `git log` you'll see the message, author, date and of course changes. 
+
+Now let's `amend` what we've done in that commit. 
+
+`git add Bob.txt` to get the changes to the _Staging Area_, and then `git commit --amend`. 
+
+What happens next is your latest commit being unrolled, the new changes from the _Staging Area_ added to the existing one, and the editor for the commit message opening. 
+
+In the editor you'll see the previous commit message. 
+Feel free to change it to something better. 
+
+After you're done, take another look at the latest commit with `git show HEAD`.
+
+As you've certainly expected by now, the commit hash is different. The original commit is gone, and in it's place there is a new one, with the combined changes and new commit message. 
+
+> Note how the other commit data like author and date are unchanged from the original commit. You can mess with those too, but we'll get to that later. 
+
+Congratulations! You've just succesfully re-written history for the first time! 
+
+### Interactive Rebase
 <!-- squashing -->
+Generally when we `git rebase`, we `rebase` onto a branch. When we do that however, we actualy rebase onto the _HEAD_ of that branch. 
+
+Actually if we felt like it, we could `rebase` onto any commit. 
+
+> Remember that a commit contains information about the history that came before it
+
+Like many other commands `git rebase` has an _interactive_ mode. 
+
+Unlike most others the _interactive_ `rebase` is something you'll probably be using a lot, as it allows you to change history as much as you want. 
+
+Especially if you follow a work-flow of making many small commits of your changes, which allow you to easily jump back if you made a mistake, _interactive_ `rebase` will be your closest ally. 
+
+Enough talk! Lets do something! 
+
+Back to your _master_ branch and `git checkout` a new branch to work on. 
+
+As before, we'll make some changes to both `Alice.txt` and `Bob.txt`, and then `git add Alice.txt`. 
+
+Then `git commit` using a message like "Add text to Alice". 
+
+Now instead of changing that commit however we'll `git add Bob.txt` and `git commit` that change as well. As message I used "Add Bob.txt". 
+
+And to make things more interesting, we'll make another change to `Alice.txt` which we'll `git add` and `git commit`. As a message I used "Add more text to Alice". 
+
+If we now have a look at the branch's history with `git log` (or for just a quick look preferably with `git log --oneline`), we'll see our three commits on top of whatever was on your _master_. 
+
+For me it looks like this: 
+```ShellSession
+> git log --oneline
+0b22064 (HEAD -> interactiveRebase) Add more text to Alice
+062ef13 Add Bob.txt
+9e06fca Add text to Alice
+df3ad1d (origin/master, origin/HEAD, master) Add Alice
+800a947 Add Tutorial Text
+```
+
+There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`: 
+
+* Put both changes to `Alice.txt` in a single commit
+* Consistenly name things, and remove the _.txt_ from the message about `Bob.txt`
+
+To change the three new commits, we'll want to rebase onto the commit just before them. That commit for me is `df3ad1d`, but we can also reference it as the third commit from the current _HEAD_ as `HEAD~3`
+
+To start an _interactive_ `rebase` we use `git rebase -i {COMMIT}`, so let's run `git rebase -i HEAD~3`
+
+What you'll see is your editor of choice showing something like this: 
+
+```
+pick 9e06fca Add text to Alice
+pick 062ef13 Add Bob.txt
+pick 0b22064 Add more text to Alice
+
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
+#
+# Commands:
+# p, pick = use commit
+# r, reword = use commit, but edit the commit message
+# e, edit = use commit, but stop for amending
+# s, squash = use commit, but meld into previous commit
+# f, fixup = like "squash", but discard this commit's log message
+# x, exec = run command (the rest of the line) using shell
+# d, drop = remove commit
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+Note as always how `git` explains everything you can do right there when you call the command. 
+
+The _Commands_ you'll probably be using most are `reword`, `squash` and `drop`. (And `pick` but that one's there by default)
+
+Take a moment to think about what you see and what we're going to use to achive our two goals from above. I'll wait. 
+
+Got a plan? Perfect!
+
+Before we start making changes, take note of the fact, that the commits are listed from oldest to newest, and thus in the oppisite direction of the `git log` output. 
+
+I'll start off with the easy change and make it so we get to change the commit message of the middle commit. 
+
+```
+pick 9e06fca Add text to Alice
+reword 062ef13 Add Bob.txt
+pick 0b22064 Add more text to Alice
+
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
+[...]
+```
+
+Now to getting the two changes of `Alice.txt` into one commit. 
+
+Obviously what we want to do is `squash` the later of the two into the first one, so let's put that command in place of the `pick` on the second commit chaning `Alice.txt`. For me in the example that's _0b22064_.
+
+```
+pick 9e06fca Add text to Alice
+reword 062ef13 Add Bob.txt
+squash 0b22064 Add more text to Alice
+
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
+[...]
+```
+
+Are we done? Will that do what we want? 
+
+It wont right? As the comments in the file tell us: 
+
+```
+# s, squash = use commit, but meld into previous commit
+```
+
+So what we've done so far, will merge the changes of the second Alice commit, with the Bob commit. That's not what we want. 
+
+Another powerful thing we can do in an _interactive_ `rebase` is changing the order of commits. 
+
+If you've read what the comments told you carefully, you already know how: Simply move the lines!
+
+Thankfully you're in your favorite text editor, so go ahead and move the second Alice commit after the first.
+
+```
+pick 9e06fca Add text to Alice
+squash 0b22064 Add more text to Alice
+reword 062ef13 Add Bob.txt
+
+# Rebase df3ad1d..0b22064 onto df3ad1d (3 commands)
+[...]
+```
+
+That should do the trick, so close the editor to tell `git` to start executing the commands. 
+
+What happens next is just like a normal `rebase`: starting with the commit you've referenced when starting it, each of the commits you have listed will be applied one after the other. 
+
+> Right now it won't happen, but when you re-order actualy code changes, it may well happen, that you run into conflicts during the `rebase`. After all you've possibly mixed up changes that were building on each other. 
+>
+> Just [resolve](#resolving-conflicts) them, as you would usually. 
+
+After applying the first commit, the editor will open and allow you to put a new message for the commit combining the changes to `Alice.txt`. I've thrown away the text of both commits and put "Add a lot of very important text to Alice". 
+
+After you close the editor to finish that commit, it will open again to allow you to change the message of the `Add Bob.txt` commit. Remove the ".txt" and continue by closing the editor. 
+
+That's it! You've rewritten history again. This time a lot more substantially than when `amend`ing!
+
+If you look at the `git log` again, you'll see that there's two new commits in place of the three that we had previously. But by now you're used to what `rebase` does to commits and have expected that. 
+
+```
+> git log --oneline
+105177b (HEAD -> interactiveRebase) Add Bob
+ed78fa1 Add a lot very important text to Alice
+df3ad1d (origin/master, origin/HEAD, master) Add Alice
+800a947 Add Tutorial Text
+```
+
+<!-- changing meta data?>
 
 <!-- force pushing -->
+### Public History, why you shouldn't rewrite it, and how to still do it safely
+
+As noted before changing history is an incredibly usefull part of a workflow that involves making a lot of small commits while you work. 
+
+While all the small atomic changes make it very easy for you to e.g. verify that with each change your test-suite still passes, and if it doesn't remove or amend just these specific changes, the 100 commits you've made to write `HelloWorld.java` are probably not something you want share with people. 
+
+Most likely what you want to share with them, are a few well formed changes with nice commit messages telling your colleagues what you did for which reason. 
+
+As long as all those commits only exist in your _Dev Environment_, you're perfectly save to do a `git rebase -i` and change history to your hearts content. 
+
+Things get problematic when it comes to changing _Public History_. That means anything that has already made it to the _Remote Repository_.
+
+At this point is has become _public_ and other people's branches might be based on that history. That really makes it something you generally don't want to mess with. 
+
+The usual advice is to "Never rewrite public history!" and while I repeat that here, I've got to admit, that there is decent amount of cases in which you might still want to rewrite _public history_. 
+
+In all of theses cases that history isn't 'really' _public_ though. You most certainly don't want to go rewriting history on the _master_ branch of an open source project, or something like your companys _release_ branch. 
+
+Where you might want to rewrite history are branches that you've `push`ed just to share with some colleagues. 
+
+You might be doing trunk-based development, but want to share something that doesn't even compile yet, so you obviously don't want to put that on the main branch knowingly. 
+Or you might have a workflow in which you share feature branches. 
+
+Especially with feature branches you hopefully `rebase` them onto the current _master_ frequently. But as we know, a `git rebase` adds our branch's commits as _new_ commits on top of the thing we're basing them on. This rewrites history. And in the case of a shared feature branch it rewrites _public history_. 
+
+So what should we do if we follow the "Never rewrite public history" mantra? 
+
+Never rebase our branch and hope it still merges into _master_ in the end? 
+
+Not use shared feature branches? 
+
+Admittetly that second one is acutally a reasonable answer, but you might still not be able to do that. So the only thing you can do, is to accept rewriting the _public history_ and  `push` the changed history to the _Remote Repository_. 
+
+If you just do a `git push` you'll be notfied that you're not allowed to do that, as your _local_ branch has diverged from the _remote_ one. 
+
+You will need to `force` pushing the changes, and overwrite the remote with your local version. 
+
+As I've highlighted that so suggestively you're probably ready to try `git push --force` right now. You really shouldn't do that, if you want to rewrite _public history_ safely though!
+
+You're much better off using `--force`'s more careful sibling `--force-with-lease` ! 
+
+`--force-with-lease` will check if your _local_ version of the _remote_ branch and the actual _remote_ match, before `push`ing. 
+
+By that you can ensure that you don't accidentally wipe any changes someone else may have `push`ed while you where rewriting history!
+
+![TODO make picture visualizing force push](img/fetch.png)
+
+
+And on that note I'll leave you with a slightly changed mantra: _Don't rewrite public history unless you're really sure about what you're doing. And if you do, be safe and force-with-lease._
+
 
 ## Reading history
 
 <!-- reflog -->
 _coming soon to a tutorial near you_
 
-## So what is a commit made off really? 
-
-_coming soon to a tutorial near you_
+Until I get around to it have a look at [the git book's section on reflog](https://git-scm.com/docs/git-reflog)
