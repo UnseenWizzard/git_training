@@ -736,7 +736,7 @@ To start an _interactive_ `rebase` we use `git rebase -i {COMMIT}`, so let's run
 
 What you'll see is your editor of choice showing something like this: 
 
-```
+```bash
 pick 9e06fca Add text to Alice
 pick 062ef13 Add Bob.txt
 pick 0b22064 Add more text to Alice
@@ -773,7 +773,7 @@ Before we start making changes, take note of the fact, that the commits are list
 
 I'll start off with the easy change and make it so we get to change the commit message of the middle commit. 
 
-```
+```bash
 pick 9e06fca Add text to Alice
 reword 062ef13 Add Bob.txt
 pick 0b22064 Add more text to Alice
@@ -786,7 +786,7 @@ Now to getting the two changes of `Alice.txt` into one commit.
 
 Obviously what we want to do is `squash` the later of the two into the first one, so let's put that command in place of the `pick` on the second commit chaning `Alice.txt`. For me in the example that's _0b22064_.
 
-```
+```bash
 pick 9e06fca Add text to Alice
 reword 062ef13 Add Bob.txt
 squash 0b22064 Add more text to Alice
@@ -799,7 +799,7 @@ Are we done? Will that do what we want?
 
 It wont right? As the comments in the file tell us: 
 
-```
+```bash
 # s, squash = use commit, but meld into previous commit
 ```
 
@@ -811,7 +811,7 @@ If you've read what the comments told you carefully, you already know how: Simpl
 
 Thankfully you're in your favorite text editor, so go ahead and move the second Alice commit after the first.
 
-```
+```bash
 pick 9e06fca Add text to Alice
 squash 0b22064 Add more text to Alice
 reword 062ef13 Add Bob.txt
