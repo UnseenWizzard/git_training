@@ -892,7 +892,7 @@ You're much better off using `--force`'s more careful sibling `--force-with-leas
 
 By that you can ensure that you don't accidentally wipe any changes someone else may have `push`ed while you where rewriting history!
 
-![TODO make picture visualizing force push](img/fetch.png)
+![What happens in a push --force-with-lease](img/force_push.png)
 
 
 And on that note I'll leave you with a slightly changed mantra: _Don't rewrite public history unless you're really sure about what you're doing. And if you do, be safe and force-with-lease._
