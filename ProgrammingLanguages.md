@@ -178,3 +178,4 @@
 ### Python
 
   - [x] [args and kwargs in python explained](https://pythontips.com/2013/08/04/args-and-kwargs-in-python-explained/)
+  - [x] [Protocols: Structural subtyping (static duck typing)](https://www.python.org/dev/peps/pep-0544)
