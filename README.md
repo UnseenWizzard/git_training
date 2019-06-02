@@ -4,9 +4,7 @@
 
 An interactive git training meant to teach you how git works, not just which commands to execute.
 
-Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html) 
-
-## This is currently a work in progress!
+Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
 
 ---
 - [git_training](#git_training)
@@ -24,7 +22,7 @@ Based on the general concept from Rachel M. Carmena's blog post on [How to teach
     - [Updating the _Dev Environment_ with remote changes](#updating-the-dev-environment-with-remote-changes)
     - [Cherry-picking](#cherry-picking)
     - [Rewriting history](#rewriting-history)
-    - [~~Reading history~~](#reading-history)
+    - [Reading history](#reading-history)
 ---
 
 So, you want to use git right? 
@@ -902,7 +900,58 @@ _Don't rewrite public history unless you're really sure about what you're doing.
 
 ## Reading history
 
-<!-- reflog -->
-_coming soon to a tutorial near you_
+Knowing about the differences between the areas in your _Dev Environment_ - especially the _Local Repository_ - and how commits and the history work, doing a `rebase` should not be scary to you. 
 
-Until I get around to it have a look at [the git book's section on reflog](https://git-scm.com/docs/git-reflog)
+Still sometimes things go wrong. You may have done a `rebase` and accidentally accepted the wrong version of file when resolving a conflict. 
+
+Now instead of the feature you've added, there's just your colleagues added line of logging in a file. 
+
+Luckily `git` has your back, by having a built in safety feature called the _Reference Logs_ AKA `reflog`.
+
+Whenever any _reference_ like the tip of a branch is updated in your _Local Repository_ a _Reference Log_ entry is added. 
+
+So theres a record of any time you make a `commit`, but also of when you `reset` or otherwise move the `HEAD` etc. 
+
+Having read this tutorial so far, you see how this might come in handy when we've messed up a `rebase` right? 
+
+We know that a `rebase` moves the `HEAD` of our branch to the point we're basing it on and the applies our changes. An interactive `rebase` works similarly, but might do things to those commits like _squashing_ or _rewording_ them. 
+
+If you're not still on the branch on which we practiced [interactive rebase](#interactive-rebase), switch to it again, as we're about to practice some more there. 
+
+Lets have a look at the `reflog` of the things we've done on that branch by - you've guessed it - running `git reflog`. 
+
+You'll probably see a lot of output, but the first few lines on the top should be similar to this: 
+
+```bash
+> git reflog
+105177b (HEAD -> interactiveRebase) HEAD@{0}: rebase -i (finish): returning to refs/heads/interactiveRebase
+105177b (HEAD -> interactiveRebase) HEAD@{1}: rebase -i (reword): Add Bob
+ed78fa1 HEAD@{2}: rebase -i (squash): Add a lot very important text to Alice
+9e06fca HEAD@{3}: rebase -i (start): checkout HEAD~3
+0b22064 HEAD@{4}: commit: Add more text to Alice
+062ef13 HEAD@{5}: commit: Add Bob.txt
+9e06fca HEAD@{6}: commit: Add text to Alice
+df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from master to interactiveRebase
+```
+
+There it is. Every single thing we've done, from switching to the branch to doing the `rebase`. 
+
+Quite cool to see the things we've done, but useless on it's own if we messed up somewhere, if it wasn't for the references at the start of each line. 
+
+If you compare the `reflog` output to when we looked at the `log` the last time, you'll see those points relate to commit references, and we can use them just like that. 
+
+Let's say we actually didn't want to do the rebase. How do we get rid of the changes it made? 
+
+We move `HEAD` to the point before the `rebase` started with a `git reset 0b22064`. 
+
+> `0b22064` is the commit before the `rebase` in my case. More generally you can also reference it as _HEAD four changes ago_ via `HEAD@{4}`. Note that should you have switched branches in between or done any other thing that creates a log entry, you might have a higher number there.
+
+If you take a look at the `log` now, you'll see the original state with three individual commits restored. 
+
+But let's say we now realize that's not what we wanted. The `rebase` is fine, we just don't like how we changed the message of the Bob commit. 
+
+We could just do another `rebase -i` in the current state, just like we did originally. 
+
+Or we use the reflog and jump back to after the rebase and `amend` the commit from there. 
+
+But by now you know how to do either of that, so I'll let you try that on your own. And in addition you also know that there's the `reflog` allowing you to undo most things you might end up doing by mistake. 
