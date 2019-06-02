@@ -528,6 +528,8 @@ As we have no _working_ or _staged_ changes, we could just execute `git pull` no
 > Pulling will implicitly also `fetch` the _Remote Repository_, but sometimes it is a good idea to do a `fetch` on it's own. 
 > For example when you want to synchronize any new _remote_ branches, or when you want to make sure your _Local Repository_ is up to date before you do a `git rebase` on something like `origin/master`.
 
+![Pulling in changes](img/pull.png)
+
 Before we `pull`, lets change a file locally to see what happens. 
 
 Lets also change `Alice.txt` in our _Working Directory_ now! 
@@ -547,8 +549,6 @@ You can not `pull` in any changes, while there are modifications to files in the
 
 While one way around this is, to just get your changes to a point where you're confident in them, `add` them to the _Staging Environment_, before you finally `commit` them, this is a good moment to learn about another great tool, the `git stash`. 
 
-<!-- > If you have differing commits between your _Local Repository_ and the remote, the same things happen when you `git pull` as when you just `merge` two branches, including manual conflict resolution -->
-
 ### Stashing changes
 
 If at any point you have local changes that you do not yet want to put into a commit, or want to store somewhere while you try some different angle to solve a problem, you can `stash` those changes away. 
@@ -566,19 +566,31 @@ To inspect you current `stash` you can use `git stash list` to list the individu
 
 Now that we know about `git stash`, lets run it to remove our local changes to `Alice.txt` from the _Working Directory_, so that we can go ahead and `git pull` the changes we've made via the website. 
 
-After that, let's `git stash pop` to get the changes back and then `add` and `commit` them. 
+After that, let's `git stash pop` to get the changes back. 
+As both the commit we `pull`ed in and the `stash`ed change modified `Alice.txt` you wil have to resolve the conflict, just how you would in a  `merge` or `rebase`.
+When you're done `add` and `commit` the change. 
 
 ### Pulling with Conflicts
 
 Now that we've understood how to `fetch` and `pull` _Remote Changes_ into our _Dev Environment_, it's time to create some conflicts! 
 
-Do not `push` the commit that changed `Bob.txt` and head back to your _Remote Repository_ on [github.com](https://www.github.com). 
+Do not `push` the commit that changed `Alice.txt` and head back to your _Remote Repository_ on [github.com](https://www.github.com). 
 
-There we're also going to change `Bob.txt` and commit the change. 
+There we're also again going to change `Alice.txt` and commit the change. 
 
 Now there's actually two conflicts between our _Local_ and _Remote Repositories_. 
 
-If you run `git status` you will see, that both branches have one commit on them that differs from the other. 
+Don't forget to run `git fetch` to see the remote change without `pull`ing it in right away. 
+
+If you now run `git status` you will see, that both branches have one commit on them that differs from the other. 
+
+```ShellSession
+> git status
+On branch fetching_changes_sample
+Your branch and 'origin/fetching_changes_sample' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+```
 
 In addition we've changed the same file in both of those commits, to introduce a `merge` conflict we'll have to resolve. 
 
@@ -587,16 +599,20 @@ When you `git pull` while there is a difference between the _Local_ and _Remote 
 Additionally, you can think of the relationship between branches on the _Remote_ and the one in the _Local Repository_ as a special case of creating a branch based on another. 
 A local branch is based on a branches state on the _Remote_ from the time you last `fetched` it. 
 
-Thinking that way, the two options to get _remote_ changes make a lot of sense: 
+Thinking that way, the two options you have to get _remote_ changes make a lot of sense: 
 
 When you `git pull` the _Local_ and _Remote_ version of a branch will be `merged`. Just like `merging` branches, this will introduce a _merge commit. 
 
 As any _local_ branch is based on it's respective _remote_ version, we can also `rebase` it, so that any changes we may have made locally, appear as if they were based on the latest version that is available in the _Remote Repository. 
 To do that, we can use `git pull --rebase` (or the shorthand `git pull -r`). 
 
-As detailed in the section on [Rebasing](#rebasing), there is a benefit in keeping a clean linear history, which is why I would strongly recommend that when ever you `git pull` you do a `git pull -r`. 
+As detailed in the section on [Rebasing](#rebasing), there is a benefit in keeping a clean linear history, which is why I would strongly recommend that whenever you `git pull` you do a `git pull -r`. 
 
 > You can also tell git to use `rebase` instead of `merge` as it's default strategy when your `git pull`, by setting the `pull.rebase` flag with a command like this `git config --global pull.rebase true`.
+
+If you haven't already run `git pull` when I first mentioned it a few paragraphs ago, let's now run `git pull -r` to get the remote changes while making it look like our new commit just happened after them. 
+
+Of course like with a normal `rebase` (or `merge`) you'll have to resolve the conflict we introduced for the `git pull` to be done. 
 
 ## Cherry-picking
 
