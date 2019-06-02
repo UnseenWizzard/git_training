@@ -212,7 +212,7 @@ In fact we've been working on a branch since we've started.
 
 When you `clone` the _Remote Repository_ your _Dev Environment_ automatically starts on the repositories main or _master_ branch.
 
-Most workflows with git include making your changes on a _branch_, before you `merge` them back into _master_. 
+Most work-flows with git include making your changes on a _branch_, before you `merge` them back into _master_. 
 Usually you'll be working on your own _branch_, until you're done and confident in your changes which can then be merged into the _master_. 
 
 > Many git repository managers like _GitLab_ and _GitHub_ also allow for branches to be _protected_, which means that not everyone is allowed to just `push` changes there. There the _master_ is usually protected by default. 
@@ -406,7 +406,7 @@ Git has another clean way to integrate changes between two branches, which is ca
 
 We still recall that a branch is always based on another. When you create it, you _branch away_ from somewhere. 
 
-In our simple merging example we branched from _master_ at a specific commit, then commited some changes on both _master_ and the `change_alice` branch. 
+In our simple merging example we branched from _master_ at a specific commit, then committed some changes on both _master_ and the `change_alice` branch. 
 
 When a branch is diverging from the one it's based on and you want to integrate the latest changes back into your current branch, `rebase` offers a cleaner way of doing that than a `merge` would. 
 
@@ -415,7 +415,7 @@ As we've seen, a `merge` introduces a _merge commit_ in which the two histories 
 Viewed simply, rebasing just changes the point in history (the commit) your branch is based on. 
 
 To try that out, let's first checkout the _master_ branch again, then create/checkout a new branch based on it. 
-I called mine `add_patrick` and I added a new `Patrick.txt` file and commited that with the message 'Add Patrick'. 
+I called mine `add_patrick` and I added a new `Patrick.txt` file and committed that with the message 'Add Patrick'. 
 
 When you've added a commit to the branch, get back to _master_, make a change and commit it. I added some more text to `Alice.txt`.  
 
@@ -436,7 +436,7 @@ Applying: Add Patrick
 
 As we remember _HEAD_ is the pointer to the current commit we're at in our _Dev Environment_. 
 
-It's pointing to the same place as `add_patrick` before the rebase starts. For the rebase, it then first moves back to the common ancestor, before moving to the current head of the branch we want to re-base our's on. 
+It's pointing to the same place as `add_patrick` before the rebase starts. For the rebase, it then first moves back to the common ancestor, before moving to the current head of the branch we want to re-base ours on. 
 
 So _HEAD_ moves from the _0cfc1d2_ commit, to the _7639f4b_ commit that is at the head of _master_. 
 Then rebase applies every single commit we made on our `add_patrick` branch to that. 
@@ -448,7 +448,7 @@ After that it does a `checkout` of the latest commit of the branch you're rebasi
 So in our original simplified view, we'd assume that after the `rebase` the _0cfc1d2_ commit doesn't point to the common ancestor anymore in it's history, but points to the head of master. 
 In fact the _0cfc1d2_ commit is gone, and the `add_patrick` branch starts with a new _0ccaba8_ commit, that has the latest commit of _master_ as its ancestor. 
 We made it look, like our `add_patrick` was based on the current _master_ not an older version of it, but in doing so we re-wrote the history of the branch.  
-At the end of this tutorial we'll learn a bit more about re-writting history and when it's approriate and inapproriate to do so. 
+At the end of this tutorial we'll learn a bit more about re-writing history and when it's appropriate and inappropriate to do so. 
 
 ![History after rebase](img/rebase.png)
 
@@ -463,13 +463,13 @@ Keeping a linear history also makes reading or looking at (try out `git log --gr
 Just like for a `merge` you may run into conflicts, if you run into two commits changing the same parts of a file. 
 
 However when you encounter a conflict during a `rebase` you don't fix it in an extra _merge commit_, but can simply resolve it in the commit that is currently being applied. 
-Again, basing your changes directly on the current state of the originial branch. 
+Again, basing your changes directly on the current state of the original branch. 
 
 Actually resolving conflicts while you `rebase` is very similar to how you would for a `merge` so refer back to that section if you're not sure anymore how to do it. 
 
-The only distincition is, that as you're not introducing a _merge commit_ there is no need to `commit` your resolution. Simply `add` the changes to the _Staging Environment_ and then `git rebase --continue`. The conflict will be resolved in the commit that was just being applied. 
+The only distinction is, that as you're not introducing a _merge commit_ there is no need to `commit` your resolution. Simply `add` the changes to the _Staging Environment_ and then `git rebase --continue`. The conflict will be resolved in the commit that was just being applied. 
 
-As when merging, you can always stop and drop everything you've done sofar when you `git rebase --abort`. 
+As when merging, you can always stop and drop everything you've done so far when you `git rebase --abort`. 
 
 ## Updating the _Dev Environment_ with remote changes
 
@@ -540,7 +540,7 @@ Please commit your changes or stash them before you merge.
 Aborting
 ```
 
-You can not `pull` in any changes, while there are modfications to files in the _Working Directory_ that are also changed by the commits you're `pull`ing in. 
+You can not `pull` in any changes, while there are modifications to files in the _Working Directory_ that are also changed by the commits you're `pull`ing in. 
 
 While one way around this is, to just get your changes to a point where you're confident in them, `add` them to the _Staging Environment_, before you finally `commit` them, this is a good moment to learn about another great tool, the `git stash`. 
 
@@ -552,7 +552,7 @@ If at any point you have local changes that you do not yet want to put into a co
 
 A `git stash` is basically a stack of changes on which you store any changes to the _Working Directory_. 
 
-The commands you'll mostly use are `git stash` which places any modifications to the _Working Directory_ on the stash, and `git stash pop` wich takes the latest change that was stashed and applies it the to the _Working Directory_ again. 
+The commands you'll mostly use are `git stash` which places any modifications to the _Working Directory_ on the stash, and `git stash pop` which takes the latest change that was stashed and applies it the to the _Working Directory_ again. 
 
 Just like the stack commands it's named after `git stash pop` removes the latest stashed change before applying it again. 
 If you want to keep the stashed changes, you can use `git stash apply`, which doesn't remove them from the stash before applying them. 
@@ -581,8 +581,8 @@ In addition we've changed the same file in both of those commits, to introduce a
 
 When you `git pull` while there is a difference between the _Local_ and _Remote Repository_ the exact same thing happens as when you `merge` two branches. 
 
-Additonally, you can think of the relationship between branches on the _Remote_ and the one in the _Local Repository_ as a special case of creating a branch based on another. 
-A local branch is based on a banches state on the _Remote_ from the time you last `fetched` it. 
+Additionally, you can think of the relationship between branches on the _Remote_ and the one in the _Local Repository_ as a special case of creating a branch based on another. 
+A local branch is based on a branches state on the _Remote_ from the time you last `fetched` it. 
 
 Thinking that way, the two options to get _remote_ changes make a lot of sense: 
 
@@ -607,7 +607,7 @@ As detailed in the section on [Rebasing](#rebasing), there is a benefit in keepi
 
 From earlier sections you still remember roughly what a `commit` is made off, right? 
 
-And how when you [`rebase`](#rebasing) a branch your commmits are applied as new commits with the same _change set_ and _message_? 
+And how when you [`rebase`](#rebasing) a branch your commits are applied as new commits with the same _change set_ and _message_? 
 
 Whenever you want to just take a few choice changes from one branch and apply them to another branch, you want to `cherry-pick` these commits and put them on your branch. 
 
@@ -628,7 +628,7 @@ The figure below visualizes what happens when we run `git cherry-pick 63fc421`
 
 As you can see, a new commit with the changes we wanted shows up on branch. 
 
-> At this point note that like with any other kind of getting changes onto a branch that we've seen before, any conflicts that arrise during a `cherry-pick` will have to be _resolved_ by us, before the command can go through. 
+> At this point note that like with any other kind of getting changes onto a branch that we've seen before, any conflicts that arise during a `cherry-pick` will have to be _resolved_ by us, before the command can go through. 
 >
 > Also like all other commands you can either `--continue` a `cherry-pick` when you've resolved conflicts, or decide to `--abort` the command entirely.
 
@@ -681,9 +681,9 @@ After you're done, take another look at the latest commit with `git show HEAD`.
 
 As you've certainly expected by now, the commit hash is different. The original commit is gone, and in it's place there is a new one, with the combined changes and new commit message. 
 
-> Note how the other commit data like author and date are unchanged from the original commit. You can mess with those too, if you really want, by using the extra `--author={AUTHOR}` and `--date={DATE}` flags when ammending. 
+> Note how the other commit data like author and date are unchanged from the original commit. You can mess with those too, if you really want, by using the extra `--author={AUTHOR}` and `--date={DATE}` flags when amending. 
 
-Congratulations! You've just succesfully re-written history for the first time! 
+Congratulations! You've just successfully re-written history for the first time! 
 
 ### Interactive Rebase
 <!-- squashing -->
@@ -697,7 +697,7 @@ Like many other commands `git rebase` has an _interactive_ mode.
 
 Unlike most others, the _interactive_ `rebase` is something you'll probably be using a lot, as it allows you to change history as much as you want. 
 
-Especially if you follow a workflow of making many small commits of your changes, which allow you to easily jump back if you made a mistake, _interactive_ `rebase` will be your closest ally. 
+Especially if you follow a work-flow of making many small commits of your changes, which allow you to easily jump back if you made a mistake, _interactive_ `rebase` will be your closest ally. 
 
 _Enough talk! Lets do something!_
 
@@ -726,7 +726,7 @@ df3ad1d (origin/master, origin/HEAD, master) Add Alice
 There's two things we'd like to fix about this, which for the sake of learning different things, will be a bit different than in the previous section on `amend`: 
 
 * Put both changes to `Alice.txt` in a single commit
-* Consistenly name things, and remove the _.txt_ from the message about `Bob.txt`
+* Consistently name things, and remove the _.txt_ from the message about `Bob.txt`
 
 To change the three new commits, we'll want to rebase onto the commit just before them. That commit for me is `df3ad1d`, but we can also reference it as the third commit from the current _HEAD_ as `HEAD~3`
 
@@ -763,7 +763,7 @@ Note as always how `git` explains everything you can do right there when you cal
 
 The _Commands_ you'll probably be using most are `reword`, `squash` and `drop`. (And `pick` but that one's there by default)
 
-Take a moment to think about what you see and what we're going to use to achive our two goals from above. I'll wait. 
+Take a moment to think about what you see and what we're going to use to achieve our two goals from above. I'll wait. 
 
 Got a plan? Perfect!
 
@@ -782,7 +782,7 @@ pick 0b22064 Add more text to Alice
 
 Now to getting the two changes of `Alice.txt` into one commit. 
 
-Obviously what we want to do is to `squash` the later of the two into the first one, so let's put that command in place of the `pick` on the second commit chaning `Alice.txt`. For me in the example that's _0b22064_.
+Obviously what we want to do is to `squash` the later of the two into the first one, so let's put that command in place of the `pick` on the second commit changing `Alice.txt`. For me in the example that's _0b22064_.
 
 ```bash
 pick 9e06fca Add text to Alice
@@ -847,7 +847,7 @@ df3ad1d (origin/master, origin/HEAD, master) Add Alice
 <!-- force pushing -->
 ### Public History, why you shouldn't rewrite it, and how to still do it safely
 
-As noted before, changing history is a incredibly useful part of any workflow that involves making a lot of small commits while you work. 
+As noted before, changing history is a incredibly useful part of any work-flow that involves making a lot of small commits while you work. 
 
 While all the small atomic changes make it very easy for you to e.g. verify that with each change your test-suite still passes and if it doesn't, remove or amend just these specific changes, the 100 commits you've made to write `HelloWorld.java` are probably not something you want to share with people. 
 
@@ -861,12 +861,12 @@ At this point is has become _public_ and other people's branches might be based 
 
 The usual advice is to "Never rewrite public history!" and while I repeat that here, I've got to admit, that there is a decent amount of cases in which you might still want to rewrite _public history_. 
 
-In all of theses cases that history isn't 'really' _public_ though. You most certainly don't want to go rewriting history on the _master_ branch of an open source project, or something like your companys _release_ branch. 
+In all of theses cases that history isn't 'really' _public_ though. You most certainly don't want to go rewriting history on the _master_ branch of an open source project, or something like your company's _release_ branch. 
 
 Where you might want to rewrite history are branches that you've `push`ed just to share with some colleagues. 
 
 You might be doing trunk-based development, but want to share something that doesn't even compile yet, so you obviously don't want to put that on the main branch knowingly. 
-Or you might have a workflow in which you share feature branches. 
+Or you might have a work-flow in which you share feature branches. 
 
 Especially with feature branches you hopefully `rebase` them onto the current _master_ frequently. But as we know, a `git rebase` adds our branch's commits as _new_ commits on top of the thing we're basing them on. This rewrites history. And in the case of a shared feature branch it rewrites _public history_. 
 
@@ -878,7 +878,7 @@ Not use shared feature branches?
 
 Admittedly that second one is actually a reasonable answer, but you might still not be able to do that. So the only thing you can do, is to accept rewriting the _public history_ and  `push` the changed history to the _Remote Repository_. 
 
-If you just do a `git push` you'll be notfied that you're not allowed to do that, as your _local_ branch has diverged from the _remote_ one. 
+If you just do a `git push` you'll be notified that you're not allowed to do that, as your _local_ branch has diverged from the _remote_ one. 
 
 You will need to `force` pushing the changes, and overwrite the remote with your local version. 
 
