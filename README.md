@@ -1,10 +1,10 @@
-# git_training
+# Learn `git` concepts not commands
+
+**An interactive git tutorial meant to teach you how git works, not just which commands to execute.**
 
 ---
 
-**An interactive git training meant to teach you how git works, not just which commands to execute.**
-
-Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html)
+Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html).
 
 While I find many git tutorials on the internet to be too focused on what to do instead of how things work, the most invaluable resource for both (and source for this tutorial!) are the [git Book](https://git-scm.com/book/en/v2) and [Reference page](https://git-scm.com/docs). 
 
