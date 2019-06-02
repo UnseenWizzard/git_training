@@ -639,7 +639,7 @@ The figure below visualizes `cherry-pick`ing a range of commits instead of a sin
 ![Cherry-picking commit range](img/cherry_pick_range.png)
 
 ## Rewriting history
-> I'm repeating myself now, but you still remeber [`rebase`](#rebasing) well enough right? Else quickly jump back to that section, before continuing here, as we'll use what we already know when learning about how change history!
+> I'm repeating myself now, but you still remember [`rebase`](#rebasing) well enough right? Else quickly jump back to that section, before continuing here, as we'll use what we already know when learning about how change history!
 
 As you know a `commit` basically contains your changes, a message and few other things. 
 
@@ -895,7 +895,9 @@ By that you can ensure that you don't accidentally wipe any changes someone else
 ![What happens in a push --force-with-lease](img/force_push.png)
 
 
-And on that note I'll leave you with a slightly changed mantra: _Don't rewrite public history unless you're really sure about what you're doing. And if you do, be safe and force-with-lease._
+And on that note I'll leave you with a slightly changed mantra: 
+
+_Don't rewrite public history unless you're really sure about what you're doing. And if you do, be safe and force-with-lease._
 
 
 ## Reading history
