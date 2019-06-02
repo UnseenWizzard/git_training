@@ -2,13 +2,21 @@
 
 **An interactive git tutorial meant to teach you how git works, not just which commands to execute.**
 
+So, you want to use git right? 
+
+But you don't just want to learn commands, you want to understand what you're using? 
+
+Then this is meant for you!
+
+Let's get started!
+
 ---
 
-Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html).
-
-While I find many git tutorials on the internet to be too focused on what to do instead of how things work, the most invaluable resource for both (and source for this tutorial!) are the [git Book](https://git-scm.com/book/en/v2) and [Reference page](https://git-scm.com/docs). 
-
-So if you're still interested when you're done here, go check those out! I do hope the somewhat different concept of this tutorial will aid you in understanding all the other git features detailed there.
+> Based on the general concept from Rachel M. Carmena's blog post on [How to teach Git](https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html).
+> 
+> While I find many git tutorials on the internet to be too focused on what to do instead of how things work, the most invaluable resource for both (and source for this tutorial!) are the [git Book](https://git-scm.com/book/en/v2) and [Reference page](https://git-scm.com/docs). 
+> 
+> So if you're still interested when you're done here, go check those out! I do hope the somewhat different concept of this tutorial will aid you in understanding all the other git features detailed there.
 
 ---
 - [Overview](#overview)
@@ -27,14 +35,6 @@ So if you're still interested when you're done here, go check those out! I do ho
 - [Rewriting history](#rewriting-history)
 - [Reading history](#reading-history)
 ---
-
-So, you want to use git right? 
-
-But you don't just want to learn commands, you want to understand what you're using? 
-
-Then this is meant for you!
-
-Let's get started!
 
 ## Overview
 
