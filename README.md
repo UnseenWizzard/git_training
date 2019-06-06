@@ -42,7 +42,7 @@ In the picture below you see four boxes. One of them stands alone, while the oth
 
 ![git components](img/components.png)
 
-We'll start with the one that's on it's own though. The _Remote Repository_ is where you send your changes when you want to share them with other people, and where you get their changes from. If you've used other version control systems there's nothing interesting about that. 
+We'll start with the one that's on its own though. The _Remote Repository_ is where you send your changes when you want to share them with other people, and where you get their changes from. If you've used other version control systems there's nothing interesting about that. 
 
 The _Development Environment_ is what you have on your local machine. 
 The three parts of it are your _Working Directory_, the _Staging Area_ and the _Local Repository_. We'll learn more about those as we start using git. 
@@ -342,7 +342,7 @@ If you now `git merge change_alice` a fast-forward merge is not possible. Instea
 
 The new commit introduces the changes that we've made on the `change_alice` branch into master. 
 
-As you'll remember from before, revisions in git, aren't only a snapshot of your files but also contain information on where they came from from. Each `commit` has one or more parent commits. Our new `merge` commit, has both the last commit from _master_ and the commit we made on the other branch as it's parents.
+As you'll remember from before, revisions in git, aren't only a snapshot of your files but also contain information on where they came from from. Each `commit` has one or more parent commits. Our new `merge` commit, has both the last commit from _master_ and the commit we made on the other branch as its parents.
 
 ### Resolving conflicts
 
@@ -366,7 +366,7 @@ Auto-merging Bob.txt
 CONFLICT (content): Merge conflict in Bob.txt
 Automatic merge failed; fix conflicts and then commit the result.
 ```
-The same line has changed on both of the branches, and git can't handle this on it's own. 
+The same line has changed on both of the branches, and git can't handle this on its own. 
 
 If you run `git status` you'll get all the usual helpful instructions on how to continue. 
 
@@ -448,7 +448,7 @@ To be more exact what _git_ does after moving _HEAD_ back to the common ancestor
 
 After that it does a `checkout` of the latest commit of the branch you're rebasing on, and then applies each of the stored changed __as a new commit__ on top of that.
 
-So in our original simplified view, we'd assume that after the `rebase` the _0cfc1d2_ commit doesn't point to the common ancestor anymore in it's history, but points to the head of master. 
+So in our original simplified view, we'd assume that after the `rebase` the _0cfc1d2_ commit doesn't point to the common ancestor anymore in its history, but points to the head of master. 
 In fact the _0cfc1d2_ commit is gone, and the `add_patrick` branch starts with a new _0ccaba8_ commit, that has the latest commit of _master_ as its ancestor. 
 We made it look, like our `add_patrick` was based on the current _master_ not an older version of it, but in doing so we re-wrote the history of the branch.  
 At the end of this tutorial we'll learn a bit more about re-writing history and when it's appropriate and inappropriate to do so. 
@@ -525,7 +525,7 @@ Your branch is behind 'origin/fetching_changes_sample' by 1 commit, and can be f
 
 As we have no _working_ or _staged_ changes, we could just execute `git pull` now to get the changes from the _Repository_ all the way into our working area. 
 
-> Pulling will implicitly also `fetch` the _Remote Repository_, but sometimes it is a good idea to do a `fetch` on it's own. 
+> Pulling will implicitly also `fetch` the _Remote Repository_, but sometimes it is a good idea to do a `fetch` on its own. 
 > For example when you want to synchronize any new _remote_ branches, or when you want to make sure your _Local Repository_ is up to date before you do a `git rebase` on something like `origin/master`.
 
 ![Pulling in changes](img/pull.png)
@@ -603,12 +603,12 @@ Thinking that way, the two options you have to get _remote_ changes make a lot o
 
 When you `git pull` the _Local_ and _Remote_ version of a branch will be `merged`. Just like `merging` branches, this will introduce a _merge commit. 
 
-As any _local_ branch is based on it's respective _remote_ version, we can also `rebase` it, so that any changes we may have made locally, appear as if they were based on the latest version that is available in the _Remote Repository. 
+As any _local_ branch is based on its respective _remote_ version, we can also `rebase` it, so that any changes we may have made locally, appear as if they were based on the latest version that is available in the _Remote Repository. 
 To do that, we can use `git pull --rebase` (or the shorthand `git pull -r`). 
 
 As detailed in the section on [Rebasing](#rebasing), there is a benefit in keeping a clean linear history, which is why I would strongly recommend that whenever you `git pull` you do a `git pull -r`. 
 
-> You can also tell git to use `rebase` instead of `merge` as it's default strategy when your `git pull`, by setting the `pull.rebase` flag with a command like this `git config --global pull.rebase true`.
+> You can also tell git to use `rebase` instead of `merge` as its default strategy when your `git pull`, by setting the `pull.rebase` flag with a command like this `git config --global pull.rebase true`.
 
 If you haven't already run `git pull` when I first mentioned it a few paragraphs ago, let's now run `git pull -r` to get the remote changes while making it look like our new commit just happened after them. 
 
@@ -660,7 +660,7 @@ The figure below visualizes `cherry-pick`ing a range of commits instead of a sin
 
 As you know a `commit` basically contains your changes, a message and few other things. 
 
-The 'history' of a branch is made up of all it's commits. 
+The 'history' of a branch is made up of all its commits. 
 
 But lets say you've just made a `commit` and then notice, that you've forgotten to add a file, or you made a typo and the change leaves you with broken code. 
 
@@ -698,7 +698,7 @@ Feel free to change it to something better.
 
 After you're done, take another look at the latest commit with `git show HEAD`.
 
-As you've certainly expected by now, the commit hash is different. The original commit is gone, and in it's place there is a new one, with the combined changes and new commit message. 
+As you've certainly expected by now, the commit hash is different. The original commit is gone, and in its place there is a new one, with the combined changes and new commit message. 
 
 > Note how the other commit data like author and date are unchanged from the original commit. You can mess with those too, if you really want, by using the extra `--author={AUTHOR}` and `--date={DATE}` flags when amending. 
 
@@ -955,7 +955,7 @@ df3ad1d (origin/master, origin/HEAD, master) HEAD@{7}: checkout: moving from mas
 
 There it is. Every single thing we've done, from switching to the branch to doing the `rebase`. 
 
-Quite cool to see the things we've done, but useless on it's own if we messed up somewhere, if it wasn't for the references at the start of each line. 
+Quite cool to see the things we've done, but useless on its own if we messed up somewhere, if it wasn't for the references at the start of each line. 
 
 If you compare the `reflog` output to when we looked at the `log` the last time, you'll see those points relate to commit references, and we can use them just like that. 
 
