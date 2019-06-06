@@ -1,4 +1,4 @@
-# Learn `git` concepts not commands
+# Learn `git` concepts, not commands
 
 **An interactive git tutorial meant to teach you how git works, not just which commands to execute.**
 
@@ -401,7 +401,7 @@ We _stage_ them when we `add Bob.txt`, and then we `commit`.
 
 We already know the commit for the changes we've made to resolve the conflict. It's the _merge commit_ that is always present when merging. 
 
-Should you ever realize in the middle of resolving conflicts that you actually don't want to follow through with the `merge`, you can just `abort` it by running `git commit --abort`. 
+Should you ever realize in the middle of resolving conflicts that you actually don't want to follow through with the `merge`, you can just `abort` it by running `git merge --abort`. 
 
 ## Rebasing
 
