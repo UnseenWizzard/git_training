@@ -56,11 +56,10 @@
   - [ ] Recursion Schemes: catamorphisms, etc.
       - [x] [Understanding F-Algebras](https://bartoszmilewski.com/2013/06/10/understanding-f-algebras/)
       - [x] [An Introduction to Recursion Schemes](http://blog.sumtypeofway.com/an-introduction-to-recursion-schemes/)
-      - [ ] [Win For Recursion Schemes](http://newartisans.com/2018/04/win-for-recursion-schemes/)
       - [x] [Use cata and para for implementing Brzozowski derivatives](https://github.com/awalterschulze/ragax/blob/gh-pages/haskell/deriv/src/FDerive.hs)
-      - [ ] Use a recursion scheme to relabel a tree with ordered numbers
       - [ ] [Functional Pearl: Data types a la carte - Wouter Swierstra](http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf)
   - [x] [Tagless Final Encoding in Haskell](https://jproyo.github.io/posts/2019-03-17-tagless-final-haskell.html)
+  - [x] [Inspection Testing](http://hackage.haskell.org/package/inspection-testing)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [A Guide to GHC's Extensions](https://limperg.de/ghc-extensions/)
   - [ ] [Write you a Haskell - Hindley-Milner Inference](http://dev.stephendiehl.com/fun/006_hindley_milner.html)
