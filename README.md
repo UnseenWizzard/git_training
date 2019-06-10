@@ -93,7 +93,7 @@ The collected changes that you _commit_ are some meaningful chunk of work, so wh
 
 You can also add your _commit message_ right there in the command line if you call `git commit` like this: `git commit -m "Add Bob"`. But because you want to write [good commit messages](https://chris.beams.io/posts/git-commit/) you really should take your time and use the editor.
 
-Now your changes are in your local repository, which is a good place for the to be as long as no one else needs them or you're not yet ready to share them. 
+Now your changes are in your local repository, which is a good place for them to be as long as no one else needs them or you're not yet ready to share them. 
 
 In order to share your commits with the _Remote Repository_ you need to `push` them. 
 
