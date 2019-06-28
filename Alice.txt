@@ -1,2 +1,2 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
-I try to do changes
+I try to do changes and learn how work branches on git.
