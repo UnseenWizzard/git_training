@@ -1,6 +1,10 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 <<<<<<< HEAD
+<<<<<<< HEAD
 I try to do changes and learn how work branches on git.
 =======
 dowfowsfow
+>>>>>>> change_alice
+=======
+Mering it's fun
 >>>>>>> change_alice
