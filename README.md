@@ -350,7 +350,7 @@ So far our changes haven't interfered with each other.
 
 Let's introduce a _conflict_ and then _resolve_ it. 
 
-Create and `checkout` a new branch. You know how, but maybe try using `git checkout -b` to make your live easier. 
+Create and `checkout` a new branch. You know how, but maybe try using `git checkout -b` to make your life easier. 
 I've called mine `bobby_branch`.
 
 On the branch we'll make a change to `Bob.txt`. 
@@ -872,7 +872,7 @@ While all the small atomic changes make it very easy for you to e.g. verify that
 
 Most likely what you want to share with them, are a few well formed changes with nice commit messages telling your colleagues what you did for which reason. 
 
-As long as all those small commits only exist in your _Dev Environment_, you're perfectly save to do a `git rebase -i` and change history to your hearts content. 
+As long as all those small commits only exist in your _Dev Environment_, you're perfectly safe to do a `git rebase -i` and change history to your hearts content. 
 
 Things get problematic when it comes to changing _Public History_. That means anything that has already made it to the _Remote Repository_.
 
