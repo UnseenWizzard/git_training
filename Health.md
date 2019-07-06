@@ -40,10 +40,12 @@
 
   - [x] Planking
   - [x] Squats
-  - [x] Strecth Lower Back
-  - [x] Strecth Shoulders
+  - [x] Stretch Lower Back
+  - [x] Stretch Shoulders and do shoulder rolls
   - [x] Walk at least 150 minutes a week
-  - [ ] [Fitness Blender](https://www.youtube.com/channel/UCiP6wD_tYlYLYh3agzbByWQ)  
+  - [ ] [Ergonomics Expert Explains How to Set Up Your Desk](https://youtu.be/F8_ME4VwTiw)
+  - [ ] [8fit](https://8fit.com/)
+  - [ ] [Fitness Blender](https://www.youtube.com/channel/UCiP6wD_tYlYLYh3agzbByWQ)
 
 ## Disease
 
