@@ -27,6 +27,10 @@
       -  [x] [Brain healthy foods to fight aging](https://nutritionfacts.org/video/brain-healthy-foods-to-fight-aging/)
       -  [ ] [Lutein and Brain Function](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4638416/)
       
+    Blueberries 45g a day reduces inflamation:
+    
+      -  [x] [Berries for Inflammation and Osteoarthritis Treatment](https://nutritionfacts.org/video/berries-for-inflammation-and-osteoarthritis-treatment/)
+      
 ## Omega 3
 
   - [x] [Fish oil: what the prescriber needs to know](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1526555/)
