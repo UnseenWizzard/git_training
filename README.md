@@ -933,7 +933,7 @@ So theres a record of any time you make a `commit`, but also of when you `reset`
 
 Having read this tutorial so far, you see how this might come in handy when we've messed up a `rebase` right? 
 
-We know that a `rebase` moves the `HEAD` of our branch to the point we're basing it on and the applies our changes. An interactive `rebase` works similarly, but might do things to those commits like _squashing_ or _rewording_ them. 
+We know that a `rebase` moves the `HEAD` of our branch to the point we're basing it on and then applies our changes. An interactive `rebase` works similarly, but might do things to those commits like _squashing_ or _rewording_ them. 
 
 If you're not still on the branch on which we practiced [interactive rebase](#interactive-rebase), switch to it again, as we're about to practice some more there. 
 
