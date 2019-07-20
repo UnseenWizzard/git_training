@@ -109,6 +109,7 @@
 
 ## Rust
 
+  - [ ] [Programming Rust: Fast, Safe Systems Development](https://www.amazon.co.uk/Programming-Rust-Fast-Systems-Development-ebook/dp/B077NSY211)
   - [ ] [Achieving Warp Speed in Rust](https://gist.github.com/jFransham/369a86eff00e5f280ed25121454acec1)
   
 ## Lisp
@@ -122,7 +123,7 @@
  
 ### Pie
 
-  - [ ] [The Little Typer](https://mitpress.mit.edu/books/little-typer) and [exercises](https://github.com/awalterschulze/the-little-typer-exercises)
+  - [x] [The Little Typer](https://mitpress.mit.edu/books/little-typer) and [exercises](https://github.com/awalterschulze/the-little-typer-exercises)
 
 ### Coq
 
