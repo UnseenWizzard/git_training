@@ -1,2 +1,2 @@
 Hi! I'm Bob. I've been here some time.
-New line in bob.
+Same line in bob.
