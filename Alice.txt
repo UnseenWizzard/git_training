@@ -1,4 +1,4 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
-This is a new line in Alice!
+This is a new line in Alice! Change second line.
 New line in Alice.
 Another line for Alice!
