@@ -5,6 +5,9 @@
   - [ ] [Intro to Theoretical Computer Science](https://www.udacity.com/course/intro-to-theoretical-computer-science--cs313)
   - [ ] [Godel's Proof - Ernest Nagel](https://www.amazon.com/Godels-Proof-Ernest-Nagel-ebook/dp/B004DL2JCE)
   - [ ] [The Annotated Turing - Charles Petzold](https://www.amazon.com/Annotated-Turing-Through-Historic-Computability/dp/0470229055)
+  - [ ] [An Axiomatic Basis for Computer Programming - C. A. R. Hoare](https://www.cs.cmu.edu/~crary/819-f09/Hoare69.pdf)
+  - [ ] [Assigning Meanings to Programs - Robert W. Floyd](http://www.cs.tau.ac.il/~nachumd/term/FloydMeaning.pdf)
+  - [ ] [Checking a large routine - Alan Turing](http://www.turingarchive.org/browse.php/b/8)
   
 ## Compilers
 
