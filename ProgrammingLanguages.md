@@ -5,6 +5,7 @@
   - [ ] [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html) or [video series](https://www.youtube.com/watch?v=2Op3QLzMgSY&feature=youtu.be)
   - [ ] [Winter School on Denotational Semantics](https://www.youtube.com/watch?v=EI5i54VrAbc&list=PLvK_yEuhMQ0wxzN_xkkMA4VfFPAjJgnf0)
   - [ ] [Thinking with Types - Type-Level Programming in Haskell](http://thinkingwithtypes.com/)
+  - [x] [Inventing Monads - Kabir Shah](https://blog.kabir.sh/posts/inventing-monads.html)
 
 ## [Elm](http://elm-lang.org/)
 
