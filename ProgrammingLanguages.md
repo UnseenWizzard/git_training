@@ -6,6 +6,8 @@
   - [ ] [Winter School on Denotational Semantics](https://www.youtube.com/watch?v=EI5i54VrAbc&list=PLvK_yEuhMQ0wxzN_xkkMA4VfFPAjJgnf0)
   - [ ] [Thinking with Types - Type-Level Programming in Haskell](http://thinkingwithtypes.com/)
   - [x] [Inventing Monads - Kabir Shah](https://blog.kabir.sh/posts/inventing-monads.html)
+  - [ ] [A reckless introduction to Hindley-Milner type inference
+](http://reasonableapproximation.net/2019/05/05/hindley-milner.html)
 
 ## [Elm](http://elm-lang.org/)
 
