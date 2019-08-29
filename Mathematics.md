@@ -48,6 +48,7 @@
   - [ ] [Adventures with Types](https://www.youtube.com/watch?v=6COvD8oynmI)
   - [ ] [SQL in the type system where it belongs](http://ren.zone/articles/opaleye-sot)
   - [ ] [Structural type system](https://en.wikipedia.org/wiki/Structural_type_system)
+  - [ ] [Polymorphism, Subtyping, and Type Inference in MLsub](https://www.cl.cam.ac.uk/~sd601/papers/mlsub-preprint.pdf)
   
 ## Topology
 
