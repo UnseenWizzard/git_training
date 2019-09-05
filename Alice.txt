@@ -2,4 +2,9 @@ Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 test1
 This is wonderfull.
 I like it.
+<<<<<<< HEAD
 
+=======
+Test
+I like the wonderfull feeling
+>>>>>>> development
