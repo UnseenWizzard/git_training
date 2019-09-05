@@ -1,3 +1,7 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 
+<<<<<<< HEAD
 test1
+=======
+I like it.
+>>>>>>> development
