@@ -3,7 +3,13 @@ test1
 This is wonderfull.
 I like it.
 Test
+<<<<<<< HEAD
 I like the wonderfull feeling.
 ---------------------------------------------------------------------
 second para
 
+=======
+I like the wonderfull feeling
+--------------------------------------------
+crazy right
+>>>>>>> development
