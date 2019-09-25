@@ -376,12 +376,12 @@ First we have to resolve the conflict by hand.
 If you open `Bob.txt` you'll see something similar to this (I've truncated whatever we might have put on the second line before): 
 
 ```Diff
-<<<<<<< HEAD
-Hi! I'm Bob. I've been here for a while now.
-=======
-Hi! I'm Bobby. I'm new here.
->>>>>>> bobby_branch
-[... whatever you've put on line 2]
+ <<<<<<< HEAD
+ Hi! I'm Bob. I've been here for a while now.
+ =======
+ Hi! I'm Bobby. I'm new here.
+ >>>>>>> bobby_branch
+ [... whatever you've put on line 2]
 ```
 
 On top you see what has changed in `Bob.txt` on the current HEAD, below you see what has changed in the branch we're merging in.
@@ -931,7 +931,7 @@ So there's a record of any time you make a `commit`, but also of when you `reset
 
 Having read this tutorial so far, you see how this might come in handy when we've messed up a `rebase`, right? 
 
-We know that `rebase` moves the `HEAD` of our branch to the point we're basing it on and the applies our changes. An interactive `rebase` works similarly, but might do things to those commits like _squashing_ or _rewording_ them. 
+We know that a `rebase` moves the `HEAD` of our branch to the point we're basing it on and then applies our changes. An interactive `rebase` works similarly, but might do things to those commits like _squashing_ or _rewording_ them. 
 
 If you're not still on the branch on which we practiced [interactive rebase](#interactive-rebase), switch to it again, as we're about to practice some more there. 
 
