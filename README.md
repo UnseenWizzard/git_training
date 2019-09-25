@@ -73,7 +73,7 @@ What `git clone` also does, is create a new folder wherever you called it. There
 
 ## Adding new things
 
-Someone already put a file named `Alice.txt` into the _Remote Repository_. It's kind of lonely there, let's create a new file and call it `Bob.txt`. 
+Someone already put a file named `Alice.txt` into the _Remote Repository_. It's kind of lonely there, so let's create a new file and call it `Bob.txt`. 
 
 What you've just done is add the file to your _Working Directory_. 
 There are two kinds of files in your _Working Directory_: _tracked_ files that git knows about and _untracked_ files that git doesn't know about (yet). 
@@ -148,7 +148,7 @@ index 8eb57c4..3ed0e1b 100644
 
 As the change is what we wanted, let's `git add Bob.txt` to stage the current state of the file. 
 
-Now we're ready to `commit` what we just did. I went with `git commit -m "Add text to Bob"` because I felt that such a small change writing one line would be enough. 
+Now we're ready to `commit` what we just did. I went with `git commit -m "Add text to Bob"` because I felt that for such a small change writing one line would be enough. 
 
 As we know, the changes are now in the _Local Repository_. 
 We might still want to know what change we just _committed_ and what was there before. 
@@ -197,11 +197,11 @@ Here we see a few interesting things:
 
 > Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html).
 
-To compare that commit and a previous one we can do `git diff <commit>^!`, where the `^!` tells git to compare to the previous commit. So in this case I run `git diff 87a4ad48d55e5280aa608cd79e8bce5e13f318dc^!`.
+To compare that commit and a previous one we can do `git diff <commit>^!`, where the `^!` tells git to compare the commit to the one that came before it. So in this case I run `git diff 87a4ad48d55e5280aa608cd79e8bce5e13f318dc^!`.
 
 We can also do `git diff 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e 87a4ad48d55e5280aa608cd79e8bce5e13f318dc` for the same result and in general to compare any two commits. Note that the format here is `git diff <from commit> <to commit>`, so our new commit comes second.
 
-In the diagram below you again see the different stages of a change and the corrisponding diff commands. 
+In the diagram below you again see the different stages of a change and the corresponding diff commands. 
 
 ![States of a change an related diff commands](img/diffs.png)
 
@@ -290,7 +290,7 @@ If you want to also see the _remote_ branches your _Local Repository_ knows, you
 
 Now we can call the suggested `git push --set-upstream origin change_alice`, and `push` the changes on our branch to a new _remote_. This will create a `change_alice` branch on the _Remote Repository_ and set our _local_ `change_alice` to track that new branch. 
 
-> There is another option if we actually want our branch to track something that already exists on the _Remote Repository_. Maybe a colleague has already pushed some changes, while we were working on something related to our local branch, and we'd like to integrate the two. Then we could just set the _upstream_ for our `change_alice` branch to a new _remote_ by using `git branch --set-upstream-to=origin/change_alice` and from there to track the _remote_ branch.
+> There is another option if we actually want our branch to track something that already exists on the _Remote Repository_. Maybe a colleague has already pushed some changes, while we were working on some related issue on our local branch, and we'd like to integrate the two. Then we could just set the _upstream_ for our `change_alice` branch to a new _remote_ by using `git branch --set-upstream-to=origin/change_alice` and from there to track the _remote_ branch.
 
 After that went through have a look at your _Remote Repository_ on github, your branch will be there, ready for other people to see and work with. 
 
