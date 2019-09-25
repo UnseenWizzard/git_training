@@ -238,7 +238,7 @@ While your _Working Directory_ and _Staging Area_ don't really care about branch
 
 You can think of _branches_ in git as pointers, pointing to a series of commits. When you `commit`, you add to whatever you're currently pointing to. 
 
-Just adding a branch, doesn't directly take you there, it just creates such pointer. 
+Just adding a branch, doesn't directly take you there, it just creates such a pointer. 
 In fact the state your _Local Repository_ is currently at, can be viewed as another pointer, called _HEAD_, which points to what branch and commit you are currently at. 
 
 If that sounds complicated the diagrams below will hopefully help clear things up a bit:
