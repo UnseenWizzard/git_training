@@ -197,7 +197,7 @@ In there we see a few interesting things:
 
 > Note that the actual commit hashes will be different for you. If you want to know how exactly git arrives at those revision IDs have a look at [this interesting article ](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html).
 
-To compare that commit and the one one before we can do `git diff <commit>^!`, where the `^!` tells git to compare to the commit one before. So in this case I run `git diff 87a4ad48d55e5280aa608cd79e8bce5e13f318dc^!`
+To compare that commit and the one one before we can do `git diff <commit>^! (where the `^!` tells git to compare to the commit one before) In this case I run `git diff 87a4ad48d55e5280aa608cd79e8bce5e13f318dc^!`
 
 We can also do `git diff 8af2ff2a8f7c51e2e52402ecb7332aec39ed540e 87a4ad48d55e5280aa608cd79e8bce5e13f318dc` for the same result and in general to compare any two commits. Note that the format here is `git diff <from commit> <to commit>`, so our new commit comes second.
 
