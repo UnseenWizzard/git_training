@@ -1,1 +1,2 @@
-Hi! I'm Alice. I'm a file someone added to this repository a while ago.
+Hi, this is edited version of file from origional clonned file. 
+
