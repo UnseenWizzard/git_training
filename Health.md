@@ -31,6 +31,8 @@
     
       -  [x] [Berries for Inflammation and Osteoarthritis Treatment](https://nutritionfacts.org/video/berries-for-inflammation-and-osteoarthritis-treatment/)
       
+  - [ ] [https://examine.com/](https://examine.com/) - Nutrition and supplement information based on science
+      
 ## Omega 3
 
   - [x] [Fish oil: what the prescriber needs to know](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1526555/)
