@@ -129,6 +129,8 @@
 
 ### Coq
 
+  - [x] [Coq in a Hurry](https://cel.archives-ouvertes.fr/file/index/docid/459139/filename/coq-hurry.pdf) and do [Exercises](https://github.com/awalterschulze/coq_in_a_hurry_exercises)
+  - [ ] [Certified Programming with Dependent Types - Adam Chlipala](http://adam.chlipala.net/cpdt/)
   - [ ] [Software Foundations](https://softwarefoundations.cis.upenn.edu/lf-current/toc.html)
 
 ### Isabella
