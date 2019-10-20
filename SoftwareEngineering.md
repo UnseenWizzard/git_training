@@ -10,7 +10,7 @@
   
 ## Abstraction
 
-  - [x] [Haxl: A Big Hammer for Concurrency] (https://www.youtube.com/watch?v=sT6VJkkhy0o)
+  - [x] [Haxl: A Big Hammer for Concurrency](https://www.youtube.com/watch?v=sT6VJkkhy0o)
   - [x] [Denotational Design: From Meanings To Programs - Conal Elliott](https://www.youtube.com/watch?v=bmKYiUOEo2A)
   - [x] [Abstraction and Learning with Runar Bjarnason](https://corecursive.com/027-abstraction-with-runar-bjarnason/)
   
