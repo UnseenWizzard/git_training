@@ -8,18 +8,15 @@
 
   - [x] [Understanding Copyright and Licenses](https://www.smashingmagazine.com/2011/06/understanding-copyright-and-licenses/)
   
-## API Design
+## Abstraction
 
+  - [x] [Haxl: A Big Hammer for Concurrency] (https://www.youtube.com/watch?v=sT6VJkkhy0o)
   - [x] [Denotational Design: From Meanings To Programs - Conal Elliott](https://www.youtube.com/watch?v=bmKYiUOEo2A)
   - [x] [Abstraction and Learning with Runar Bjarnason](https://corecursive.com/027-abstraction-with-runar-bjarnason/)
   
 ## Optimization
 
   - [x] [Achieving Warp Speed in Rust](https://gist.github.com/jFransham/369a86eff00e5f280ed25121454acec1)
-  
-## Multiprocessing
-
-  - [x] [Stabbing yourself with a fork() in a multiprocessing.Pool full of sharks](https://codewithoutrules.com/2018/09/04/python-multiprocessing/)
   
 ## Distributed Systems
 
