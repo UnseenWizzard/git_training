@@ -35,8 +35,6 @@ Conclusion: [IG](https://www.ig.com/uk) Just ignore the spread betting, their st
   - [N26](https://www.n26.com) Based in Germany and useful for credit card.
   - [Revolut](https://www.revolut.com/) Based in UK and useful for currency exchange.
   - [Monzo](https://monzo.com/) Based in UK and useful for direct debit.
-  - [Glint](https://glintpay.com/) Gold
-  - [Bettr](https://bettr.finance) Based in South Africa
 
 ## Crypto Currencies
 
