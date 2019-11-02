@@ -113,6 +113,7 @@
 ## Rust
 
   - [x] [Programming Rust: Fast, Safe Systems Development](https://www.amazon.co.uk/Programming-Rust-Fast-Systems-Development-ebook/dp/B077NSY211)
+  - [x] [Tokio - Documentation](https://tokio.rs/docs/getting-started/hello-world/)
   
 ## Lisp
 
