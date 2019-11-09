@@ -8,6 +8,7 @@
   - [x] [Investing: Time in the market vs timing the market?](https://www.youtube.com/watch?v=vLethGKiP24)
   - [x] [Investing: Don’t sell your winners](https://www.youtube.com/watch?v=f7FS5JC-DB0)
   - [x] [How I lost $350,000 Day Trading stocks and what I learned from it - techlead](https://youtu.be/5IcvRe8bQhU)
+  - [x] [Upcoming 2020 Recession: How To Prepare For The Market Crash](https://www.youtube.com/watch?v=ElyhByagx1s) - Dividend Aristocrats
   
 ## ETFs and ETCs
 
