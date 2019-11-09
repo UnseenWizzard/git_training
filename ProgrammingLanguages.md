@@ -114,6 +114,8 @@
 
   - [x] [Programming Rust: Fast, Safe Systems Development](https://www.amazon.co.uk/Programming-Rust-Fast-Systems-Development-ebook/dp/B077NSY211)
   - [x] [Tokio - Documentation](https://tokio.rs/docs/getting-started/hello-world/)
+  - [x] [Advanced Lifetimes - The Rust Programming Language](https://doc.rust-lang.org/1.30.0/book/second-edition/ch19-02-advanced-lifetimes.html
+)
   
 ## Lisp
 
