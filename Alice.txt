@@ -10,3 +10,5 @@ you love cakess , I love cakes also
 just to see what will pull do
 
 changes made to see how stash works
+
+adding change to see how pull will work with conflicts
