@@ -9,6 +9,11 @@ you love cakess , I love cakes also
 
 just to see what will pull do
 
+
+interactive rebase
+
+uuu becoming intersting 
+
 changes made to see how stash works
 
 adding change to see how pull will work with conflicts
