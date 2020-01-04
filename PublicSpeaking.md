@@ -2,6 +2,7 @@
 
   - [x] [Presentation Skills Series - Lighthouse Communications](https://www.youtube.com/playlist?list=PLcbv9zftX5dac0z5W-rwDfcSKXTCpOCbB)
   - [ ] [Speaker Starter Kit](https://github.com/coryhouse/speaker-starter-kit)
+  - [ ] [How to write a successful conference proposal](https://dave.cheney.net/2017/02/12/how-to-write-a-successful-conference-proposal)
   
 ## Tips
 
