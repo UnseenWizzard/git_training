@@ -63,6 +63,7 @@
       - [ ] [Functional Pearl: Data types a la carte - Wouter Swierstra](http://www.cs.ru.nl/~W.Swierstra/Publications/DataTypesALaCarte.pdf)
   - [x] [Tagless Final Encoding in Haskell](https://jproyo.github.io/posts/2019-03-17-tagless-final-haskell.html)
   - [x] [Inspection Testing](http://hackage.haskell.org/package/inspection-testing)
+  - [ ] [hs-speedscope](https://mpickering.github.io/posts/2019-11-07-hs-speedscope.html)
   - [ ] [Fold and Unfold for Program Semantics - Graham Hutton](http://www.cs.nott.ac.uk/~pszgmh/semantics.pdf)
   - [ ] [A Guide to GHC's Extensions](https://limperg.de/ghc-extensions/)
   - [ ] [Write you a Haskell - Hindley-Milner Inference](http://dev.stephendiehl.com/fun/006_hindley_milner.html)
