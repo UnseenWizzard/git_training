@@ -9,7 +9,7 @@
   - [ ] [Assigning Meanings to Programs - Robert W. Floyd](http://www.cs.tau.ac.il/~nachumd/term/FloydMeaning.pdf)
   - [ ] [Checking a large routine - Alan Turing](http://www.turingarchive.org/browse.php/b/8)
   
-## Compilers
+## Languages
 
   - [ ] [Awesome Compilers](https://github.com/aalhour/awesome-compilers)
 
@@ -19,8 +19,12 @@
   - [x] [Learn You a gocc for Great Good - Marius Ackerman](https://raw.githubusercontent.com/goccmack/gocc/master/doc/gocc_user_guide.pdf)
   - [x] [Parsing Expression Grammars: A Recognition-Based Syntactic Foundation](http://bford.info/pub/lang/peg.pdf)
   - [x] [Combinator Parsers A Short Tutorial](http://www.cs.uu.nl/research/techreps/repo/CS-2008/2008-044.pdf)
+  
+### Language Design
+ 
+  - [x] [Protobuffers Are Wrong](https://reasonablypolymorphic.com/blog/protos-are-wrong/)
 
-## Automata
+### Automata
 
   - [x] [Tree Automata and Tree Grammars - Joost Engelfriet](https://arxiv.org/pdf/1510.02036.pdf)
   - [x] [Lecture 6: Alternating Automata](http://www.cmi.ac.in/~kumar/words/lecture06.pdf)
