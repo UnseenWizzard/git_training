@@ -1,1 +1,3 @@
 Hi! I'm Bob. I'm new here.
+And here's some more text that I am adding.
+and now there's even more.
