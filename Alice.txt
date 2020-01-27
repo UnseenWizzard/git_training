@@ -1,3 +1,4 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 This is the second line.
 This is a third line for merging divergent branches.
+This is line 4.
