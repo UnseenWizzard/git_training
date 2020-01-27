@@ -1,1 +1,2 @@
 Hi! I'm Bob. I'm new here.
+This is a secondary edit for merging divergent branches.
