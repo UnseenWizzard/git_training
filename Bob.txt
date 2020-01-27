@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Hi! I'm Bob. I've been here for a while.
+=======
+Hi! I'm Bob 2.0. I'm new here.
+>>>>>>> Bob2
 This is a secondary edit for merging divergent branches.
