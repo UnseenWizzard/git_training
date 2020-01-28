@@ -2,3 +2,4 @@ Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 I do not like to dance.
 I like pineapples.
 Deleted a line via web.
+Alice loves spaghetti. 
