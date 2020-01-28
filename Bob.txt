@@ -1,3 +1,4 @@
 Hi! I'm Bobby. I've been here for a while now.
 Merging divergent branches.
 Resolving conflicts
+Rewriting history
