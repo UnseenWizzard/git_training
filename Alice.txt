@@ -2,4 +2,4 @@ Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 Branching part.
 Merging divergent branches
 Rebasing
-Updating the Dev Environment with remote changes
+Updating the Dev Environment with remote changes for Alice
