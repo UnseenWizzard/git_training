@@ -3,5 +3,5 @@ Branching part.
 Merging divergent branches
 Rebasing
 Updating the Dev Environment with remote changes for Alice
-Updating the Dev Environment with remote changes
+Pulling with Conflicts
 Pulling Changes
