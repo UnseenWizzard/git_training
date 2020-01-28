@@ -1,3 +1,7 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
+<<<<<<< HEAD
 I do not like to dance.
 I like pineapples.
+=======
+Added a line via web.
+>>>>>>> 7e4f8c02ae26097e4103b270424f943216cf3fa2
