@@ -62,3 +62,6 @@
   - [ ] [Infinities and Skepticism in Mathematics- N J Wildberger](https://www.youtube.com/watch?v=E_dGqavx5AU)
   - [ ] [Paradox and Infinity - Edx - Agustin Rayo](https://www.edx.org/course/paradox-infinity-mitx-24-118x-0)
   
+## Math with numbers
+
+  - [x] [Feigenbaum constant - This equation will change how you see the world](https://www.youtube.com/watch?v=ovJcsL7vyrk)
