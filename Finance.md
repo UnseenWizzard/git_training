@@ -16,6 +16,7 @@
   - [x] [Powershares NASDAQ-100](https://www.youtube.com/watch?v=iwDtkL6l9d8)
   - [x] [iShares Physical Gold ETC](https://m.youtube.com/watch?v=sLKBsgf-Fcs)
   - [x] [iShares Core MSCI Emerging Markets IMI ETF](https://www.youtube.com/watch?v=b2MCFbpG4BM&feature=youtu.be)
+  - [x] S&P 500 Dividend Aristocrats
   
 ## United Kingdom
 
