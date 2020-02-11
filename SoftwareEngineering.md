@@ -1,5 +1,8 @@
 # Software Engineering
 
+  - [ ] [Simple Made Easy - Rich Hickey](https://www.infoq.com/presentations/Simple-Made-Easy/)
+  - [ ] [The Design of Datomic - Rich Hickey](https://www.infoq.com/presentations/The-Design-of-Datomic/)  
+
 ## Time
 
   - [x] [The Problem with Time & Timezones - Computerphile](https://www.youtube.com/watch?v=-5wpm-gesOY)
