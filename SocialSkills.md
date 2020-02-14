@@ -4,6 +4,7 @@ So much work to do here
 
   - [x] [Performance vs Trust by Simon Sinek](https://www.youtube.com/watch?v=YPDmNaEG8v4)
   - [ ] [Privacy at Work: Architectural Correlates of Job Satisfaction and Job Performance - Eric Sundstrom, Robert E. Burt and Douglas Kamp](https://journals.aom.org/doi/abs/10.5465/255498)
+  - [x] [This could be why you're depressed or anxious - Johann Hari](https://www.ted.com/talks/johann_hari_this_could_be_why_you_re_depressed_or_anxious?language=en)
 
 ## Conflict Resolution
 
