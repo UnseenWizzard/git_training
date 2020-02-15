@@ -136,6 +136,7 @@
 
   - [x] [Coq in a Hurry](https://cel.archives-ouvertes.fr/file/index/docid/459139/filename/coq-hurry.pdf) and [exercises](https://github.com/awalterschulze/coq_in_a_hurry_exercises)
   - [x] [3110 Coq Tactics Cheatsheet](https://www.cs.cornell.edu/courses/cs3110/2018sp/a5/coq-tactics-cheatsheet.html)
+  - [x] [A Tutorial on Coinduction and Bisimulation - slides - Joonwon Choi](https://ropas.snu.ac.kr/~jwchoi/talks/snt130315.pdf)
   - [ ] [Certified Programming with Dependent Types - Adam Chlipala](http://adam.chlipala.net/cpdt/)
   - [ ] [Software Foundations](https://softwarefoundations.cis.upenn.edu/lf-current/toc.html)
 
