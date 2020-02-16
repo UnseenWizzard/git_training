@@ -33,7 +33,7 @@
       
   - [ ] [examine.com](https://examine.com/) - Nutrition and supplement information based on science
       
-## Omega 3
+## Arthritis
 
   - [x] [Fish oil: what the prescriber needs to know](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1526555/)
         Although modest increases in intake of n3 LC PUFAs can reduce cardiovascular risk, relatively large doses (≥ 2.7 g/day         EPA plus DHA) are required for anti-inflammatory effects.
@@ -41,6 +41,10 @@
         [MorEPA Plus 850g per capsule](http://www.minami-nutrition.com/products/morepa-plus)
   - [x] [What Are the Real Differences Between EPA and DHA?](https://blog.zonediet.com/drsears/blog/what-are-the-real-differences-between-epa-and-dha)
         EPA is better than DHA for anti inflamation.
+        
+  - [x] [BLAME - Clint Paddison](https://www.youtube.com/watch?v=G96U17hA-FI)
+        Leaky gut => undigested protiens in body => anti bodies to attack protiens => anti bodies to attack joints
+        - [ ] [Leaky Gut As a Danger Signal for Autoimmune Diseases](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5440529/)
           
 ## Exercise
 
