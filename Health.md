@@ -44,7 +44,8 @@
         
   - [x] [BLAME - Clint Paddison](https://www.youtube.com/watch?v=G96U17hA-FI)
         Leaky gut => undigested protiens in body => anti bodies to attack protiens => anti bodies to attack joints
-        - [ ] [Leaky Gut As a Danger Signal for Autoimmune Diseases](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5440529/)
+        
+  - [ ] [Leaky Gut As a Danger Signal for Autoimmune Diseases](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5440529/)
           
 ## Exercise
 
