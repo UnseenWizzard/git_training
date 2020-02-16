@@ -2,6 +2,8 @@
 
 ## Diet
 
+  - [x] [7 Signs You Need To Eat Probiotic Rich Foods](https://www.youtube.com/watch?v=j3nChO3M208)
+  
   - [x] [Low Carb & Keto: What about Cholesterol?](https://www.youtube.com/watch?v=b7zWNabebxs)
         Vitamin K2 found in animal fat is used to transport calcium from your heart to your bones.
         This reduces mortality rates from heart desease, where Vitamin K1 found in soy beans, does not.
