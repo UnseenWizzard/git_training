@@ -5,7 +5,7 @@
   - [x] [7 Signs You Need To Eat Probiotic Rich Foods - GojiMan](https://www.youtube.com/watch?v=j3nChO3M208)
   
   - [x] [14 Signs & Symptoms Of Eating Too Much Fat - GojiMan](https://youtu.be/RckqL1IVnXg?t=147)
-        Eating too much fat, can lead to bloating and burping
+        Eating too much fat can lead to: bloating and burping, pain in right shoulder
   
   - [x] [Low Carb & Keto: What about Cholesterol?](https://www.youtube.com/watch?v=b7zWNabebxs)
         Vitamin K2 found in animal fat is used to transport calcium from your heart to your bones.
