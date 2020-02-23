@@ -9,6 +9,7 @@
 
 ## Abstract Algebra
 
+  - [x] [What Does It Mean to Be a Number? (The Peano Axioms) | Infinite Series](https://www.youtube.com/watch?v=3gBoP8jZ1Is)
   - [x] [Abstract Algebra on Socratica](https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6)
   - [ ] [Algebra - Saunders Mac Lane](https://www.amazon.com/gp/product/0821816462/ref=dbs_a_def_rwt_bibl_vppi_i1)
 
