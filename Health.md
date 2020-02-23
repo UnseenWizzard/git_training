@@ -39,6 +39,7 @@
   - [ ] [examine.com](https://examine.com/) - Nutrition and supplement information based on science
   
   - [x] [Building a healthy gut (podcast) - Dr Will Bulsiewicz](https://plantproof.com/building-a-healthy-gut-with-dr-will-bulsiewicz/)
+  
         * 95% serotonin created by gut bacteria. Too much serotonin => diarea, Too little serotonin => constipation 
         * IBS and Anxiety are connected
         * Antibiotics is a napalm bomb for bacteria with permanent results, but of which can mostly be recovered in 2 years
