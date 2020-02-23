@@ -37,7 +37,19 @@
       -  [x] [Berries for Inflammation and Osteoarthritis Treatment](https://nutritionfacts.org/video/berries-for-inflammation-and-osteoarthritis-treatment/)
       
   - [ ] [examine.com](https://examine.com/) - Nutrition and supplement information based on science
-      
+  
+  - [x] [Building a healthy gut (podcast) - Dr Will Bulsiewicz](https://plantproof.com/building-a-healthy-gut-with-dr-will-bulsiewicz/)
+        * 95% serotonin created by gut bacteria. Too much serotonin => diarea, Too little serotonin => constipation 
+        * IBS and Anxiety are connected
+        * Antibiotics is a napalm bomb for bacteria with permanent results, but of which can mostly be recovered in 2 years
+        * Ibuprofen, aspirin, etc. also damage the gut
+        * Diversity of the plants that you eat is what is most important for health
+        * 90 percent plant based diet => longest life
+        * Prebiotic fiber (only plants and all plants) creates short chain fatty acids, which are energy for your gut bacteria which makes them better at their job 
+        * Eating more beans makes you live longer, they are an incredible source of fibre
+        * Garlic, asparagus, chicory root are also has great fibre
+        * Fermentation imitates your digestion. It is like a super food. Eat on daily basis. Get variety.
+
 ## Arthritis
 
   - [x] [Fish oil: what the prescriber needs to know](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1526555/)
