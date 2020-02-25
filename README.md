@@ -22,7 +22,7 @@ _Adapted from Nice Reidman's interactive Git tutorial
 - Get your copy of the remote repo onto your machine
 
 
-```
+```sh
 git clone https://github.com/{YOUR USERNAME}/git_training.git
 ```
 
@@ -35,26 +35,38 @@ git clone https://github.com/{YOUR USERNAME}/git_training.git
 ## Adding new things
 - Move to the repo directory and add a new file
 
-```
+```sh
 cd git_training
 echo "This is Bob" > Bob.txt
 ```
 - Check the status of your working directory
-```
+
+```sh
 git status
 ```
 <img src="./images/teachingGit/3-tracked-untracked.png" width="500"/>
 
 
-## tEST Adding new things
-- stuff
--
-<!-- ```
-git add Bob.txt
-git commit -m "Added Bob"
-``` -->
+## Adding Changes
+<img src="./images/teachingGit/4-add-commit-push.png" width="700"/>
 
-<!-- <img src="./images/teachingGit/4-add-commit-push.png" width="700"/> -->
+## Adding Changes
+- Add changes to the staging area
+
+```sh
+git add Bob.txt
+git diff --staged
+```
+- Commit changes to the local repo
+
+```sh
+git commit -m "Added Bob"
+```
+- Push changes to the remote
+
+```sh
+git push
+```
 
 ## Commit Messages
 
@@ -70,3 +82,86 @@ e142fd1 Add tests for ImportSelector meta-data
 ac8326d Polish mockito usage
 </code></pre>
 </div>
+
+
+<!-- # Branching -->
+## Branching
+![branching](./images/branching.svg "Branching")
+
+## Branching
+- Create a new branch called `updateAlice`
+
+```sh
+git branch updateAlice
+```
+
+- Switch to the branch we just created
+
+```sh
+git checkout updateAlice
+```
+
+- Switch back to master
+
+```sh
+git checkout master
+git branch
+```
+
+- Delete branch `updateAlice`
+
+```sh
+git branch -d updateAlice
+```
+
+- Shortcut: create and update branch in one go
+
+```sh
+git checkout -b updateAlice
+git branch
+```
+
+## Branching
+- Make a change to `Alice.txt` by adding more text
+
+```sh
+echo "More content added" >> Alice.txt
+```
+
+- Add and commit this change
+
+```sh
+git add Alice.txt
+git commit -m "Updated Alice"
+```
+
+- Push these changes to the remote repository
+
+```sh
+git push
+fatal: The current branch updateAlice has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin updateAlice
+```
+
+## Merging
+![merging](./images/merging.png "Merging")
+
+
+## Merge Conflicts
+
+```
+<<<<<<< HEAD
+Hi! I'm Bob. I've been here for a while now.
+=======
+Hi! I'm Bobby. I'm new here.
+>>>>>>> bobby_branch
+[... whatever you've put on line 2]
+```
+
+## Rebasing
+
+## Getting Remote Changes
+
+## Stashing
