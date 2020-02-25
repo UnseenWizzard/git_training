@@ -43,8 +43,30 @@ echo "This is Bob" > Bob.txt
 ```
 git status
 ```
-<img src="./images/teachingGit/3-tracked-untracked.png" width="700"/>
+<img src="./images/teachingGit/3-tracked-untracked.png" width="500"/>
 
-## Adding new things
 
-<img src="./images/teachingGit/4-add-commit-push.png" width="700"/>
+## tEST Adding new things
+- stuff
+-
+<!-- ```
+git add Bob.txt
+git commit -m "Added Bob"
+``` -->
+
+<!-- <img src="./images/teachingGit/4-add-commit-push.png" width="700"/> -->
+
+## Commit Messages
+
+<img src="https://imgs.xkcd.com/comics/git_commit.png" class="center" width="600"/>
+
+## Commit Messages
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ git log --oneline -5 --author pwebb --before "Sat Aug 30 2014"
+5ba3db6 Fix failing CompositePropertySourceTests
+84564a0 Rework @PropertySource early parsing logic
+e142fd1 Add tests for ImportSelector meta-data
+887815f Update docbook dependency and generate epub
+ac8326d Polish mockito usage
+</code></pre>
+</div>
