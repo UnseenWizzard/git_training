@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Git Training</title>
+		<title>Professional Practice: Git Seminar</title>
 		<style>
 			body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -72,9 +72,20 @@ code {
 		<textarea id="source">
 class: center, middle, main-title
 
-# Git Training
-*Adapted from Nice Reidman&#39;s interactive Git tutorial
-[&quot;Learn git concepts, not commands&quot;](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)*
+# Professional Practice: Git Seminar
+*Adapted from Nice Reidman&#39;s interactive Git tutorial*
+
+[&quot;Learn git concepts, not commands&quot;](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/10b5498d-ec6a-4ff6-a80b-d03376d487cb)
+
+
+---
+## Resources
+
+- [Pro Git Book](https://git-scm.com/book/en/v2)
+- [Introduction to GitHub course on GitLab](https://lab.github.com/githubtraining/introduction-to-github)
+- [This tutorial in more depth](./TUTORIAL.md)
 
 
 ---
@@ -133,10 +144,11 @@ cd git_training
 echo "This is Bob" > Bob.txt
 ```
 
-- Check the status of your working directory
+- Check the status of your working directory and view changes
 
 ```sh
 git status
+git diff
 ```
 <img src="./images/teachingGit/3-tracked-untracked.png" width="500"/>
 
@@ -170,12 +182,12 @@ git push
 <!-- ## Reviewing Change History -->
 
 ---
-## Commit Messages
+## Commit Messages: Bad
 <img src="https://imgs.xkcd.com/comics/git_commit.png" class="center" width="600"/>
 
 
 ---
-## Commit Messages
+## Commit Messages: Good
 <div class="highlighter-rouge"><pre class="highlight"><code>$ git log --oneline -5 --author pwebb --before &quot;Sat Aug 30 2014&quot;
 5ba3db6 Fix failing CompositePropertySourceTests
 84564a0 Rework @PropertySource early parsing logic
@@ -331,7 +343,7 @@ git log
 
 ---
 ## 3 Way Merge: Before
-![merging](./images/before3WayMerge.png "Merging")
+![merging](./images/before3Waymerge.png "Merging")
 
 
 ---
@@ -422,7 +434,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 - View contents of `Bob.txt`
 
-```sh
+```
 cat Bob.txt
 <<<<<<< HEAD
 Hi! I'm new here.
@@ -431,7 +443,10 @@ Hi! I'm Bob. I've been here for a while now.
 >>>>>>> fixBob
 ```
 
-- Fix conflict manually (or using a tool)
+---
+### Merge Conflicts
+
+- Open file in text editor and fix conflict manually (or using a tool)
 - Add and commit fixed file
 
 ```sh
@@ -446,19 +461,90 @@ git merge --abort
 ```
 
 ---
-class: center, middle, title
+class: center, middle, main-title
 
-## Rebasing
+# Getting Remote Changes
+Keeping your copy of the repository up-to-date
 
----
-class: center, middle, title
-
-## Getting Remote Changes
 
 ---
-class: center, middle, title
+## Fetch
+<img src="./images/teachingGit/fetch.png" width="700"/>
 
+
+---
+## Pull
+<img src="./images/teachingGit/pull.png" width="700"/>
+
+
+---
 ## Stashing
+
+- Save work in progress that&#39;s not ready to commit
+
+```sh
+git stash
+```
+
+- List stashes
+
+```sh
+git stash list
+```
+
+- View a stash
+
+```sh
+git stash show
+```
+
+- Apply a stash (retrieve the changes)
+
+```
+git stash apply
+```
+<!-- ## Rebasing -->
+
+---
+class: center, middle, main-title
+
+# Useful Git Commands
+
+- Keep notes of new commands you learn
+- Build up a library of handy commands
+
+
+---
+## My Command Library
+|  Action |  Git Syntax | 
+|--|--|
+|  List tags and commit ids |  `git show-ref --tags` | 
+|  Squash last 4 commits into one commit with new message |  `git reset --soft HEAD~4` | 
+|  Amend last commit message |  `git commit —amend` | 
+|  Force push to remote (overwrites history, **Don&#39;t do this!**) |  `git push -f origin` | 
+|  List tags |  `git tag -l` | 
+|  Check out tag |  `git checkout tags/&lt;TAG&gt;` | 
+|  Show history in format [short SHA1] [message] |  `git log --oneline` | 
+|  Show sha1, author and message of a single commit |  `git log --pretty=short -n 1 &lt;SHA1&gt;` | 
+|  Check if object is present in repo and return its type |  `git cat-file -t [SHA1]` | 
+|  Get last common ancestor of two branches |  `git merge-base branch1 branch2` | 
+|  Abort a merge |  `git merge --abort` | 
+|  Create a new branch and check it out |  `git checkout -b branch_name` | 
+|  List remotes |  `git remote -v` | 
+|  Show details of remote |  `git remote show remote_name` | 
+|  Delete branch from remote |  `git push origin :branch_name` | 
+|  Resolve all conflicting files below a directory with the remote side of the merge (use ours for the local side) |  `grep -lr &#39;&lt;&lt;&lt;&lt;&#39; . |  xargs git checkout --theirs --` | 
+|  Resolve conflics in specific file/directory |  `git mergetool &lt;file/directory&gt;` | 
+|  Reset resolved merge conflict to conflicted state |  `git checkout -m &lt;file&gt;` | 
+|  Remove local branches no longer present on remote |  `git remote prune origin` | 
+|  Reset local repo to nth commit behind current HEAD |  `git reset --hard HEAD~n` | 
+|  Revert commit without committing |  `git revert -n &lt;sha1&gt;` | 
+|  Stage changes interactively |  `git add -p` | 
+|  Checkout previously checked-out branch |  `git checkout -` | 
+|  Search in git command history |  `CTRL-R` | 
+|  Check out file from another branch |  `git checkout &lt;branch_name&gt; -- &lt;paths&gt;` | 
+|  Cherry pick a merge commit, appending a line saying “cherry picked from commit” |  `git cherry-pick -x -m 1 &lt;sha1&gt;` | 
+
 
 		</textarea>
 		<script>require=(function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require=="function"&&require;if(!s&&o)return o(n,!0);if(r)return r(n,!0);throw new Error("Cannot find module '"+n+"'")}var u=t[n]={exports:{}};e[n][0].call(u.exports,function(t){var r=e[n][1][t];return i(r?r:t)},u,u.exports)}return t[n].exports}var r=typeof require=="function"&&require;for(var s=0;s<n.length;s++)i(n[s]);return i})({"components/printing":[function(require,module,exports){

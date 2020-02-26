@@ -1,6 +1,14 @@
-# Git Training
-_Adapted from Nice Reidman's interactive Git tutorial
-["Learn git concepts, not commands"](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)_
+# Professional Practice: Git Seminar
+_Adapted from Nice Reidman's interactive Git tutorial_
+
+["Learn git concepts, not commands"](https://dev.to/unseenwizzard/learn-git-concepts-not-commands-4gjc)
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#snapshot/10b5498d-ec6a-4ff6-a80b-d03376d487cb)
+
+## Resources
+- [Pro Git Book](https://git-scm.com/book/en/v2)
+- [Introduction to GitHub course on GitLab](https://lab.github.com/githubtraining/introduction-to-github)
+- [This tutorial in more depth](./TUTORIAL.md)
 
 # Local Version Control
 <img src="./images/localVCS.png" height="400"/>
@@ -39,11 +47,13 @@ git clone https://github.com/{YOUR USERNAME}/git_training.git
 cd git_training
 echo "This is Bob" > Bob.txt
 ```
-- Check the status of your working directory
+- Check the status of your working directory and view changes
 
 ```sh
 git status
+git diff
 ```
+
 <img src="./images/teachingGit/3-tracked-untracked.png" width="500"/>
 
 
@@ -71,11 +81,11 @@ git push
 <!-- ## Reviewing Change History -->
 
 
-## Commit Messages
+## Commit Messages: Bad
 
 <img src="https://imgs.xkcd.com/comics/git_commit.png" class="center" width="600"/>
 
-## Commit Messages
+## Commit Messages: Good
 
 <div class="highlighter-rouge"><pre class="highlight"><code>$ git log --oneline -5 --author pwebb --before "Sat Aug 30 2014"
 5ba3db6 Fix failing CompositePropertySourceTests
@@ -201,7 +211,7 @@ git log
 ```
 
 ## 3 Way Merge: Before
-![merging](./images/before3WayMerge.png "Merging")
+![merging](./images/before3Waymerge.png "Merging")
 
 ## 3 Way Merge: After
 ![merging](./images/after3WayMerge.png "Merging")
@@ -282,7 +292,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 
 - View contents of `Bob.txt`
 
-```sh
+```
 cat Bob.txt
 <<<<<<< HEAD
 Hi! I'm new here.
@@ -291,7 +301,8 @@ Hi! I'm Bob. I've been here for a while now.
 >>>>>>> fixBob
 ```
 
-- Fix conflict manually (or using a tool)
+### Merge Conflicts
+- Open file in text editor and fix conflict manually (or using a tool)
 - Add and commit fixed file
 
 ```sh
@@ -305,8 +316,73 @@ git commit
 git merge --abort
 ```
 
-## Rebasing
+# Getting Remote Changes
+Keeping your copy of the repository up-to-date
 
-## Getting Remote Changes
+## Fetch
+<img src="./images/teachingGit/fetch.png" width="700"/>
+
+## Pull
+<img src="./images/teachingGit/pull.png" width="700"/>
+
 
 ## Stashing
+- Save work in progress that's not ready to commit
+
+```sh
+git stash
+```
+
+- List stashes
+
+```sh
+git stash list
+```
+
+- View a stash
+
+```sh
+git stash show
+```
+
+- Apply a stash (retrieve the changes)
+
+```
+git stash apply
+```
+
+<!-- ## Rebasing -->
+
+# Useful Git Commands
+- Keep notes of new commands you learn
+- Build up a library of handy commands
+
+## My Command Library
+Action | Git Syntax
+--- | ---
+List tags and commit ids| `git show-ref --tags`
+Squash last 4 commits into one commit with new message | `git reset --soft HEAD~4`
+Amend last commit message | `git commit —amend`
+Force push to remote (overwrites history, **Don't do this!**) | `git push -f origin`
+List tags | `git tag -l`
+Check out tag | `git checkout tags/<TAG>`
+Show history in format [short SHA1] [message] | `git log --oneline`
+Show sha1, author and message of a single commit | `git log --pretty=short -n 1 <SHA1>`
+Check if object is present in repo and return its type | `git cat-file -t [SHA1]`
+Get last common ancestor of two branches | `git merge-base branch1 branch2`
+Abort a merge | `git merge --abort`
+Create a new branch and check it out | `git checkout -b branch_name`
+List remotes | `git remote -v`
+Show details of remote | `git remote show remote_name`
+Delete branch from remote | `git push origin :branch_name`
+Resolve all conflicting files below a directory with the remote side of the merge (use ours for the local side) | `grep -lr '<<<<' . | xargs git checkout --theirs --`
+Resolve conflics in specific file/directory | `git mergetool <file/directory>`
+Reset resolved merge conflict to conflicted state | `git checkout -m <file>`
+Remove local branches no longer present on remote | `git remote prune origin`
+Reset local repo to nth commit behind current HEAD | `git reset --hard HEAD~n`
+Revert commit without committing | `git revert -n <sha1>`
+Stage changes interactively | `git add -p`
+Checkout previously checked-out branch | `git checkout -`
+Search in git command history | `CTRL-R`
+Check out file from another branch | `git checkout <branch_name> -- <paths>`
+Cherry pick a merge commit, appending a line saying “cherry picked from commit”  |  `git cherry-pick -x -m 1 <sha1>`
