@@ -351,6 +351,18 @@ git stash show
 git stash apply
 ```
 
+# Aliases
+## Creating Command Shortcuts
+- Git aliases are command Shortcuts
+    - use sparingly or you'll forget the real syntax
+
+```
+$ git config --global alias.co checkout
+$ git config --global alias.ci commit
+```
+
+- Useful for longer commands
+
 <!-- ## Rebasing -->
 
 # Useful Git Commands
