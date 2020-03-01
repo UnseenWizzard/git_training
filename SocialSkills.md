@@ -12,3 +12,10 @@ So much work to do here
   - [ ] [The Art of Negotiating the Best Deal - Seth Freeman](https://www.goodreads.com/en/book/show/22816770-the-art-of-negotiating-the-best-deal)
   - [ ] [STABEN - Jennie Byrne](https://www.youtube.com/watch?v=DSGy5yvC0hM)
   
+## 
+
+  - [x] [Emotional Mastery: The Gifted Wisdom of Unpleasant Feelings - Dr Joan Rosenberg](https://www.youtube.com/watch?v=EKy19WzkPxE)
+    Lean into unpleasant feelings, instead of avoiding them.
+    The physical sensation will wash over in 90 seconds.
+    By leaning into them you will gain insight and become confident in yourself.
+    Grief has multiple 90 second waves.
