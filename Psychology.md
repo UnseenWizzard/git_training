@@ -1,3 +1,5 @@
+# Psychology
+
 ## Depression
 
   - [x] [This could be why you're depressed or anxious - Johann Hari](https://www.ted.com/talks/johann_hari_this_could_be_why_you_re_depressed_or_anxious?language=en)
