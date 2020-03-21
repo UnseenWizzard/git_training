@@ -63,7 +63,7 @@ Sleep with feet elevated a bit (15 degrees) perfuses the brain more with neuro c
 30 minutes after this cocktail you will be out and the depth of the sleep will be better:
 
  - 200-600mg Magnesium Threonate for sleep and neuro-protection
- - 100-200mg Theanine makes dream more intense.  Promotes Gabba formation in the brain. Theanine is a pre cursor to Gabba. If you take Gabba directly this will shutdown Gabba production in the brain. So rather take the precursor, and this applies to all neuro-transmitters.
+ - 100-200mg Theanine makes dream more intense.  Promotes GABA formation in the brain. Theanine is a pre cursor to GABA. If you take GABA directly this will shutdown GABA production in the brain. So rather take the precursor, and this applies to all neuro-transmitters.
  - 50mg Apigenin: for Men only, very little in Camomile tea, so find pills.
 
 Magnesium Citrate is for sleep, but also a laxative.  Depends what you are after.
