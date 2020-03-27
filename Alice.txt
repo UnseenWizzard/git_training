@@ -1,5 +1,9 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 Here is some other sentence.
+<<<<<<< HEAD
 And one more line of crap.
 So, it is time to add another line.
 Tralla la.
+=======
+Third line changed in the GitHub.
+>>>>>>> f2df080c86a686ba3b87a27a7ef47b50b0ec7dc9
