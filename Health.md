@@ -51,6 +51,8 @@
         * Garlic, asparagus, chicory root are also has great fibre
         * Fermentation imitates your digestion. It is like a super food. Eat on daily basis. Get variety.
 
+  - [x] [The cause of infectious diseases - Dr. Michael Greger](https://youtu.be/Se9yqWNIG8A)
+
 ## Arthritis
 
   - [x] [Fish oil: what the prescriber needs to know](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1526555/)
