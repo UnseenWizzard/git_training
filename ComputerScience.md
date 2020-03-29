@@ -19,6 +19,7 @@
   - [x] [Learn You a gocc for Great Good - Marius Ackerman](https://raw.githubusercontent.com/goccmack/gocc/master/doc/gocc_user_guide.pdf)
   - [x] [Parsing Expression Grammars: A Recognition-Based Syntactic Foundation](http://bford.info/pub/lang/peg.pdf)
   - [x] [Combinator Parsers A Short Tutorial](http://www.cs.uu.nl/research/techreps/repo/CS-2008/2008-044.pdf)
+  - [ ] [Tree-Sitter - a new parsing system for programming tools - Max Brunsfeld](https://www.thestrangeloop.com/2018/tree-sitter---a-new-parsing-system-for-programming-tools.html)
   
 ### Language Design
  
