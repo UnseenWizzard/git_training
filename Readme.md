@@ -12,7 +12,6 @@ A list of videos, playlists, blog posts, papers, books, etc that I have learned 
   - [PublicSpeaking](https://github.com/awalterschulze/learning/blob/master/PublicSpeaking.md)
   - [SocialSkills](https://github.com/awalterschulze/learning/blob/master/SocialSkills.md)
   - [Psychology](https://github.com/awalterschulze/learning/blob/master/Psychology.md)
-  - [Learning](https://github.com/awalterschulze/learning/blob/master/Learning.md)
 
 ## Personal
 
