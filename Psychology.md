@@ -27,3 +27,8 @@
     Timely, not necessarily time bound but not very far off goals
     Evaluate, read every week and evaluate them every month 
     Reward 
+
+## Procrastination
+
+  - [x] [Self Worth Theory: The Key to Understanding & Overcoming Procrastination - Nic Voge](https://www.youtube.com/watch?v=52lZmIafep4)
+        [my notes](https://github.com/awalterschulze/learning/blob/master/ProcrastinationNicVoge.md)
