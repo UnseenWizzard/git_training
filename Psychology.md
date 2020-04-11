@@ -31,6 +31,7 @@
 ## Procrastination
 
   - [x] [Self Worth Theory: The Key to Understanding & Overcoming Procrastination - Nic Voge](https://www.youtube.com/watch?v=52lZmIafep4)
+
         [my notes](https://github.com/awalterschulze/learning/blob/master/ProcrastinationNicVoge.md)
 
 ## Learning
