@@ -1,3 +1,5 @@
+## Self Worth Theory: The Key to Understanding & Overcoming Procrastination - Nic Voge
+
 These are notes from a video [Self Worth Theory: The Key to Understanding & Overcoming Procrastination | Nic Voge | TEDxPrincetonU](https://www.youtube.com/watch?v=52lZmIafep4).
 
 We are motivated by our drive for success and fear of failure.
