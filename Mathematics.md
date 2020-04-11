@@ -56,7 +56,7 @@
   
 ## Homotopy Type Theory
 
-  - [ ] [Homotopy Type Theory](http://%0Ahttp://www.cs.cmu.edu/~rwh/courses/hott/)
+  - [ ] [Homotopy Type Theory](http://www.cs.cmu.edu/~rwh/courses/hott/)
 
 ## Infinity
 
