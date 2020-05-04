@@ -39,8 +39,7 @@
       - [x] [Parsing stuff in Haskell](https://www.youtube.com/watch?v=r_Enynu_TV0)
       - [x] [Create a parser using Parsec](https://github.com/aslatter/parsec)
   - [x] [Theorems for free!](http://ttic.uchicago.edu/~dreyer/course/papers/wadler.pdf)
-  - [x] [Real World Haskell](http://book.realworldhaskell.org/)
-      - [x] Monad Transformers
+  - [x] Monad Transformers
   - [ ] [Continuation passing style](https://en.wikibooks.org/wiki/Haskell/Continuation_passing_style)
   - [ ] [the Continuation monad](http://www.haskellforall.com/2012/12/the-continuation-monad.html)
 
