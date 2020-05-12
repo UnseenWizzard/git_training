@@ -12,6 +12,7 @@
 ## Languages
 
   - [ ] [Awesome Compilers](https://github.com/aalhour/awesome-compilers)
+  - [ ] [Partial Evaluation and Automatic Program Generation - Neil D Jones](https://www.researchgate.net/publication/213882771_Partial_Evaluation_and_Automatic_Program_Generation)
 
 ### Parsing
 
