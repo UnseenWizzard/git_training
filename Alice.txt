@@ -5,3 +5,5 @@ some more text
 editing this via website
 stash
 rewriting history
+interactive rebase
+more changes
