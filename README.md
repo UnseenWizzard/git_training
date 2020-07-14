@@ -601,7 +601,7 @@ Thinking that way, the two options you have to get _remote_ changes make a lot o
 
 When you `git pull`, the _Local_ and _Remote_ versions of a branch will be `merged`. Just like `merging` branches, this will introduce a _merge_ commit. 
 
-As any _local_ branch is based on its respective _remote_ version, we can also `rebase` it, so that any changes we may have made locally, appear as if they were based on the latest version that is available in the _Remote Repository. 
+As any _local_ branch is based on its respective _remote_ version, we can also `rebase` it, so that any changes we may have made locally, appear as if they were based on the latest version that is available in the _Remote Repository_. 
 To do that, we can use `git pull --rebase` (or the shorthand `git pull -r`). 
 
 As detailed in the section on [Rebasing](#rebasing), there is a benefit in keeping a clean linear history, which is why I would strongly recommend that whenever you `git pull` you do a `git pull -r`. 
