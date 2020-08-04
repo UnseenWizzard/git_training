@@ -1,3 +1,4 @@
 Esta es una prueba
 para ver como funciona git.
 Ahora lo edité con Nano.
+Ahora lo estoy editando en la interfaz de github
