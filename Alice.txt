@@ -1,3 +1,4 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
 Here's some extra, changed text on line 2.
 Here's a merged new third line.
+Here's a cherry pick change.
