@@ -1,2 +1,6 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
+<<<<<<< HEAD
 This is the change.
+=======
+This is the new line!
+>>>>>>> New line to Alice.txt
