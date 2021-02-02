@@ -1,6 +1,3 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
-<<<<<<< HEAD
 adding text to second line, changing on alice!!
-=======
 making remote change
->>>>>>> 1e20ecdb63aebfa0d0d921b76175d730cca9b8d9
