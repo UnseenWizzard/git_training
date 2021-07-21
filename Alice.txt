@@ -13,3 +13,9 @@ I am adding a new line here
 
 New line in the branch
 >>>>>>> d7e8eff6f9c893c270178e53cd8b32d2e699e6f9
+
+
+These are new lines to learn about interactive rebasing 
+
+
+adding txt for interactive rebasing second time
