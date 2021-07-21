@@ -1,4 +1,5 @@
 Hi! I'm Alice. I'm a file someone added to this repository a while ago.
+<<<<<<< HEAD
 Now A new line is added in this file.
 
 
@@ -6,3 +7,9 @@ adding change
 
 
 adding a line
+=======
+
+I am adding a new line here
+
+New line in the branch
+>>>>>>> d7e8eff6f9c893c270178e53cd8b32d2e699e6f9
