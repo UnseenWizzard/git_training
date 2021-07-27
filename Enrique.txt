@@ -1,2 +1,3 @@
 Yo me llamo Enrique Verdes y esto es una prueba de git.
-Ahora estoy en la rama nueva_version.
+Ahora estoy en la rama nueva_version
+Este es otro commit de la branch nueva_version.
