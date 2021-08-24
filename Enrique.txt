@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Estoy programando en Windows :-( 
+=======
+Estoy trabajando con git en Linux!!!! yabadabaduuuu!!!
+>>>>>>> 70bdd3bb13703912805cac8289b1f93e74e59ecd
