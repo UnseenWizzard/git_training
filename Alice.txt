@@ -1,1 +1,5 @@
-Hi! I'm Alice. I'm a file someone added to this repository a while ago.
+Hi! I'm Alice. I'm a file someone made a change to on the remote!
+Then a bit later someone made another remote change.
+I made another change
+And another for good measure
+
