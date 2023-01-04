@@ -351,7 +351,7 @@ If you now switch back to master (`git checkout master`) and do `git merge chang
 
 The new commit introduces the changes that we've made on the `change_alice` branch into master. 
 
-As you'll remember from before, revisions in git, aren't only a snapshot of your files but also contain information on where they came from from. Each `commit` has one or more parent commits. Our new `merge` commit, has both the last commit from _master_ and the commit we made on the other branch as its parents.
+As you'll remember from before, revisions in git, aren't only a snapshot of your files but also contain information on where they came from. Each `commit` has one or more parent commits. Our new `merge` commit, has both the last commit from _master_ and the commit we made on the other branch as its parents.
 
 ### Resolving conflicts
 
