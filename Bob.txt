@@ -1,1 +1,3 @@
 On Master, added Bob.txt
+Added text to Bob.txt
+Another edit, before committing
