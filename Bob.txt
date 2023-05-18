@@ -4,3 +4,5 @@ somemore changes
 UPdated again
 asdddd
 Master branch changes
+
+Bobby branch conflict changes
