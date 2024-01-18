@@ -1,0 +1,5 @@
+This is a test
+I will experiment with -p patch and -i interactive options on the git add command
+This 
+is 
+fluff
