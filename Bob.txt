@@ -1,5 +1,3 @@
-This is a test
-I will experiment with -p patch and -i interactive options on the git add command
-This 
-is 
-fluff
+Changing the contents of the fill
+this is so I can mess with git log and other
+tools to check file changes over time.
